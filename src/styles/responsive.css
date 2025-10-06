@@ -171,6 +171,15 @@
   #h-tabs {
     background-color: transparent;
   }
+
+  #home-tab-content-desktop {
+    display: none !important;
+  }
+
+  #home-tab-content-phone {
+    display: block !important;
+  }
+
 }
 
 @media (max-width: 590px) {

@@ -98,3 +98,8 @@
   background-color: var(--verLightGrayishBlue);
 }
 /* Introduction Brain Vector end */
+
+/* Tabs */
+#home-tab-content-phone {
+  display: none;
+}

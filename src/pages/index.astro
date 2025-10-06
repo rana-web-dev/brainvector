@@ -103,7 +103,7 @@ import Header from "../components/header";
                 <p class="text-[16px]"><em>All emotional and cognitive data is processed with strict privacy protocols. Ethical technology for  sensitive, human-centered applications.</em></p>
               </div>
             </div>            
-            <button class="w-[190px] mt-[20px] flex items-center gap-[8px] p-[12px] border rounded-full pointer"><img style={{width: "20px;"}} src="/images/video.svg" alt="video play" /> Watch the video</button>
+            <button class="w-[190px] mt-[20px] cursor-pointer flex items-center gap-[8px] p-[12px] border rounded-full pointer"><img style={{width: "20px;"}} src="/images/video.svg" alt="video play" /> Watch the video</button>
           </div>
       </div>
     </div>
@@ -122,19 +122,19 @@ import Header from "../components/header";
   <div class="mt-[35px] md:mt-[47px]">
     <div id="h-tabs" class="flex gap-[5px] justify-between items-center rounded-full  overflow-hidden">
       <!-- Active on mobile = 70%, inactive = 10% -->
-      <button class="tab-btn flex items-center justify-center rounded-full p-4 transition-all duration-300 bg-[#D7DCE3] md:w-[25%] cursor-pointer" data-tab="1">
+      <button class="tab-btn flex z-50 items-center justify-center rounded-full p-4 transition-all duration-300 bg-[#D7DCE3] md:w-[25%] cursor-pointer" data-tab="1">
         <span class="number">1</span>
         <span class="text">. Identify</span>
       </button>
-      <button class="tab-btn flex items-center justify-center rounded-full p-4 transition-all duration-300 md:w-[25%] bg-[var(--verLightGrayishBlue)] cursor-pointer" data-tab="2">
+      <button class="tab-btn flex z-50 items-center justify-center rounded-full p-4 transition-all duration-300 md:w-[25%] bg-[var(--verLightGrayishBlue)] cursor-pointer" data-tab="2">
         <span class="number">2</span>
         <span class="text hidden md:inline">. Personalize</span>
       </button>
-      <button class="tab-btn flex items-center justify-center rounded-full p-4 transition-all duration-300 md:w-[25%] bg-[var(--verLightGrayishBlue)] cursor-pointer" data-tab="3">
+      <button class="tab-btn flex z-50 items-center justify-center rounded-full p-4 transition-all duration-300 md:w-[25%] bg-[var(--verLightGrayishBlue)] cursor-pointer" data-tab="3">
         <span class="number">3</span>
         <span class="text hidden md:inline">. Guide</span>
       </button>
-      <button class="tab-btn flex items-center justify-center rounded-full p-4 transition-all duration-300 md:w-[25%] bg-[var(--verLightGrayishBlue)] cursor-pointer" data-tab="4">
+      <button class="tab-btn flex z-50 items-center justify-center rounded-full p-4 transition-all duration-300 md:w-[25%] bg-[var(--verLightGrayishBlue)] cursor-pointer" data-tab="4">
         <span class="number">4</span>
         <span class="text hidden md:inline">. Activate</span>
       </button>
@@ -142,22 +142,69 @@ import Header from "../components/header";
 
     <!-- Tab Content -->
     <div class="mt-6">
-      <div class="tab-content overflow-hidden transition-all duration-500 max-h-[1000px] opacity-100" data-tab="1">
-        Content for Identify
+      <div id="home-tab-content-desktop" class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/PSnvfw8/home-page-tab-identify-bg-img.png')]" data-tab="1">
+        <img class="max-w-[240px] mb-[-115px]" src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png" alt="indentify mobile image" />
+        <div class="max-w-[307px] absolute right-[82px]">
+          <h4 class="font-[Barlow]! font-bold text-[24px] leading-[24px] text-white">Map Your Inner State</h4>
+          <p class="font-[Barlow]! font-normal! text-[18px] leading-[25px] pt-[5px] text-white">AI-driven dialogue helps identify your current emotional and cognitive profile.</p>
+        </div>
       </div>
-      <div class="tab-content overflow-hidden transition-all duration-500 max-h-0 opacity-0" data-tab="2">
-        Content for Personalize
+      <div id="home-tab-content-phone" class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/Jw1hvJQ4/idsfajfn.png')] bg-cover bg-center" data-tab="1">
+        <img class="max-w-[140px] absolute
+        right-[-10px] bottom-[-10px]" src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png" alt="indentify mobile image" />
+        <div class="max-w-[200px] absolute left-[25px] bottom-[50px]">
+          <h4 class="font-[Barlow]! font-bold text-[20px] md:text-[24px] leading-[24px] text-white">Map Your Inner State</h4>
+          <p class="font-[Barlow]! font-normal! text-[14px] md:text-[18px] leading-[25px] pt-[5px] text-white">AI-driven dialogue helps identify your current emotional and cognitive profile.</p>
+        </div>
       </div>
-      <div class="tab-content overflow-hidden transition-all duration-500 max-h-0 opacity-0" data-tab="3">
-        Content for Guide
+      <div id="home-tab-content-desktop" class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/JwJtbVwy/home-page-personalize-bgimg.png')]" data-tab="2">
+        <img class="max-w-[240px] mb-[-115px]" src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png" alt="indentify mobile image" />
+        <div class="max-w-[318px] absolute right-[60px]">
+          <h4 class="font-[Barlow]! font-bold text-[24px] leading-[24px] text-white">A Program Made for Your Mind</h4>
+          <p class="font-[Barlow]! font-normal! text-[18px] leading-[25px] pt-[5px] text-white">Builds personalized programs for cognitive strengthening</p>
+        </div>
       </div>
-      <div class="tab-content overflow-hidden transition-all duration-500 max-h-0 opacity-0" data-tab="4">
-        Content for Activate
+      <div id="home-tab-content-phone" class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/zhJLxFv7/personalize-phone-bg.png')] bg-cover bg-center" data-tab="2">
+        <img class="max-w-[140px] absolute
+        right-[-10px] bottom-[-10px]" src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png" alt="indentify mobile image" />
+        <div class="max-w-[200px] absolute left-[25px] bottom-[50px]">
+          <h4 class="font-[Barlow]! font-bold text-[20px] md:text-[24px] leading-[24px] text-white">A Program Made for Your Mind</h4>
+          <p class="font-[Barlow]! font-normal! text-[14px] md:text-[18px] leading-[25px] pt-[5px] text-white">Builds personalized programs for cognitive strengthening</p>
+        </div>
+      </div>
+      <div id="home-tab-content-desktop" class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/sJJYBk3J/guide-bg.png')]" data-tab="3">
+        <img class="max-w-[240px] mb-[-115px]" src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png" alt="indentify mobile image" />
+        <div class="max-w-[310px] absolute right-[70px]">
+          <h4 class="font-[Barlow]! font-bold text-[24px] leading-[24px] text-white">Enter Your Mental Landscape</h4>
+          <p class="font-[Barlow]! font-normal! text-[18px] leading-[25px] pt-[5px] text-white">Guides you through immersive journeys based on your goals</p>
+        </div>
+      </div>
+      <div id="home-tab-content-phone" class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/C3zyb9Qx/guide-phone-bg.png')] bg-cover bg-center" data-tab="3">
+        <img class="max-w-[140px] absolute
+        right-[-10px] bottom-[-10px]" src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png" alt="indentify mobile image" />
+        <div class="max-w-[200px] absolute left-[25px] bottom-[50px]">
+          <h4 class="font-[Barlow]! font-bold text-[20px] md:text-[24px] leading-[24px] text-white">Enter Your Mental Landscape</h4>
+          <p class="font-[Barlow]! font-normal! text-[14px] md:text-[18px] leading-[25px] pt-[5px] text-white">Guides you through immersive journeys based on your goals</p>
+        </div>
+      </div>
+      <div id="home-tab-content-desktop" class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/fYDxz1mF/activate-bg.png')]" data-tab="4">
+        <img class="max-w-[240px] mb-[-115px]" src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png" alt="indentify mobile image" />
+        <div class="max-w-[307px] absolute right-[82px]">
+          <h4 class="font-[Barlow]! font-bold text-[24px] leading-[24px] text-white">Switch On Your Best Self</h4>
+          <p class="font-[Barlow]! font-normal! text-[18px] leading-[25px] pt-[5px] text-white">Activates key emotional states like focus, serenity, and confidence</p>
+        </div>
+      </div>
+      <div id="home-tab-content-phone" class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/hFHKnZYj/activate-phone-bg.png')] bg-cover bg-center" data-tab="4">
+        <img class="max-w-[140px] absolute
+        right-[-10px] bottom-[-10px]" src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png" alt="indentify mobile image" />
+        <div class="max-w-[200px] absolute left-[25px] bottom-[50px]">
+          <h4 class="font-[Barlow]! font-bold text-[20px] md:text-[24px] leading-[24px] text-white">Switch On Your Best Self</h4>
+          <p class="font-[Barlow]! font-normal! text-[14px] md:text-[18px] leading-[25px] pt-[5px] text-white">Activates key emotional states like focus, serenity, and confidence</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
-
 <script>
 const buttons = document.querySelectorAll(".tab-btn");
 const contents = document.querySelectorAll(".tab-content");
@@ -174,21 +221,22 @@ function activateTab(tab: any) {
         text.classList.remove("hidden");
       }
       b.classList.add("bg-[#D7DCE3]", "font-medium");
-      b.classList.remove("bg-[var(--verLightGrayishBlue)]", "font-regular");
+      b.classList.remove("bg-[var(--verLightGrayishBlue)]", "font-normal");
     } else {
       if (window.innerWidth < 768) {
         b.style.width = "15%";
         text.classList.add("hidden");
       }
       b.classList.remove("bg-[#D7DCE3]", "font-medium");
-      b.classList.add("bg-[var(--verLightGrayishBlue)]", "font-regular");
+      b.classList.add("bg-[var(--verLightGrayishBlue)]", "font-normal");
     }
   });
 
   // Animate content
   (contents as NodeListOf<HTMLElement>).forEach(c => {
     if (c.getAttribute("data-tab") === tab) {
-      c.style.maxHeight = c.scrollHeight + "px";
+      // c.style.maxHeight = c.scrollHeight + "px";
+      c.style.maxHeight = "526px";
       c.style.opacity = "1";
     } else {
       c.style.maxHeight = "0px";
@@ -236,10 +284,5 @@ window.addEventListener("resize", () => {
   }
 });
 </script>
-
-
-
-
-
 
 </Layout>
