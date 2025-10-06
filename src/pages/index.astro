@@ -5,6 +5,7 @@ import Header from "../components/header";
 
 <Layout>
   <Header client:load />
+  <!-- Home Page -->
   <section class="home">
     <video autoplay muted loop playsinline poster="https://i.ibb.co/PsyBtX5G/brainvector-home-banner-fallback-img.png">
       <source src="/videos/brainvector-home-bg-vide.mp4" type="video/mp4" />
@@ -20,6 +21,7 @@ import Header from "../components/header";
       </div>
     </div>
   </section>
+  <!-- Understanding Emotional -->
   <section class="understanding-emotional">
     <div>
       <h2>
@@ -48,6 +50,7 @@ import Header from "../components/header";
     </div>
   </section>
   <!-- Introdution Brainvector -->
+   <!-- Introdution Brainvector -->
   <section class="introduction-brainvector">
     <div class="introduction-brainvector-content flex flex-col md:flex-row gap-[0] md:gap-[68px] ">
       <div class="w-1/2 sm:w-full flex items-center">
@@ -105,4 +108,138 @@ import Header from "../components/header";
       </div>
     </div>
   </section>
+  
+  <!-- Discover How Brain Vector Helps You -->
+  <section class="pt-[75px] pb-[119px] bg-white max-w-[1150px] mx-auto p-4">
+  <h2 class="text-[38px] leading-[42px] md:text-[50px] md:leading-[52px] font-medium text-center">
+    Discover How Brain Vector Helps You
+  </h2>
+  <p class="pt-[25px] md:pt-[20px] text-center text-[18px] text-[var(--mediumDarkGray)]">
+    Emotional regulation and mental enhancement begins with four key steps:
+  </p>
+
+  <!-- Tab Buttons -->
+  <div class="mt-[35px] md:mt-[47px]">
+    <div id="h-tabs" class="flex gap-[5px] justify-between items-center rounded-full  overflow-hidden">
+      <!-- Active on mobile = 70%, inactive = 10% -->
+      <button class="tab-btn flex items-center justify-center rounded-full p-4 transition-all duration-300 bg-[#D7DCE3] md:w-[25%] cursor-pointer" data-tab="1">
+        <span class="number">1</span>
+        <span class="text">. Identify</span>
+      </button>
+      <button class="tab-btn flex items-center justify-center rounded-full p-4 transition-all duration-300 md:w-[25%] bg-[var(--verLightGrayishBlue)] cursor-pointer" data-tab="2">
+        <span class="number">2</span>
+        <span class="text hidden md:inline">. Personalize</span>
+      </button>
+      <button class="tab-btn flex items-center justify-center rounded-full p-4 transition-all duration-300 md:w-[25%] bg-[var(--verLightGrayishBlue)] cursor-pointer" data-tab="3">
+        <span class="number">3</span>
+        <span class="text hidden md:inline">. Guide</span>
+      </button>
+      <button class="tab-btn flex items-center justify-center rounded-full p-4 transition-all duration-300 md:w-[25%] bg-[var(--verLightGrayishBlue)] cursor-pointer" data-tab="4">
+        <span class="number">4</span>
+        <span class="text hidden md:inline">. Activate</span>
+      </button>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="mt-6">
+      <div class="tab-content overflow-hidden transition-all duration-500 max-h-[1000px] opacity-100" data-tab="1">
+        Content for Identify
+      </div>
+      <div class="tab-content overflow-hidden transition-all duration-500 max-h-0 opacity-0" data-tab="2">
+        Content for Personalize
+      </div>
+      <div class="tab-content overflow-hidden transition-all duration-500 max-h-0 opacity-0" data-tab="3">
+        Content for Guide
+      </div>
+      <div class="tab-content overflow-hidden transition-all duration-500 max-h-0 opacity-0" data-tab="4">
+        Content for Activate
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+const buttons = document.querySelectorAll(".tab-btn");
+const contents = document.querySelectorAll(".tab-content");
+
+// ✅ Reusable function to activate a tab
+function activateTab(tab: any) {
+  (buttons as NodeListOf<HTMLElement>).forEach(b => {
+    const text = b.querySelector(".text") as HTMLElement;
+
+    if (b.getAttribute("data-tab") === tab) {
+      // Mobile: wider + show text
+      if (window.innerWidth < 768) {
+        b.style.width = "55%";
+        text.classList.remove("hidden");
+      }
+      b.classList.add("bg-[#D7DCE3]", "font-medium");
+      b.classList.remove("bg-[var(--verLightGrayishBlue)]", "font-regular");
+    } else {
+      if (window.innerWidth < 768) {
+        b.style.width = "15%";
+        text.classList.add("hidden");
+      }
+      b.classList.remove("bg-[#D7DCE3]", "font-medium");
+      b.classList.add("bg-[var(--verLightGrayishBlue)]", "font-regular");
+    }
+  });
+
+  // Animate content
+  (contents as NodeListOf<HTMLElement>).forEach(c => {
+    if (c.getAttribute("data-tab") === tab) {
+      c.style.maxHeight = c.scrollHeight + "px";
+      c.style.opacity = "1";
+    } else {
+      c.style.maxHeight = "0px";
+      c.style.opacity = "0";
+    }
+  });
+}
+
+// ✅ Click events
+(buttons as NodeListOf<HTMLElement>).forEach(btn => {
+  btn.addEventListener("click", () => {
+    const tab = btn.getAttribute("data-tab");
+    activateTab(tab!);
+  });
+});
+
+// ✅ Activate tab #1 by default on page load
+document.addEventListener("DOMContentLoaded", () => {
+  activateTab("1");
+});
+
+// ✅ Handle resize
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 768) {
+    (buttons as NodeListOf<HTMLElement>).forEach(b => {
+      b.style.width = "25%";
+      const text = b.querySelector(".text") as HTMLElement;
+      text.classList.remove("hidden");
+    });
+  } else {
+    // Re-apply mobile widths correctly
+    const activeBtn = document.querySelector(".tab-btn.bg-[#D7DCE3]") as HTMLElement;
+    if (activeBtn) {
+      (buttons as NodeListOf<HTMLElement>).forEach(b => {
+        const text = b.querySelector(".text") as HTMLElement;
+        if (b === activeBtn) {
+          b.style.width = "55%";
+          text.classList.remove("hidden");
+        } else {
+          b.style.width = "15%";
+          text.classList.add("hidden");
+        }
+      });
+    }
+  }
+});
+</script>
+
+
+
+
+
+
 </Layout>

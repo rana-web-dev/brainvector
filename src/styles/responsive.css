@@ -167,6 +167,10 @@
   .introduction-brainvector-content {
     padding: 61px 20px;
   }
+
+  #h-tabs {
+    background-color: transparent;
+  }
 }
 
 @media (max-width: 590px) {

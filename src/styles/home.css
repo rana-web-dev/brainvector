@@ -93,4 +93,8 @@
 .introduction-brainvector .introduction-brainvector-content div > p {
   color: var(--darkBlueGray);
 }
+
+#h-tabs {
+  background-color: var(--verLightGrayishBlue);
+}
 /* Introduction Brain Vector end */
