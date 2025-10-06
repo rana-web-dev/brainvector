@@ -44,4 +44,8 @@ img {
     display: none;
 }
 
+.d-none {
+    display: none !important;
+}
+
 /* Global CSS end */
