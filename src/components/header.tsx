@@ -22,7 +22,7 @@ const Navigation: React.FC = () => {
   }, []);
 
   return (
-    <nav className="navigations">
+    <nav className={`navigations ${activeMenu ? "pe-auto" : ""}`}>
       <div className={`${activeMenu || isScrolled ? "bg-black" : ""}`}>
         <div className="navigations-content">
           <ul className="menu-for-desktop">

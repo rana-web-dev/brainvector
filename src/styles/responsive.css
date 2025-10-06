@@ -1,6 +1,9 @@
 /* All pages responsive here */
 @media (max-width: 1500px) {
   /* Header */
+  .navigations {
+    pointer-events: none;
+  }
   .navigations .menu-for-desktop {
     gap: 50px;
   }
@@ -106,7 +109,7 @@
 }
 
 
-  /* Understanding Emotional */
+  /* Home page Understanding Emotional */
   .understanding-emotional h2 {
     font-size: 38px;
     line-height: 42px;
@@ -158,6 +161,11 @@
 
   .understanding-emotional p {
     padding-top: 31px;
+  }
+
+  /* Introduction Brainvector */
+  .introduction-brainvector-content {
+    padding: 61px 20px;
   }
 }
 
