@@ -1,0 +1,168 @@
+/* All pages responsive here */
+@media (max-width: 1500px) {
+  /* Header */
+  .navigations .menu-for-desktop {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1250px) {
+  /* Header */
+  .navigations .menu-for-desktop,
+  .navigations .book-a-demo {
+    display: none;
+  }
+
+  .navigations .menu-for-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .navigations .menu-for-mobile .mobile-menu-items {
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navigations .menu-for-mobile .mobile-menu-items ul {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 30px;
+    margin-top: 100px;
+    opacity: 0;
+    transition: 0.2s;
+  }
+
+  .navigations .menu-for-mobile a {
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .navigations .menu-for-mobile a:hover {
+    color: var(--grayish) !important;
+  }
+
+  .navigations .menu-for-mobile .mobile-menu-items ul .book-a-demo-mobile-li {
+    margin-top: 30px;
+  }
+
+  .navigations .menu-for-mobile .mobile-menu-items ul .book-a-demo-mobile-li a {
+    border: 1px solid var(--white);
+    padding: 13px 32px;
+    border-radius: 30px;
+    margin-top: 50px;
+    transition: 0.3s;
+  }
+
+  .navigations .menu-for-mobile .mobile-menu-items ul .book-a-demo-mobile-li a:hover {
+    background-color: var(--grayish);
+    color: var(--white) !important;
+  }
+
+  .mobile-menu-items-active ul {
+    margin-top: 0px !important;
+    opacity: 1 !important;
+  }
+
+  .navigations .menu-for-mobile .mobile-menu-items li a:hover {
+    color: var(--white);
+  }
+
+  .navigations .menu-for-mobile > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigations .menu-for-mobile > div a img {
+    width: 217px;
+  }
+
+  .navigations .menu-for-mobile > div button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .navigations .menu-for-mobile > div img {
+    width: 25px;
+  }
+
+  .pe-none-m {
+    pointer-events: none;
+  }
+
+  /* Understanding Emotional */
+  .understanding-emotional h2 {
+    font-size: 38px;
+    line-height: 42px;
+    padding-bottom: 24px;
+}
+}
+
+@media (max-width: 900px) {
+    .home {
+        height: 844px;
+    }
+    
+    .home .home-content {
+        height: calc(100% - 100px);
+    }
+
+    .home .home-content div {
+        width: 500px;
+    }
+    .home .home-content h1 {
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .home .home-content p {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .understanding-emotional {
+        flex-direction: column-reverse;
+        gap: 0px;
+        padding: 80px 20px;
+    }
+
+    .understanding-emotional div {
+        width: 100%;
+    }
+
+    .for-phone-img {
+        display: block;
+    }
+
+    .for-desktop-img {
+        display: none;
+    }
+
+    .understanding-emotional p {
+        padding-top: 31px;
+    }
+}
+
+@media (max-width: 590px) {
+    .home .home-content div {
+        width: auto;
+    }
+    .home .home-content h1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .home .home-content p {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+}
+

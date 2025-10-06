@@ -1,0 +1,81 @@
+/* Banner Section start */
+.home {
+  width: 100%;
+  height: 1024px;
+  position: relative;
+  overflow: hidden;
+}
+
+.home video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  object-fit: cover;
+}
+
+.home .home-content {
+    max-width: 1800px;
+    height: calc(100% - 200px);
+    margin: auto;
+    padding-top: 150px;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 0 20px;
+}
+
+.home .home-content div {
+    max-width: 800px;
+}
+
+.home .home-content h1 {
+    font-size: 119px;
+    font-weight: 700;
+    line-height: 116px;
+    color: var(--white);
+}
+
+.home .home-content p {
+    font-family: Roboto;
+    font-weight: 300;
+    color: var(--white);
+    font-size: 36px;
+    margin-top: 10px;
+}
+/* Banner Section end */
+
+/* Understanding Emotional start  */
+.understanding-emotional {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 92px;
+  padding: 95px 20px 115px 20px;
+}
+
+.understanding-emotional div {
+  width: 50%;
+}
+
+.understanding-emotional h2 {
+  font-size: 50px;
+  line-height: 60px;
+  padding-bottom: 24px;
+  color: var(--darkBlueGray);
+}
+
+.understanding-emotional p {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 300;
+}
+/* Understanding Emotional end  */

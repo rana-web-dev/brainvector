@@ -1,0 +1,51 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/header";
+---
+
+<Layout>
+  <Header client:load />
+  <section class="home">
+    <video autoplay muted loop playsinline poster="https://i.ibb.co/PsyBtX5G/brainvector-home-banner-fallback-img.png">
+      <source src="/videos/brainvector-home-bg-vide.mp4" type="video/mp4" />
+      <img src="https://i.ibb.co.com/PsyBtX5G/brainvector-home-banner-fallback-img.png" alt="Your browser does not support video playback.">
+    </video>
+    <div class="home-content">
+      <div>
+        <h1>Experience<br /> Your Positive</h1>
+        <p>
+          Elevate mental performance with immersive, personalized emotional
+          experiences.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="understanding-emotional">
+    <div>
+      <h2>
+        Understanding Emotional Regulation:<span style="color: var(--blueGray)">The Oxytocin Pathway to Clarity,
+        Performance & Inner Balance</span>
+      </h2>
+      <img class="for-phone-img" src="https://i.ibb.co.com/j9LdWvs2/Animation-visuel-homepage.png" />
+      <p>
+        <span style="font-size: 19px; text-transform: uppercase;">Regulate Emotions. Boost Focus. Elevate Mental Performance.</span> <br><br>Emotion can
+        shape how we think, decide, and perform. At the center of this process
+        is oxytocin, a naturally occurring neurochemical that promotes trust,
+        emotional balance, and stress relief. When triggered, either naturally
+        or through VR and AI-enhanced immersive technology, oxytocin helps shift
+        the brain from a stress response into a state of clarity and cognitive
+        readiness. It enhances focus, strengthens working memory, and improves
+        decision-making under pressure.<br><br> <span style="font-weight: 600;color: var(--darkBlueGray);">Repeated thoughts and imagery strengthen
+        the pathways that guide behavior and choices, reinforcing this process
+        over time.</span> <br><br> regulation is not a personality trait: it’s a
+        trainable mental capacity, now accessible through technology. Whether
+        you're a wellness center, a corporate leader, or a performance-focused
+        organization, supporting emotional regulation can unlock untapped human
+        potential.
+      </p>
+    </div>
+    <div>
+      <img class="for-desktop-img" src="/images/Animation-visuel-homepage.png" />
+    </div>
+  </section>
+</Layout>

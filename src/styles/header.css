@@ -1,0 +1,53 @@
+.navigations {
+    max-width: 1800px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    background-color: transparent;
+    padding: 20px;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navigations .menu-for-desktop {
+    display: flex;
+    gap: 100px;
+    border-bottom: 1px solid var(--white);
+    padding-bottom: 24px;
+    align-items: center;
+}
+
+.navigations .menu-for-desktop a {
+    color: var(--grayish);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.navigations .menu-for-desktop a:hover {
+    color: var(--white);
+}
+
+.navigations .book-a-demo {
+    text-transform: uppercase;
+    font-family: Barlow;
+    font-size: 14px;
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 16px 32px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.navigations .book-a-demo:hover {
+    background-color: var(--grayish);
+    color: var(--white);
+}
+
+/* for mobile */
+.navigations .menu-for-mobile {
+    display: none;
+}
