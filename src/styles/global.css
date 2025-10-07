@@ -21,11 +21,6 @@ html, body {
     padding: 0;
 }
 
-p {
-    font-size: 18px;
-    font-weight: 300;
-}
-
 /* Global Color */
 :root {
     --grayish: #BFB9B3;
@@ -35,6 +30,7 @@ p {
     --darkBlueGray: #0F131A;
     --verLightGrayishBlue: #EDF0F4;
     --mediumDarkGray: #4D4D4D;
+    --mediumGrayBlue: #727E8A;
 }
 
 .bg-black {
