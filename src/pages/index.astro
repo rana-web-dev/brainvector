@@ -1,15 +1,25 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/header";
+import Carousel from "../components/carousel";
 ---
 
 <Layout>
   <Header client:load />
-  <!-- Home Page -->
+  <!-- Home Page Start -->
   <section class="home">
-    <video autoplay muted loop playsinline poster="https://i.ibb.co/PsyBtX5G/brainvector-home-banner-fallback-img.png">
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      poster="https://i.ibb.co/PsyBtX5G/brainvector-home-banner-fallback-img.png"
+    >
       <source src="/videos/brainvector-home-bg-vide.mp4" type="video/mp4" />
-      <img src="https://i.ibb.co.com/PsyBtX5G/brainvector-home-banner-fallback-img.png" alt="Your browser does not support video playback.">
+      <img
+        src="https://i.ibb.co.com/PsyBtX5G/brainvector-home-banner-fallback-img.png"
+        alt="Your browser does not support video playback."
+      />
     </video>
     <div class="home-content">
       <div>
@@ -21,120 +31,207 @@ import Header from "../components/header";
       </div>
     </div>
   </section>
+  <!-- Home Page End -->
   <!-- Understanding Emotional -->
   <section class="understanding-emotional">
     <div>
       <h2>
-        Understanding Emotional Regulation:<span style="color: var(--blueGray)">The Oxytocin Pathway to Clarity,
-        Performance & Inner Balance</span>
+        Understanding Emotional Regulation:<span style="color: var(--blueGray)"
+          >The Oxytocin Pathway to Clarity, Performance & Inner Balance</span
+        >
       </h2>
-      <img class="for-phone-img mb-[20px]" src="https://i.ibb.co.com/j9LdWvs2/Animation-visuel-homepage.png" alt="animation visuel" />
-        <span style="font-size: 19px; text-transform: uppercase;">Regulate Emotions. Boost Focus. Elevate Mental Performance.</span> <br><br>Emotion can
-        shape how we think, decide, and perform. At the center of this process
-        is oxytocin, a naturally occurring neurochemical that promotes trust,
-        emotional balance, and stress relief. When triggered, either naturally
-        or through VR and AI-enhanced immersive technology, oxytocin helps shift
-        the brain from a stress response into a state of clarity and cognitive
-        readiness. It enhances focus, strengthens working memory, and improves
-        decision-making under pressure.<br><br> <span style="font-weight: 600;color: var(--darkBlueGray);">Repeated thoughts and imagery strengthen
-        the pathways that guide behavior and choices, reinforcing this process
-        over time.</span> <br><br> regulation is not a personality trait: it’s a
-        trainable mental capacity, now accessible through technology. Whether
-        you're a wellness center, a corporate leader, or a performance-focused
-        organization, supporting emotional regulation can unlock untapped human
-        potential.
-      </p>
-    </div>
-    <div>
-      <img class="for-desktop-img" src="https://i.ibb.co.com/j9LdWvs2/Animation-visuel-homepage.png" />
+      <img
+        class="for-phone-img mb-[20px]"
+        src="https://i.ibb.co.com/j9LdWvs2/Animation-visuel-homepage.png"
+        alt="animation visuel"
+      />
+      <span style="font-size: 19px; text-transform: uppercase;"
+        >Regulate Emotions. Boost Focus. Elevate Mental Performance.</span
+      >
+      <br /><br />Emotion can shape how we think, decide, and perform. At the
+      center of this process is oxytocin, a naturally occurring neurochemical
+      that promotes trust, emotional balance, and stress relief. When triggered,
+      either naturally or through VR and AI-enhanced immersive technology,
+      oxytocin helps shift the brain from a stress response into a state of
+      clarity and cognitive readiness. It enhances focus, strengthens working
+      memory, and improves decision-making under pressure.<br /><br />
+      <span style="font-weight: 600;color: var(--darkBlueGray);"
+        >Repeated thoughts and imagery strengthen the pathways that guide
+        behavior and choices, reinforcing this process over time.</span
+      >
+      <br /><br /> regulation is not a personality trait: it’s a trainable mental
+      capacity, now accessible through technology. Whether you're a wellness center,
+      a corporate leader, or a performance-focused organization, supporting emotional
+      regulation can unlock untapped human potential.
     </div>
   </section>
-  <!-- Introdution Brainvector -->
-   <!-- Introdution Brainvector -->
-  <section class="introduction-brainvector">
-    <div class="introduction-brainvector-content flex flex-col md:flex-row gap-[0] md:gap-[68px] ">
-      <div class="w-1/2 sm:w-full flex items-center">
-        <img class="hidden md:block"
+  <div>
+    <img
+      class="for-desktop-img"
+      src="https://i.ibb.co.com/j9LdWvs2/Animation-visuel-homepage.png"
+    />
+  </div>
+</Layout>
+<!-- Introdution Brainvector Start -->
+<section class="introduction-brainvector">
+  <div
+    class="introduction-brainvector-content flex flex-col md:flex-row gap-[0] md:gap-[68px]"
+  >
+    <div class="w-1/2 sm:w-full flex items-center">
+      <img
+        class="hidden md:block"
         src="https://i.ibb.co.com/LDFZQ3bY/Introduction-Brainvector-Image.png"
         alt="Introduction brainvector image"
       />
-      </div>
-      <div class="sm:w-full">
-        <h2 class="hel font-mediam text-[38px] leading-[42px] md:text-[50px] md:leading-[52px]">Introducing Brain Vector: 
-          <span class="text-[var(--blueGray)]">AI for Mental Clarity and Emotional Resilience</span></h2>
-          <img class="md:hidden mt-[35px]"
+    </div>
+    <div class="sm:w-full">
+      <h2
+        class="hel font-mediam text-[38px] leading-[42px] md:text-[50px] md:leading-[52px]"
+      >
+        Introducing Brain Vector:
+        <span class="text-[var(--blueGray)]"
+          >AI for Mental Clarity and Emotional Resilience</span>
+      </h2>
+      <img
+        class="md:hidden mt-[35px]"
         src="https://i.ibb.co.com/svHXHDqc/Introduction-Brainvector-Image-phone.png"
-        alt="Introduction brainvector image"/>
-          <p class="mt-[20px]">Brain Vector is a cutting-edge platform that combines artificial intelligence, virtual reality, and neuroscience to help individuals regain control over their emotional states and optimize cognitive performance.</p>
-          <div class="mt-[30px] md:mt-[20px] grid gap-[20px]">
-            <div class="flex flex-col md:flex-row">
-              <div class="bg-white rounded-[15px] w-[63px] md:w-[135px] h-auto p-[10px] flex items-center">
-                <img src="/images/Emotional-Lucidity.svg" alt="Emotional-Lucidity" />
-              </div>
-              <div class="pt-[10px] md:pt-[0px] md:pl-[20px]">
-                <h4 class="text-[18px] font-semibold">Emotional Lucidity</h4>
-                <p class="text-[16px]"><em>Powered by oxytocin stimulation, our programs help users access mental clarity, presence, and a deep sense of focus.</em></p>
-              </div>
-            </div>
-            <div class="flex flex-col md:flex-row">
-              <div class="bg-white rounded-[15px] w-[63px] md:w-[135px] h-auto p-[10px] flex items-center">
-                <img src="/images/Human-Centered-Technology.svg" alt="Human-Centered-Technology" />
-              </div>
-              <div class="pt-[10px] md:pt-[0px] md:pl-[20px]">
-                <h4 class="text-[18px] font-semibold">Human-Centered Technology</h4>
-                <p class="text-[16px]"><em>Customized sessions designed with emotional data, neuroscience-backed content, and real-time AI analysis.</em></p>
-              </div>
-            </div>
-            <div class="flex flex-col md:flex-row">
-              <div class="bg-white rounded-[15px] w-[63px] md:w-[182px] h-auto p-[10px] flex items-center">
-                <img src="/images/Active-Resilience.svg" alt="Active Resilience" />
-              </div>
-              <div class="pt-[10px] md:pt-[0px] md:pl-[20px]">
-                <h4 class="text-[18px] font-semibold">Active Resilience</h4>
-                <p class="text-[16px]"><em>Enhance endurance, and strengthen executive function. Brain Vector supports performance under stress, during recovery, or in high-demand environments.</em></p>
-              </div>
-            </div>
-            <div class="flex flex-col md:flex-row">
-              <div class="bg-white rounded-[15px] w-[63px] md:w-[165px] h-auto p-[10px] flex items-center">
-                <img src="/images/Confidentiality.svg" alt="Confidentiality" />
-              </div>
-              <div class="pt-[10px] md:pt-[0px] md:pl-[20px]">
-                <h4 class="text-[18px] font-semibold">Confidentiality</h4>
-                <p class="text-[16px]"><em>All emotional and cognitive data is processed with strict privacy protocols. Ethical technology for  sensitive, human-centered applications.</em></p>
-              </div>
-            </div>            
-            <button class="w-[190px] mt-[20px] cursor-pointer flex items-center gap-[8px] p-[12px] border rounded-full pointer"><img style={{width: "20px;"}} src="/images/video.svg" alt="video play" /> Watch the video</button>
+        alt="Introduction brainvector image"
+      />
+      <p class="mt-[20px]">
+        Brain Vector is a cutting-edge platform that combines artificial
+        intelligence, virtual reality, and neuroscience to help individuals
+        regain control over their emotional states and optimize cognitive
+        performance.
+      </p>
+      <div class="mt-[30px] md:mt-[20px] grid gap-[20px]">
+        <div class="flex flex-col md:flex-row">
+          <div
+            class="bg-white rounded-[15px] w-[63px] md:w-[135px] h-auto p-[10px] flex items-center"
+          >
+            <img
+              src="/images/Emotional-Lucidity.svg"
+              alt="Emotional-Lucidity"
+            />
           </div>
+          <div class="pt-[10px] md:pt-[0px] md:pl-[20px]">
+            <h4 class="text-[18px] font-semibold">Emotional Lucidity</h4>
+            <p class="text-[16px]">
+              <em
+                >Powered by oxytocin stimulation, our programs help users access
+                mental clarity, presence, and a deep sense of focus.</em>
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row">
+          <div
+            class="bg-white rounded-[15px] w-[63px] md:w-[135px] h-auto p-[10px] flex items-center"
+          >
+            <img
+              src="/images/Human-Centered-Technology.svg"
+              alt="Human-Centered-Technology"
+            />
+          </div>
+          <div class="pt-[10px] md:pt-[0px] md:pl-[20px]">
+            <h4 class="text-[18px] font-semibold">Human-Centered Technology</h4>
+            <p class="text-[16px]">
+              <em
+                >Customized sessions designed with emotional data,
+                neuroscience-backed content, and real-time AI analysis.</em>
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row">
+          <div
+            class="bg-white rounded-[15px] w-[63px] md:w-[182px] h-auto p-[10px] flex items-center"
+          >
+            <img src="/images/Active-Resilience.svg" alt="Active Resilience" />
+          </div>
+          <div class="pt-[10px] md:pt-[0px] md:pl-[20px]">
+            <h4 class="text-[18px] font-semibold">Active Resilience</h4>
+            <p class="text-[16px]">
+              <em
+                >Enhance endurance, and strengthen executive function. Brain
+                Vector supports performance under stress, during recovery, or in
+                high-demand environments.</em>
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row">
+          <div
+            class="bg-white rounded-[15px] w-[63px] md:w-[165px] h-auto p-[10px] flex items-center"
+          >
+            <img src="/images/Confidentiality.svg" alt="Confidentiality" />
+          </div>
+          <div class="pt-[10px] md:pt-[0px] md:pl-[20px]">
+            <h4 class="text-[18px] font-semibold">Confidentiality</h4>
+            <p class="text-[16px]">
+              <em
+                >All emotional and cognitive data is processed with strict
+                privacy protocols. Ethical technology for sensitive,
+                human-centered applications.</em>
+            </p>
+          </div>
+        </div>
+        <button
+          class="w-[190px] mt-[20px] cursor-pointer flex items-center gap-[8px] p-[12px] border rounded-full pointer"
+          ><img
+            style={{ width: "20px;" }}
+            src="/images/video.svg"
+            alt="video play"
+          /> Watch the video</button
+        >
       </div>
     </div>
-  </section>
-  
-  <!-- Discover How Brain Vector Helps You Tab -->
-  <section class="pt-[73px] md:pt-[75px] pb-[60px] md:pb-[119px] bg-white max-w-[1150px] mx-auto p-4">
-  <h2 class="text-[38px] leading-[42px] md:text-[50px] md:leading-[52px] font-medium text-center">
+  </div>
+</section>
+<!-- Introdution Brainvector End -->
+<!-- Discover How Brain Vector Helps You Tab Start -->
+<section
+  class="pt-[73px] md:pt-[75px] pb-[60px] md:pb-[119px] bg-white max-w-[1150px] mx-auto p-4"
+>
+  <h2
+    class="text-[38px] leading-[42px] md:text-[50px] md:leading-[52px] font-medium text-center"
+  >
     Discover How Brain Vector Helps You
   </h2>
-  <p class="pt-[25px] md:pt-[20px] text-center text-[18px] text-[var(--mediumDarkGray)]">
+  <p
+    class="pt-[25px] md:pt-[20px] text-center text-[18px] text-[var(--mediumDarkGray)]"
+  >
     Emotional regulation and mental enhancement begins with four key steps:
   </p>
 
   <!-- Tab Buttons -->
   <div class="mt-[35px] md:mt-[47px]">
-    <div id="h-tabs" class="flex gap-[5px] justify-between items-center rounded-full  overflow-hidden">
+    <div
+      id="h-tabs"
+      class="flex gap-[5px] justify-between items-center rounded-full overflow-hidden"
+    >
       <!-- Active on mobile = 70%, inactive = 10% -->
-      <button class="tab-btn flex z-50 items-center justify-center rounded-full p-4 transition-all duration-300 bg-[#D7DCE3] md:w-[25%] cursor-pointer" data-tab="1">
+      <button
+        class="tab-btn flex z-50 items-center justify-center rounded-full p-4 transition-all duration-300 bg-[#D7DCE3] md:w-[25%] cursor-pointer"
+        data-tab="1"
+      >
         <span class="number">1</span>
         <span class="text">. Identify</span>
       </button>
-      <button class="tab-btn flex z-50 items-center justify-center rounded-full p-4 transition-all duration-300 md:w-[25%] bg-[var(--verLightGrayishBlue)] cursor-pointer" data-tab="2">
+      <button
+        class="tab-btn flex z-50 items-center justify-center rounded-full p-4 transition-all duration-300 md:w-[25%] bg-[var(--verLightGrayishBlue)] cursor-pointer"
+        data-tab="2"
+      >
         <span class="number">2</span>
         <span class="text hidden md:inline">. Personalize</span>
       </button>
-      <button class="tab-btn flex z-50 items-center justify-center rounded-full p-4 transition-all duration-300 md:w-[25%] bg-[var(--verLightGrayishBlue)] cursor-pointer" data-tab="3">
+      <button
+        class="tab-btn flex z-50 items-center justify-center rounded-full p-4 transition-all duration-300 md:w-[25%] bg-[var(--verLightGrayishBlue)] cursor-pointer"
+        data-tab="3"
+      >
         <span class="number">3</span>
         <span class="text hidden md:inline">. Guide</span>
       </button>
-      <button class="tab-btn flex z-50 items-center justify-center rounded-full p-4 transition-all duration-300 md:w-[25%] bg-[var(--verLightGrayishBlue)] cursor-pointer" data-tab="4">
+      <button
+        class="tab-btn flex z-50 items-center justify-center rounded-full p-4 transition-all duration-300 md:w-[25%] bg-[var(--verLightGrayishBlue)] cursor-pointer"
+        data-tab="4"
+      >
         <span class="number">4</span>
         <span class="text hidden md:inline">. Activate</span>
       </button>
@@ -142,180 +239,410 @@ import Header from "../components/header";
 
     <!-- Tab Content -->
     <div class="mt-6">
-      <div id="home-tab-content-desktop" class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/PSnvfw8/home-page-tab-identify-bg-img.png')]" data-tab="1">
-        <img class="max-w-[240px] mb-[-115px]" src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png" alt="indentify mobile image" />
+      <div
+        id="home-tab-content-desktop"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/PSnvfw8/home-page-tab-identify-bg-img.png')]"
+        data-tab="1"
+      >
+        <img
+          class="max-w-[240px] mb-[-115px]"
+          src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png"
+          alt="indentify mobile image"
+        />
         <div class="max-w-[307px] absolute right-[82px]">
-          <h4 class="font-[Barlow]! font-bold text-[24px] leading-[24px] text-white">Map Your Inner State</h4>
-          <p class="font-[Barlow]! font-normal! text-[18px] leading-[25px] pt-[5px] text-white">AI-driven dialogue helps identify your current emotional and cognitive profile.</p>
+          <h4
+            class="font-[Barlow]! font-bold text-[24px] leading-[24px] text-white"
+          >
+            Map Your Inner State
+          </h4>
+          <p
+            class="font-[Barlow]! font-normal! text-[18px] leading-[25px] pt-[5px] text-white"
+          >
+            AI-driven dialogue helps identify your current emotional and
+            cognitive profile.
+          </p>
         </div>
       </div>
-      <div id="home-tab-content-phone" class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/Jw1hvJQ4/idsfajfn.png')] bg-cover bg-center" data-tab="1">
-        <img class="max-w-[140px] absolute
-        right-[-10px] bottom-[-10px]" src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png" alt="indentify mobile image" />
+      <div
+        id="home-tab-content-phone"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/Jw1hvJQ4/idsfajfn.png')] bg-cover bg-center"
+        data-tab="1"
+      >
+        <img
+          class="max-w-[140px] absolute
+        right-[-10px] bottom-[-10px]"
+          src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png"
+          alt="indentify mobile image"
+        />
         <div class="max-w-[200px] absolute left-[25px] bottom-[50px]">
-          <h4 class="font-[Barlow]! font-bold text-[20px] md:text-[24px] leading-[24px] text-white">Map Your Inner State</h4>
-          <p class="font-[Barlow]! font-normal! text-[14px] md:text-[18px] leading-[25px] pt-[5px] text-white">AI-driven dialogue helps identify your current emotional and cognitive profile.</p>
+          <h4
+            class="font-[Barlow]! font-bold text-[20px] md:text-[24px] leading-[24px] text-white"
+          >
+            Map Your Inner State
+          </h4>
+          <p
+            class="font-[Barlow]! font-normal! text-[14px] md:text-[18px] leading-[25px] pt-[5px] text-white"
+          >
+            AI-driven dialogue helps identify your current emotional and
+            cognitive profile.
+          </p>
         </div>
       </div>
-      <div id="home-tab-content-desktop" class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/JwJtbVwy/home-page-personalize-bgimg.png')]" data-tab="2">
-        <img class="max-w-[240px] mb-[-115px]" src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png" alt="indentify mobile image" />
+      <div
+        id="home-tab-content-desktop"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/JwJtbVwy/home-page-personalize-bgimg.png')]"
+        data-tab="2"
+      >
+        <img
+          class="max-w-[240px] mb-[-115px]"
+          src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png"
+          alt="indentify mobile image"
+        />
         <div class="max-w-[318px] absolute right-[60px]">
-          <h4 class="font-[Barlow]! font-bold text-[24px] leading-[24px] text-white">A Program Made for Your Mind</h4>
-          <p class="font-[Barlow]! font-normal! text-[18px] leading-[25px] pt-[5px] text-white">Builds personalized programs for cognitive strengthening</p>
+          <h4
+            class="font-[Barlow]! font-bold text-[24px] leading-[24px] text-white"
+          >
+            A Program Made for Your Mind
+          </h4>
+          <p
+            class="font-[Barlow]! font-normal! text-[18px] leading-[25px] pt-[5px] text-white"
+          >
+            Builds personalized programs for cognitive strengthening
+          </p>
         </div>
       </div>
-      <div id="home-tab-content-phone" class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/zhJLxFv7/personalize-phone-bg.png')] bg-cover bg-center" data-tab="2">
-        <img class="max-w-[140px] absolute
-        right-[-10px] bottom-[-10px]" src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png" alt="indentify mobile image" />
+      <div
+        id="home-tab-content-phone"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/zhJLxFv7/personalize-phone-bg.png')] bg-cover bg-center"
+        data-tab="2"
+      >
+        <img
+          class="max-w-[140px] absolute
+        right-[-10px] bottom-[-10px]"
+          src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png"
+          alt="indentify mobile image"
+        />
         <div class="max-w-[200px] absolute left-[25px] bottom-[50px]">
-          <h4 class="font-[Barlow]! font-bold text-[20px] md:text-[24px] leading-[24px] text-white">A Program Made for Your Mind</h4>
-          <p class="font-[Barlow]! font-normal! text-[14px] md:text-[18px] leading-[25px] pt-[5px] text-white">Builds personalized programs for cognitive strengthening</p>
+          <h4
+            class="font-[Barlow]! font-bold text-[20px] md:text-[24px] leading-[24px] text-white"
+          >
+            A Program Made for Your Mind
+          </h4>
+          <p
+            class="font-[Barlow]! font-normal! text-[14px] md:text-[18px] leading-[25px] pt-[5px] text-white"
+          >
+            Builds personalized programs for cognitive strengthening
+          </p>
         </div>
       </div>
-      <div id="home-tab-content-desktop" class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/sJJYBk3J/guide-bg.png')]" data-tab="3">
-        <img class="max-w-[240px] mb-[-115px]" src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png" alt="indentify mobile image" />
+      <div
+        id="home-tab-content-desktop"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/sJJYBk3J/guide-bg.png')]"
+        data-tab="3"
+      >
+        <img
+          class="max-w-[240px] mb-[-115px]"
+          src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png"
+          alt="indentify mobile image"
+        />
         <div class="max-w-[310px] absolute right-[70px]">
-          <h4 class="font-[Barlow]! font-bold text-[24px] leading-[24px] text-white">Enter Your Mental Landscape</h4>
-          <p class="font-[Barlow]! font-normal! text-[18px] leading-[25px] pt-[5px] text-white">Guides you through immersive journeys based on your goals</p>
+          <h4
+            class="font-[Barlow]! font-bold text-[24px] leading-[24px] text-white"
+          >
+            Enter Your Mental Landscape
+          </h4>
+          <p
+            class="font-[Barlow]! font-normal! text-[18px] leading-[25px] pt-[5px] text-white"
+          >
+            Guides you through immersive journeys based on your goals
+          </p>
         </div>
       </div>
-      <div id="home-tab-content-phone" class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/C3zyb9Qx/guide-phone-bg.png')] bg-cover bg-center" data-tab="3">
-        <img class="max-w-[140px] absolute
-        right-[-10px] bottom-[-10px]" src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png" alt="indentify mobile image" />
+      <div
+        id="home-tab-content-phone"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/C3zyb9Qx/guide-phone-bg.png')] bg-cover bg-center"
+        data-tab="3"
+      >
+        <img
+          class="max-w-[140px] absolute
+        right-[-10px] bottom-[-10px]"
+          src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png"
+          alt="indentify mobile image"
+        />
         <div class="max-w-[200px] absolute left-[25px] bottom-[50px]">
-          <h4 class="font-[Barlow]! font-bold text-[20px] md:text-[24px] leading-[24px] text-white">Enter Your Mental Landscape</h4>
-          <p class="font-[Barlow]! font-normal! text-[14px] md:text-[18px] leading-[25px] pt-[5px] text-white">Guides you through immersive journeys based on your goals</p>
+          <h4
+            class="font-[Barlow]! font-bold text-[20px] md:text-[24px] leading-[24px] text-white"
+          >
+            Enter Your Mental Landscape
+          </h4>
+          <p
+            class="font-[Barlow]! font-normal! text-[14px] md:text-[18px] leading-[25px] pt-[5px] text-white"
+          >
+            Guides you through immersive journeys based on your goals
+          </p>
         </div>
       </div>
-      <div id="home-tab-content-desktop" class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/fYDxz1mF/activate-bg.png')]" data-tab="4">
-        <img class="max-w-[240px] mb-[-115px]" src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png" alt="indentify mobile image" />
+      <div
+        id="home-tab-content-desktop"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/fYDxz1mF/activate-bg.png')]"
+        data-tab="4"
+      >
+        <img
+          class="max-w-[240px] mb-[-115px]"
+          src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png"
+          alt="indentify mobile image"
+        />
         <div class="max-w-[307px] absolute right-[82px]">
-          <h4 class="font-[Barlow]! font-bold text-[24px] leading-[24px] text-white">Switch On Your Best Self</h4>
-          <p class="font-[Barlow]! font-normal! text-[18px] leading-[25px] pt-[5px] text-white">Activates key emotional states like focus, serenity, and confidence</p>
+          <h4
+            class="font-[Barlow]! font-bold text-[24px] leading-[24px] text-white"
+          >
+            Switch On Your Best Self
+          </h4>
+          <p
+            class="font-[Barlow]! font-normal! text-[18px] leading-[25px] pt-[5px] text-white"
+          >
+            Activates key emotional states like focus, serenity, and confidence
+          </p>
         </div>
       </div>
-      <div id="home-tab-content-phone" class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/hFHKnZYj/activate-phone-bg.png')] bg-cover bg-center" data-tab="4">
-        <img class="max-w-[140px] absolute
-        right-[-10px] bottom-[-10px]" src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png" alt="indentify mobile image" />
+      <div
+        id="home-tab-content-phone"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/hFHKnZYj/activate-phone-bg.png')] bg-cover bg-center"
+        data-tab="4"
+      >
+        <img
+          class="max-w-[140px] absolute
+        right-[-10px] bottom-[-10px]"
+          src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png"
+          alt="indentify mobile image"
+        />
         <div class="max-w-[200px] absolute left-[25px] bottom-[50px]">
-          <h4 class="font-[Barlow]! font-bold text-[20px] md:text-[24px] leading-[24px] text-white">Switch On Your Best Self</h4>
-          <p class="font-[Barlow]! font-normal! text-[14px] md:text-[18px] leading-[25px] pt-[5px] text-white">Activates key emotional states like focus, serenity, and confidence</p>
+          <h4
+            class="font-[Barlow]! font-bold text-[20px] md:text-[24px] leading-[24px] text-white"
+          >
+            Switch On Your Best Self
+          </h4>
+          <p
+            class="font-[Barlow]! font-normal! text-[14px] md:text-[18px] leading-[25px] pt-[5px] text-white"
+          >
+            Activates key emotional states like focus, serenity, and confidence
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- Unlock Your Potential -->
- <section class="mx-auto z-50 bg-[var(--verLightGrayishBlue)] pt-[62px] md:pt-[97px] pb-[94px] md:pb-[119px] px-[20px]">
+<!-- Discover How Brain Vector Helps You Tab End -->
+<!-- Unlock Your Potential Start -->
+<section
+  class="mx-auto z-50 bg-[var(--verLightGrayishBlue)] pt-[62px] md:pt-[97px] pb-[94px] md:pb-[119px] px-[20px]"
+>
   <div class="max-w-[1680px] mx-auto">
-    <h2 class="hidden md:block text-[50px] leading-[52px] font-medium text-center text-[var(--black)]">Unlock Your Potential:<br>
-    <span class="text-[var(--mediumGrayBlue)]">Three Paths to Mental Acceleration</span></h2>
-    <h2 class="md:hidden text-[38px] leading-[38px] font-medium text-[var(--black)]">Unlock Your Potential:<span class="text-[var(--mediumGrayBlue)]">Three Paths to Mental Acceleration</span></h2>
-    <div class="pt-[40px] md:pt-[62px] grid grid-cols-1 md:grid-cols-3 gap-[30px]">
-      <div class="px-[20px] md:px-[37px] pt-[20px] md: pb-[30px] md:py-[20px] h-[316px] md:h-[526px] bg-[url('https://i.ibb.co.com/nsWW9WDm/ullock-reboot.png')] bg-cover bg-center rounded-[20px] flex flex-col justify-between">
+    <h2
+      class="hidden md:block text-[50px] leading-[52px] font-medium text-center text-[var(--black)]"
+    >
+      Unlock Your Potential:<br />
+      <span class="text-[var(--mediumGrayBlue)]"
+        >Three Paths to Mental Acceleration</span>
+    </h2>
+    <h2
+      class="md:hidden text-[38px] leading-[38px] font-medium text-[var(--black)]"
+    >
+      Unlock Your Potential:<span class="text-[var(--mediumGrayBlue)]"
+        >Three Paths to Mental Acceleration</span>
+    </h2>
+    <div
+      class="pt-[40px] md:pt-[62px] grid grid-cols-1 md:grid-cols-3 gap-[16px] md:gap-[30px]"
+    >
+      <div
+        class="px-[20px] md:px-[37px] pt-[20px] md: pb-[30px] md:py-[20px] h-[316px] md:h-[526px] bg-[url('https://i.ibb.co.com/nsWW9WDm/ullock-reboot.png')] bg-cover bg-center rounded-[20px] flex flex-col justify-between"
+      >
         <div>
-        <h4 class="text-[18px] leading-[20px] md:text-[26px] md:leading-[26px] font-normal! font-[Barlow]! text-[var(--white)]">Reboot – Corporate Mental Clarity</h4>
-        <hr class="text-[var(--white)] mt-[10px]">
+          <h4
+            class="text-[18px] leading-[20px] md:text-[26px] md:leading-[26px] font-normal! font-[Barlow]! text-[var(--white)]"
+          >
+            Reboot – Corporate Mental Clarity
+          </h4>
+          <hr class="text-[var(--white)] mt-[10px]" />
         </div>
-        <p class="md:pb-[23px] text-[16px] leading-[20px] md:text-[18px] md:leading-[26px] font-normal! text-[var(--white)]">For executives, innovators, and teams facing pressure and decision fatigue. Improve focus, reduce distraction, and regain energy with high-performance neurotraining.</p>
+        <p
+          class="md:pb-[23px] text-[16px] leading-[20px] md:text-[18px] md:leading-[26px] font-normal! text-[var(--white)]"
+        >
+          For executives, innovators, and teams facing pressure and decision
+          fatigue. Improve focus, reduce distraction, and regain energy with
+          high-performance neurotraining.
+        </p>
       </div>
-      <div class="px-[20px] md:px-[37px] pt-[20px] md: pb-[30px] md:py-[20px] h-[316px] md:h-[526px] bg-[url('https://i.ibb.co.com/RGGhrWNv/Realize-bg.png')] bg-cover bg-center rounded-[20px] flex flex-col justify-between">
+      <div
+        class="px-[20px] md:px-[37px] pt-[20px] md: pb-[30px] md:py-[20px] h-[316px] md:h-[526px] bg-[url('https://i.ibb.co.com/RGGhrWNv/Realize-bg.png')] bg-cover bg-center rounded-[20px] flex flex-col justify-between"
+      >
         <div>
-        <h4 class="text-[18px] leading-[20px] md:text-[26px] md:leading-[26px] font-normal! font-[Barlow]! text-[var(--white)]">Realize – Elite Performance & Focus</h4>
-        <hr class="text-[var(--white)] mt-[10px]">
+          <h4
+            class="text-[18px] leading-[20px] md:text-[26px] md:leading-[26px] font-normal! font-[Barlow]! text-[var(--white)]"
+          >
+            Realize – Elite Performance & Focus
+          </h4>
+          <hr class="text-[var(--white)] mt-[10px]" />
         </div>
-        <p class="md:pb-[24px] text-[16px] leading-[20px] md:text-[18px] md:leading-[26px] font-normal! text-[var(--white)]">Designed for athletes, military professionals, and pilots. Enhance mental endurance, cognitive precision, and stress recovery in high-stakes environments.</p>
+        <p
+          class="md:pb-[24px] text-[16px] leading-[20px] md:text-[18px] md:leading-[26px] font-normal! text-[var(--white)]"
+        >
+          Designed for athletes, military professionals, and pilots. Enhance
+          mental endurance, cognitive precision, and stress recovery in
+          high-stakes environments.
+        </p>
       </div>
-      <div class="px-[20px] md:px-[37px] pt-[20px] md: pb-[30px] md:py-[20px] h-[316px] md:h-[526px] bg-[url('https://i.ibb.co.com/xSBTps8K/reset-bg.png')] bg-cover bg-center rounded-[20px] flex flex-col justify-between">
+      <div
+        class="px-[20px] md:px-[37px] pt-[20px] md: pb-[30px] md:py-[20px] h-[316px] md:h-[526px] bg-[url('https://i.ibb.co.com/xSBTps8K/reset-bg.png')] bg-cover bg-center rounded-[20px] flex flex-col justify-between"
+      >
         <div>
-        <h4 class="text-[18px] leading-[20px] md:text-[26px] md:leading-[26px] font-normal! font-[Barlow]! text-[var(--white)]">Reset - Wellness & Emotional Balance</h4>
-        <hr class="text-[var(--white)] mt-[10px]">
+          <h4
+            class="text-[18px] leading-[20px] md:text-[26px] md:leading-[26px] font-normal! font-[Barlow]! text-[var(--white)]"
+          >
+            Reset - Wellness & Emotional Balance
+          </h4>
+          <hr class="text-[var(--white)] mt-[10px]" />
         </div>
-        <p class="text-[16px] leading-[20px] md:text-[18px] md:leading-[26px] font-normal! text-[var(--white)]">Ideal for well-being centers, mental health professionals, and retreats. Support your clients’ journey toward inner peace, nervous system regulation, and emotional anchoring.</p>
+        <p
+          class="text-[16px] leading-[20px] md:text-[18px] md:leading-[26px] font-normal! text-[var(--white)]"
+        >
+          Ideal for well-being centers, mental health professionals, and
+          retreats. Support your clients’ journey toward inner peace, nervous
+          system regulation, and emotional anchoring.
+        </p>
       </div>
     </div>
   </div>
- </section>
-
+</section>
+<!-- Unlock Your Potential End -->
+<!-- The VectorVerse Start -->
+<section
+  class="max-w-[1742px] mx-auto px-[20px] pt-[74px] md:pt-[91px] pb-[20px] md:pb-[138px]"
+>
+  <h2
+    class="pb-[25px] md:pb-[35px] text-[38px] leading-[42px] md:text-[50px] md:leading-[52px] font-medium"
+  >
+    The VectorVerse
+  </h2>
+  <Carousel client:load />
+  <div
+    class="max-w-[1408px] flex flex-col md:flex-row items-center mx-auto pt-[89px] md:pt-[166px] flex gap-[83px]"
+  >
+    <div
+      class="hidden md:block w-[672px] h-[742px] bg-[url('https://i.ibb.co.com/yn3RK4bg/why-emotional.png')] rounded-[20px]"
+    >
+    </div>
+    <div class="w-full md:w-1/2">
+      <h2
+        class="text-[38px] leading-[42px] md:text-[50px] md:leading-[55px] font-medium"
+      >
+        Why Emotional Regulation Technology Matters in <span
+          class="text-[var(--graywishBlueShade)]">Business & Wellness</span>
+      </h2>
+      <div
+      class="mt-[25px] md:hidden h-[364px] bg-[url('https://i.ibb.co.com/yn3RK4bg/why-emotional.png')] bg-cover bg-center rounded-[20px]"
+    ></div>
+      <div class="pt-[32px] md:pt-[92px] flex justify-start items-center">
+        <img class="w-[130px]!" src="images/s.svg" alt="s svg" />
+        <p
+          class="max-w-[504px] text-[19px] md:text-[24px] font-regular text-[var(--desaturated)]"
+        >
+          of burnout cases are linked to poor emotional management 1
+        </p>
+      </div>
+      <p class="pt-[32px] md:pt-[45px] text-[18px] text-[var(--desaturated)]">
+        Emotional regulation increases <span
+          class="font-semibold text-[#4D4D4D]"
+          >productivity, creativity, and team collaboration.</span
+        > Oxytocin-based protocols can support stress reduction, learning, and executive
+        functioning. <br> With Brain Vector, you're not just implementing wellness—you’re
+        upgrading human potential through science and immersive tech.
+      </p>
+      <p class="pt-[70px] md:hidden text-[#8D8D8D] text-[14px] text-normal!">1. Gallup, Employee Burnout: Causes and Cures (2020).</p>
+    </div>
+  </div>
+</section>
+<!-- The VectorVerse End -->
 
 <script>
-const buttons = document.querySelectorAll(".tab-btn");
-const contents = document.querySelectorAll(".tab-content");
+  // for tabs
+  const buttons = document.querySelectorAll(".tab-btn");
+  const contents = document.querySelectorAll(".tab-content");
 
-// ✅ Reusable function to activate a tab
-function activateTab(tab: any) {
-  (buttons as NodeListOf<HTMLElement>).forEach(b => {
-    const text = b.querySelector(".text") as HTMLElement;
-
-    if (b.getAttribute("data-tab") === tab) {
-      // Mobile: wider + show text
-      if (window.innerWidth < 768) {
-        b.style.width = "55%";
-        text.classList.remove("hidden");
-      }
-      b.classList.add("bg-[#D7DCE3]", "font-medium");
-      b.classList.remove("bg-[var(--verLightGrayishBlue)]", "font-normal");
-    } else {
-      if (window.innerWidth < 768) {
-        b.style.width = "15%";
-        text.classList.add("hidden");
-      }
-      b.classList.remove("bg-[#D7DCE3]", "font-medium");
-      b.classList.add("bg-[var(--verLightGrayishBlue)]", "font-normal");
-    }
-  });
-
-  // Animate content
-  (contents as NodeListOf<HTMLElement>).forEach(c => {
-    if (c.getAttribute("data-tab") === tab) {
-      // c.style.maxHeight = c.scrollHeight + "px";
-      c.style.maxHeight = "526px";
-      c.style.opacity = "1";
-    } else {
-      c.style.maxHeight = "0px";
-      c.style.opacity = "0";
-    }
-  });
-}
-
-// ✅ Click events
-(buttons as NodeListOf<HTMLElement>).forEach(btn => {
-  btn.addEventListener("click", () => {
-    const tab = btn.getAttribute("data-tab");
-    activateTab(tab!);
-  });
-});
-
-// ✅ Activate tab #1 by default on page load
-document.addEventListener("DOMContentLoaded", () => {
-  activateTab("1");
-});
-
-// ✅ Handle resize
-window.addEventListener("resize", () => {
-  if (window.innerWidth >= 768) {
-    (buttons as NodeListOf<HTMLElement>).forEach(b => {
-      b.style.width = "25%";
+  // ✅ Reusable function to activate a tab
+  function activateTab(tab: any) {
+    (buttons as NodeListOf<HTMLElement>).forEach((b) => {
       const text = b.querySelector(".text") as HTMLElement;
-      text.classList.remove("hidden");
-    });
-  } else {
-    // Re-apply mobile widths correctly
-    const activeBtn = document.querySelector(".tab-btn.bg-[#D7DCE3]") as HTMLElement;
-    if (activeBtn) {
-      (buttons as NodeListOf<HTMLElement>).forEach(b => {
-        const text = b.querySelector(".text") as HTMLElement;
-        if (b === activeBtn) {
+
+      if (b.getAttribute("data-tab") === tab) {
+        // Mobile: wider + show text
+        if (window.innerWidth < 768) {
           b.style.width = "55%";
           text.classList.remove("hidden");
-        } else {
+        }
+        b.classList.add("bg-[#D7DCE3]", "font-medium");
+        b.classList.remove("bg-[var(--verLightGrayishBlue)]", "font-normal");
+      } else {
+        if (window.innerWidth < 768) {
           b.style.width = "15%";
           text.classList.add("hidden");
         }
-      });
-    }
-  }
-});
-</script>
+        b.classList.remove("bg-[#D7DCE3]", "font-medium");
+        b.classList.add("bg-[var(--verLightGrayishBlue)]", "font-normal");
+      }
+    });
 
-</Layout>
+    // Animate content
+    (contents as NodeListOf<HTMLElement>).forEach((c) => {
+      if (c.getAttribute("data-tab") === tab) {
+        // c.style.maxHeight = c.scrollHeight + "px";
+        c.style.maxHeight = "526px";
+        c.style.opacity = "1";
+      } else {
+        c.style.maxHeight = "0px";
+        c.style.opacity = "0";
+      }
+    });
+  }
+
+  // ✅ Click events
+  (buttons as NodeListOf<HTMLElement>).forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const tab = btn.getAttribute("data-tab");
+      activateTab(tab!);
+    });
+  });
+
+  // ✅ Activate tab #1 by default on page load
+  document.addEventListener("DOMContentLoaded", () => {
+    activateTab("1");
+  });
+
+  // ✅ Handle resize
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 768) {
+      (buttons as NodeListOf<HTMLElement>).forEach((b) => {
+        b.style.width = "25%";
+        const text = b.querySelector(".text") as HTMLElement;
+        text.classList.remove("hidden");
+      });
+    } else {
+      // Re-apply mobile widths correctly
+      const activeBtn = document.querySelector(
+        ".tab-btn.bg-[#D7DCE3]"
+      ) as HTMLElement;
+      if (activeBtn) {
+        (buttons as NodeListOf<HTMLElement>).forEach((b) => {
+          const text = b.querySelector(".text") as HTMLElement;
+          if (b === activeBtn) {
+            b.style.width = "55%";
+            text.classList.remove("hidden");
+          } else {
+            b.style.width = "15%";
+            text.classList.add("hidden");
+          }
+        });
+      }
+    }
+  });
+</script>

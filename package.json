@@ -19,12 +19,16 @@
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
     "astro": "^5.14.1",
+    "flowbite": "^3.1.2",
+    "flowbite-react": "^0.12.9",
+    "lucide-react": "^0.545.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.9.3",
-    "tailwindcss": "^4.1.14"
+    "swiper": "^12.0.2"
   },
   "devDependencies": {
-    "@types/react-router-dom": "^5.3.3"
+    "@types/react-router-dom": "^5.3.3",
+    "tailwindcss": "^4.1.14"
   }
 }
