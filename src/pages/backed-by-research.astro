@@ -1,0 +1,36 @@
+---
+import Header from "../components/header";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+<Header client:load/>
+<!-- Backed by search -->
+ <section class="home">
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      poster="https://i.ibb.co.com/svZGgX15/backed.png"
+    >
+      <source src="/videos/brainvector-home-bg-vide.mp4" type="video/mp4" />
+      <img
+        src="https://i.ibb.co.com/PsyBtX5G/brainvector-home-banner-fallback-img.png"
+        alt="Your browser does not support video playback."
+      />
+    </video>
+    <div class="home-content">
+      <div>
+        <h1>Backed by Research</h1>
+      </div>
+    </div>
+  </section>
+  <!-- At Brain Vector, -->
+   <section class="pt-[114px] mx-auto">
+    <h2 class="max-w-[1315px] mx-auto text-[34px] text-[38px] text-center md:text-[50px] md:leading-[50px] font-regular"><span class="font-bold text-[#8F9EAD]">At Brain Vector, neuroscience powers every protocol. </span> Backed by peer-reviewed research, clinical partnerships, and biosensor technology, our solutions deliver measurable impact on focus, stress, and emotional regulation.</h2>
+    <div class="pt-[161px]">
+
+    </div>
+   </section>
+</Layout>
