@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/header";
+---
+
+<Layout>
+  <Header client:load />
+  <!-- How it works Page -->
+  <section class="home">
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      poster="https://i.ibb.co.com/fY8qsczY/how-it-works-bg.jpg"
+    >
+      <source src="/videos/brainvector-home-bg-vide.mp4" type="video/mp4" />
+      <img
+        src="https://i.ibb.co.com/PsyBtX5G/brainvector-home-banner-fallback-img.png"
+        alt="Your browser does not support video playback."
+      />
+    </video>
+    <div class="home-content">
+      <div>
+        <h1>How It Works</h1>
+        <p>
+          The Brain Vector Method: Tech-Driven Mental Clarity, Backed by Neuroscience
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Brain Vector transforms -->
+  <section class="pt-[50px] md:pt-[142px] pb-[114px] px-[20px]">
+    <h2 class="max-w-[1125px] md:text-center mx-auto text-[34px] leading-[38px] md:text-[50px] md:leading-[50px] font-normal">Brain Vector transforms the science of emotional regulation and cognitive performance into <span class="text-[#8F9EAD]">an immersive, personalized experience.</span></h2>
+    <div class="max-w-[1383px] pt-[52px] md:pt-[114px] mx-auto flex gap-[28px] md:gap-[71px] flex-col md:flex-row items-center">
+        <div class="w-full md:w-1/2 h-[362px] md:h-[742px] bg-[url('https://i.ibb.co.com/F4M16Vfn/map-your-inner-state.png')] bg-center bg-cover no-repeat rounded-[20px]"></div>
+        <div class="w-full md:w-1/2">
+            <h2 class="text-[38px] leading-[40px] md:text-[50px] md:leading-[50px] font-medium"><span class="text-[#8F9EAD]">Step 1:</span><br>Map Your Inner State</h2>
+            <h6 class="text-[16px] md:text-[18px] leading-[24px] pt-[26px] font-semibold">Real-time AI diagnostics for emotional and cognitive awareness</h6>
+            <p class="max-w-[610px]">Each session begins with an AI-guided conversation designed to evaluate your stress levels, focus, attention span, and emotional patterns. This data builds your personal mental profile, ensuring that every experience begins from where you are—right now.</p>
+        </div>
+    </div>
+  </section>
+</Layout>

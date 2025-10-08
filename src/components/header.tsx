@@ -35,7 +35,7 @@ const Navigation: React.FC = () => {
               </a>
             </li>
             <li>
-              <a href="/">How it works</a>
+              <a href="how-it-works">How it works</a>
             </li>
             <li>
               <a href="#">Explore our solutions</a>
