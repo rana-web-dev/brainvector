@@ -3,8 +3,55 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/header";
 ---
 <Layout>
-    <Header/>
-    <div class="about-us">
-        <h1>About Us</h1>
-    </div>
+    <Header client:load />
+    <!-- About us Page Start -->
+    <section class="home">
+        <video
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="https://i.ibb.co.com/tTj2mnQG/about-us.png"
+        >
+        <source src="/videos/brainvector-home-bg-vide.mp4" type="video/mp4" />
+        <img
+            src="https://i.ibb.co.com/PsyBtX5G/brainvector-home-banner-fallback-img.png"
+            alt="Your browser does not support video playback."
+        />
+        </video>
+        <div class="home-content">
+        <div>
+            <h1 class="max-w-[1200px]">The Driving Force Behind Brain Vector</h1>
+        </div>
+        </div>
+    </section>
+    <!-- About us Page End -->
+     <!-- Our Vision Start -->
+      <section class="pt-[50px] pb-[80px] md:pt-[114px] md:pb-[227px] px-4">
+        <h2 class="max-w-[1200px] mx-auto md:text-center text-[34px] leading-[38px] md:text-[50px] md:leading-[52px] font-normal ">Our Vision is <span class="text-[#8F9EAD] font-bold">to bridge the gap between science and everyday mental well-being.</span> To make emotional clarity and cognitive strength accessible through cutting-edge, ethical technology.</h2>
+        <div class="max-w-[1420px] mx-auto pt-[71px] md:pt-[173px] md:flex items-center md:gap-[75px]">
+            <div class="md:w-1/2">
+                <img src="https://i.ibb.co.com/BKTWr8Y5/Science-Driven.png" alt="" />
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="pt-[50px] md:pt-[0px] font-[Barlow]! font-medium text-[38px] leading-[40px] md:text-[50px] md:leading-[50px]">Science-Driven Innovation for Emotional and Cognitive Well-Being</h2>
+                <p class="pt-[25px] text-[18px]">At Brain Vector, we believe that emotional regulation and mental performance are not just personal goals—they’re measurable, trainable, and essential to human potential. Our mission is to create science-backed tools that help individuals and organizations access clarity, resilience, and cognitive precision through immersive technology.</p><p class="py-[20px]">
+<span class="text-[#4D4D4D] font-bold">Where Neuroscience Meets Innovation: </span> Brain Vector was founded on the principle that emotional and cognitive states can be guided—not just observed. Our solutions are built on decades of peer-reviewed neuroscience exploring memory, emotion, and neuroplasticity. By combining artificial intelligence, virtual reality, and biosensor-based feedback, we deliver personalized mental training experiences rooted in measurable science.</p><p>
+<span class="text-[#4D4D4D] font-bold">Academic & Clinical Partnerships:</span> We work hand-in-hand with global research institutions, including The <span class="text-[#4D4D4D] font-bold">University of Adelaide and Flinders University,</span> to develop clinical studies and biosensor-enhanced systems that validate and refine our protocols. These collaborations allow us to stay at the forefront of affective neuroscience and applied mental tech.</p>
+            </div>
+        </div>
+      </section>
+     <!-- Our Vision End -->
+      <!-- Behind Brain Vector Start -->
+       <section class="md:pt-[89px] md:pb-[110px] bg-[#EDF0F4]">
+        <div class="max-w-[1570px] mx-auto">
+            <h2 class="text-[50px] leading-[50px] font-medium">Behind Brain Vector</h2>
+            <div class="max-w-[680px]">
+                <p class="pt-[20px]">Brain Vector is spearheaded by co-founders Dr. Stephane Verhaeghe and Dan Stevens, who bring a dynamic blend of expertise to the table.</p>
+                <p class="pt-[10px]"><span class="text-[#0F131A] font-semibold">Dr. Verhaeghe,</span> with a distinguished background in neuroscience and medical affairs, provides the scientific rigor and innovative vision that propels the company's technological advancements.</p>
+                <p class="pt-[10px]"><span class="text-[#0F131A] font-semibold">Dan Stevens,</span> on the other hand, contributes a wealth of knowledge in entrepreneurship, and the intersection of health tech and AI innovation.</p>
+            </div>
+        </div>
+       </section>
+      <!-- Behind Brain Vector End -->
 </Layout>
