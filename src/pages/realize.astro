@@ -1,0 +1,547 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/header";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout>
+    <Header client:load />
+    <!-- Banner Start -->
+    <section class="home">
+        <video
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="https://i.ibb.co.com/N6rh3MdD/realize.png"
+        >
+        <source src="/videos/brainvector-home-bg-vide.mp4" type="video/mp4" />
+        <img
+            src="https://i.ibb.co.com/PsyBtX5G/brainvector-home-banner-fallback-img.png"
+            alt="Your browser does not support video playback."
+        />
+        </video>
+        <div class="home-content">
+        <div>
+            <h1>Realize <br> Elite Performance & Focus</h1>
+            <p>
+            Sharpen Focus. Strengthen Endurance. Recover Faster.
+            </p>
+        </div>
+        </div>
+    </section>
+    <!-- Banner End -->
+    <!-- Reset is a specialized Start -->
+    <section class="pt-[50px] md:pt-[114px] px-[20px] pb-[50px] md:pb-[136px]">
+        <h2 class="text-[34px] leading-[34px] md:text-[50px] md:leading-[50px] text-center max-w-[1170px] mx-auto font-normal!">Realize is a neuroscience-based program built for high-pressure roles where <span class="text-[#8F9EAD] font-semibold"> mental clarity, endurance, and emotional control</span>are critical—whether you're an athlete, military professional, or pilot.</h2>
+        <div class="md:hidden mt-[50px] md:w-1/2 rounded-[20px] h-[364px] md:h-[731px] bg-[url('https://i.ibb.co.com/fzYKkmQq/Why-Emotional-Balance-Matters.png')] bg-cover bg-center">
+        </div>
+        <div class="max-w-[1408px] mx-auto pt-[50px] md:pt-[114px]">
+            <div class="md:flex md:items-center gap-[50px]">
+                <div class="md:w-1/2">
+                    <h2 class="text-[38px] leading-[40px] md:text-[50px] md:leading-[52px] font-medium"><span class="text-[#8F9EAD]">Why Mental Clarity Matters in </span> High-Stakes Environments</h2>
+                    <div class="pt-[38px] md:pt-[56px] flex justify-start items-center">
+                        <img class="w-[114px]! md:w-[130px]!" src="images/efour.svg" alt="s svg" />
+                        <p
+                        class="max-w-[504px] text-[19px] md:text-[24px] font-regular text-[var(--desaturated)]"
+                        >
+                        of adults say they regularly feel overwhelmed by their emotions or environment. 1
+                        </p>
+                    </div>
+                    <div class="pt-[25px] md:pt-[41px] flex justify-start items-center">
+                        <img class="w-[114px]! md:w-[130px]!" src="images/efour.svg" alt="s svg" />
+                        <p
+                        class="max-w-[504px] text-[19px] md:text-[24px] font-regular text-[var(--desaturated)]"
+                        >
+                        reduction in anxiety symptoms has been observed through emotional regulation techniques used in wellness interventions.2
+                        </p>
+                    </div>
+                    <div class="pt-[25px] md:pt-[41px] flex justify-start items-center">
+                        <img class="w-[114px]! md:w-[130px]!" src="images/efour.svg" alt="s svg" />
+                        <p
+                        class="max-w-[504px] text-[19px] md:text-[24px] font-regular text-[var(--desaturated)]"
+                        >
+                        of retreat participants report greater emotional clarity and inner calm after just one immersive experience.3
+                        </p>
+                    </div>
+                    <p class="text-[14px] font-light md:font-regular! text-[#8D8D8D] pt-[50px]">
+                        1. Mental Health Foundation, 2023<br>
+                        2. Journal of Mental Health & Wellness, 2022<br>
+                        3. Global Wellness Institute, 2023
+                    </p>
+                </div>
+                <div class="hidden md:block md:w-1/2 rounded-[20px] h-[731px] bg-[url('https://i.ibb.co.com/fzYKkmQq/Why-Emotional-Balance-Matters.png')] bg-cover bg-center">
+                </div>
+            </div>
+            <div class="pt-[55px] md:pt-[174px] md:flex md:items-center gap-[31px] md:gap-[56px]">
+                <div class="md:w-1/2 hidden md:block">
+                    <img src="https://i.ibb.co.com/ZRg5r77p/resetwefs.png" alt="why reset" />
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-[38px] leading-[40px] md:text-[50px] md:leading-[52px] font-medium">Why <span class="text-[#9DAAB7]">Reset</span>?</h2>
+                    <img class="md:hidden mt-[23px]" src="https://i.ibb.co.com/ZRg5r77p/resetwefs.png" alt="why reset" />
+                    <p class="font-light text-[18px] md:pt-[20px] pt-[31px]" >Reset combines immersive VR & AI technology with neuroscience-based practices to help clients:</p>
+                    <div class="pt-[20px] grid gap-[20px]">
+                        <div class="flex gap-[14px] md:gap-[20px] items-center">
+                            <img class="w-[63px]!" src="images/Harness.svg" alt="Harness" />
+                            <p class="font-semibold">Harness oxytocin-driven emotional regulation to lower stress and anxiety</p>
+                        </div>
+                        <div class="flex gap-[14px] md:gap-[20px] items-center">
+                            <img class="w-[63px]!" src="images/Restore.svg" alt="Harness" />
+                            <p class="font-semibold">Restore balance in the nervous system, shifting from fight-or-flight to rest-and-digest</p>
+                        </div>
+                        <div class="flex gap-[14px] md:gap-[20px] items-center">
+                            <img class="w-[63px]!" src="images/Anchor.svg" alt="Harness" />
+                            <p class="font-semibold">Anchor emotional clarity and stabilize mood fluctuations</p>
+                        </div>
+                        <div class="flex gap-[14px] md:gap-[20px] items-center">
+                            <img class="w-[63px]!" src="images/Provide.svg" alt="Harness" />
+                            <p class="font-semibold">Provide tools for self-awareness, emotional release, and long-term wellness</p>
+                        </div>
+                        <p class="pt-[30px] text-[18px]">Reset isn’t just about calming the mind—it’s about giving clients <strong>lasting emotional structure.</strong><p>
+                        <p class="pt-[55px] md:pt-[50px] text-[14px] font-regular! text-[#8D8D8D]">1. Psychology of Sport and Exercise, 2011</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Reset is a specialized End -->
+     <!-- Who Reset Serves Start -->
+    <section class="pt-[72px] pb-[116px] md:pt-[85px] md:pb-[120px] md:flex flex-col justify-center items-center bg-[#EDF0F4] px-4">
+        <h2 class="text-[38px] leading-[38px] text-[42px] md:text-[50px] md:leading-[50px] text-[#0F131A] md:text-center">Who Reset Serves</h2>
+        <p class="text-[18px] font-light! text-[#0F131A] pt-[17px] md:pt-[20px] max-w-[676px] md:text-center">The Reset program is designed for professionals and individuals looking to integrate emotional balance and nervous system regulation into wellness practices.</p>
+        <div class="grid gap-[20px] md:gap-[30px] grid-cols-1 md:grid-cols-4 pt-[50px] md:pt-[20px] md:pt-[50px]">
+            <div class="md:w-[403px] h-[423px] md:h-[441px] bg-[url('https://i.ibb.co.com/HTZ9kbRF/Wellness.png')] bg-cover bg-center px-[30px] md:px-[38px] pb-[41px] flex items-end rounded-[20px]">
+                <div class="w-full">
+                    <hr class="text-white">
+                    <p class="pt-[20px] text-[26px] leading-[28px] font-normal! font-[Barlow]! text-white">Wellness centers offering emotional recovery programs</p>
+                </div>
+            </div>
+            <div class="md:w-[403px] h-[423px] md:h-[441px] bg-[url('https://i.ibb.co.com/Nz62Y2D/Therapists.png')] bg-cover bg-center px-[30px] md:px-[38px] pb-[41px] flex items-end rounded-[20px]">
+                <div class="w-full">
+                    <hr class="text-white">
+                    <p class="pt-[20px] text-[26px] leading-[28px] font-normal! font-[Barlow]! text-white">Therapists integrating immersive tools into care</p>
+                </div>
+            </div>
+            <div class="md:w-[403px] h-[423px] md:h-[441px] bg-[url('https://i.ibb.co.com/jZ1PWpnW/Retreat.png')] bg-cover bg-center px-[30px] md:px-[38px] pb-[41px] flex items-end rounded-[20px]">
+                <div class="w-full">
+                    <hr class="text-white">
+                    <p class="pt-[20px] text-[26px] leading-[28px] font-normal! font-[Barlow]! text-white">Retreat leaders focused on nervous system healing</p>
+                </div>
+            </div>
+            <div class="md:w-[403px] h-[423px] md:h-[441px] bg-[url('https://i.ibb.co.com/d05L0vyX/Individuals.png')] bg-cover bg-center px-[30px] md:px-[38px] pb-[41px] flex items-end rounded-[20px]">
+                <div class="w-full">
+                    <hr class="text-white">
+                    <p class="pt-[20px] text-[26px] leading-[28px] font-normal! font-[Barlow]! text-white">Individuals seeking calm, balance, and reconnection</p>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Who Reset Serves End -->
+    <!-- Why reset tab start -->
+    <!-- Discover How Brain Vector Helps You Tab Start -->
+<section
+  class="pt-[73px] md:pt-[156px] pb-[84px] md:pb-[119px] bg-white max-w-[1150px] mx-auto px-4"
+>
+  <h2
+    class="text-[38px] leading-[42px] md:text-[50px] md:leading-[52px] font-medium md:text-center"
+  >
+    What You’ll <span clas="text-[#8F9EAD]">Experience</span>
+  </h2>
+  <p
+    class="pt-[25px] md:pt-[20px] md:text-center text-[18px] text-[var(--mediumDarkGray)]"
+  >
+    Each Reset session follows Brain Vector’s proven 4-step framework:
+  </p>
+
+  <!-- Tab Buttons -->
+  <div class="mt-[35px] md:mt-[47px]">
+    <div
+      id="h-tabs"
+      class="flex gap-[5px] justify-between items-center rounded-full overflow-hidden"
+    >
+      <!-- Active on mobile = 70%, inactive = 10% -->
+      <button
+        class="tab-btn flex z-50 items-center justify-center rounded-full p-4 transition-all duration-300 bg-[#D7DCE3] md:w-[25%] cursor-pointer"
+        data-tab="1"
+      >
+        <span class="number">1</span>
+        <span class="text">. Identify</span>
+      </button>
+      <button
+        class="tab-btn flex z-50 items-center justify-center rounded-full p-4 transition-all duration-300 md:w-[25%] bg-[var(--verLightGrayishBlue)] cursor-pointer"
+        data-tab="2"
+      >
+        <span class="number">2</span>
+        <span class="text hidden md:inline">. Personalize</span>
+      </button>
+      <button
+        class="tab-btn flex z-50 items-center justify-center rounded-full p-4 transition-all duration-300 md:w-[25%] bg-[var(--verLightGrayishBlue)] cursor-pointer"
+        data-tab="3"
+      >
+        <span class="number">3</span>
+        <span class="text hidden md:inline">. Guide</span>
+      </button>
+      <button
+        class="tab-btn flex z-50 items-center justify-center rounded-full p-4 transition-all duration-300 md:w-[25%] bg-[var(--verLightGrayishBlue)] cursor-pointer"
+        data-tab="4"
+      >
+        <span class="number">4</span>
+        <span class="text hidden md:inline">. Activate</span>
+      </button>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="mt-6">
+      <div
+        id="home-tab-content-desktop"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/Y4NvMjQB/Map.png')] bg-cover bg-center"
+        data-tab="1"
+      >
+        <img
+          class="max-w-[240px] mb-[-115px]"
+          src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png"
+          alt="indentify mobile image"
+        />
+        <div class="max-w-[307px] absolute right-[82px]">
+          <h4
+            class="font-[Barlow]! font-bold text-[24px] leading-[24px] text-white"
+          >
+            Map Your Inner State
+          </h4>
+          <p
+            class="font-[Barlow]! font-normal! text-[18px] leading-[25px] pt-[5px] text-white"
+          >
+            AI-driven dialogue helps identify your current emotional and
+            cognitive profile.
+          </p>
+        </div>
+      </div>
+      <div
+        id="home-tab-content-phone"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/PsgGB7xs/mapdfds.png')] bg-cover bg-center"
+        data-tab="1"
+      >
+        <img
+          class="max-w-[140px] absolute
+        right-[-10px] bottom-[-10px]"
+          src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png"
+          alt="indentify mobile image"
+        />
+        <div class="max-w-[150px] absolute left-[25px] bottom-[50px]">
+          <h4
+            class="font-[Barlow]! font-bold text-[20px] md:text-[24px] leading-[24px] text-white"
+          >
+            Map Your Inner State
+          </h4>
+          <p
+            class="font-[Barlow]! font-normal! text-[14px] md:text-[18px] leading-[25px] pt-[5px] text-white"
+          >
+            Engage in gentle, AI-guided dialogue to assess emotional state and stress levels.
+          </p>
+        </div>
+      </div>
+      <div
+        id="home-tab-content-desktop"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/hx2ds1Sm/A-Program.png')] bg-cover bg-center"
+        data-tab="2"
+      >
+        <img
+          class="max-w-[240px] mb-[-115px]"
+          src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png"
+          alt="indentify mobile image"
+        />
+        <div class="max-w-[318px] absolute right-[60px]">
+          <h4
+            class="font-[Barlow]! font-bold text-[24px] leading-[24px] text-white"
+          >
+            A Program Made for Your Mind
+          </h4>
+          <p
+            class="font-[Barlow]! font-normal! text-[18px] leading-[25px] pt-[5px] text-white"
+          >
+            Receive a wellness protocol tailored to each person's emotional and physiological needs.
+          </p>
+        </div>
+      </div>
+      <div
+        id="home-tab-content-phone"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/qMssmMQ8/a-program-phone.png')] bg-cover bg-center"
+        data-tab="2"
+      >
+        <img
+          class="max-w-[140px] absolute
+        right-[-10px] bottom-[-10px]"
+          src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png"
+          alt="indentify mobile image"
+        />
+        <div class="max-w-[150px] absolute left-[25px] bottom-[50px]">
+          <h4
+            class="font-[Barlow]! font-bold text-[20px] md:text-[24px] leading-[24px] text-white"
+          >
+            Enter Your Mental Landscape
+          </h4>
+          <p
+            class="font-[Barlow]! font-normal! text-[14px] md:text-[18px] leading-[25px] pt-[5px] text-white"
+          >
+            Enter immersive VR sessions designed to soothe, ground, and restore balance.
+          </p>
+        </div>
+      </div>
+      <div
+        id="home-tab-content-desktop"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/QjmNg5FH/dfsd.png')] bg-cover bg-center"
+        data-tab="3"
+      >
+        <img
+          class="max-w-[240px] mb-[-115px]"
+          src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png"
+          alt="indentify mobile image"
+        />
+        <div class="max-w-[310px] absolute right-[70px]">
+          <h4
+            class="font-[Barlow]! font-bold text-[24px] leading-[24px] text-white"
+          >
+            Enter Your Mental Landscape
+          </h4>
+          <p
+            class="font-[Barlow]! font-normal! text-[18px] leading-[25px] pt-[5px] text-white"
+          >
+            Guides you through immersive journeys based on your goals
+          </p>
+        </div>
+      </div>
+      <div
+        id="home-tab-content-phone"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/5xCnt3Hc/enter.png')] bg-cover bg-center"
+        data-tab="3"
+      >
+        <img
+          class="max-w-[140px] absolute
+        right-[-10px] bottom-[-10px]"
+          src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png"
+          alt="indentify mobile image"
+        />
+        <div class="max-w-[150px] absolute left-[25px] bottom-[50px]">
+          <h4
+            class="font-[Barlow]! font-bold text-[20px] md:text-[24px] leading-[24px] text-white"
+          >
+            Switch On Your Best Self
+          </h4>
+          <p
+            class="font-[Barlow]! font-normal! text-[14px] md:text-[18px] leading-[25px] pt-[5px] text-white"
+          >
+            Stimulate core emotional states such as calm, clarity, and emotional stability.
+          </p>
+        </div>
+      </div>
+      <div
+        id="home-tab-content-desktop"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/j9SdDxd7/switch.png')] bg-cover bg-center"
+        data-tab="4"
+      >
+        <img
+          class="max-w-[240px] mb-[-115px]"
+          src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png"
+          alt="indentify mobile image"
+        />
+        <div class="max-w-[307px] absolute right-[82px]">
+          <h4
+            class="font-[Barlow]! font-bold text-[24px] leading-[24px] text-white"
+          >
+            Switch On Your Best Self
+          </h4>
+          <p
+            class="font-[Barlow]! font-normal! text-[18px] leading-[25px] pt-[5px] text-white"
+          >
+            Activates key emotional states like focus, serenity, and confidence
+          </p>
+        </div>
+      </div>
+      <div
+        id="home-tab-content-phone"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/s9ybQ8rQ/switchphone.png')] bg-cover bg-center"
+        data-tab="4"
+      >
+        <img
+          class="max-w-[140px] absolute
+        right-[-10px] bottom-[-10px]"
+          src="https://i.ibb.co.com/gMjfqxCH/home-page-tab-identify-mobile-image.png"
+          alt="indentify mobile image"
+        />
+        <div class="max-w-[150px] absolute left-[25px] bottom-[50px]">
+          <h4
+            class="font-[Barlow]! font-bold text-[20px] md:text-[24px] leading-[24px] text-white"
+          >
+            Switch On Your Best Self
+          </h4>
+          <p
+            class="font-[Barlow]! font-normal! text-[14px] md:text-[18px] leading-[25px] pt-[5px] text-white"
+          >
+            Activates key emotional states like focus, serenity, and confidence
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Discover How Brain Vector Helps You Tab End -->
+    <!-- Why reset tab end -->
+      <!-- What Makes Brain Vector Start -->
+      <section class="px-4 pt-[71px] pb-[78px] md:pt-[86px] md:pb-[86px] flex flex-col md:justify-center md:items-center bg-[#EDF0F4]">
+        <h2
+        class="text-[38px] leading-[42px] md:text-[50px] md:leading-[52px] font-medium md:text-center text-[var(--black)]"
+        >Benefits for Wellness Organizations
+        </h2>
+        <p class="text-[18px] leading-[22px] font-light pt-[23px] md:pt-[20px]">Reset adds measurable value to your wellness offering by enhancing emotional recovery and client engagement.</p>
+        <div class="grid grid-cols-1 md:grid-cols-4 pt-[28px] md:pt-[82px] gap-[30px] md:gap-[84px]">
+            <div class="w-[281px] flex md:flex-col justify-center items-center gap-[14px] md:gap-[21px]">
+                <img class="w-[50px]!" src="images/love.svg" alt="Rooted" />
+                <p class="md:text-[18px] md:leading-[28px] md:text-center font-semibold">Improve client retention by offering transformative emotional wellness services</p>
+            </div>
+            <div class="w-[281px] flex md:flex-col justify-center items-center gap-[14px] md:gap-[21px]">
+                <img class="w-[50px]!" src="images/reduce.svg" alt="Rooted" />
+                <p class="md:text-[18px] md:leading-[28px] md:text-center font-semibold">Reduce anxiety and stress symptoms among clients more effectively</p>
+            </div>
+            <div class="w-[281px] flex md:flex-col justify-center items-center gap-[14px] md:gap-[21px]">
+                <img class="w-[50px]!" src="images/Enhance.svg" alt="Rooted" />
+                <p class="md:text-[18px] md:leading-[28px] md:text-center font-semibold">Enhance emotional clarity, regulation, and mental calm in day-to-day life</p>
+            </div>
+            <div class="w-[281px] flex md:flex-col justify-center items-center gap-[14px] md:gap-[21px]">
+                <img class="w-[50px]!" src="images/Support.svg" alt="Rooted" />
+                <p class="md:text-[18px] md:leading-[28px] md:text-center font-semibold">Support your clients in building resilience and sustaining emotional balance</p>
+            </div>
+        </div>
+      </section>
+     <!-- What Makes Brain Vector End -->
+      <!-- for desktop -->
+<section
+  class="hidden md:block md:pt-[151px] pb-[139px] bg-[url('https://i.ibb.co.com/B2KKM5CW/sfs.png')] bg-cover bg-center"
+>
+  <div class="max-w-[1400px] mx-auto">
+    <div class="w-[718px]">
+      <h2 class="md:text-[50px] md:leading-[55px] font-medium text-white">
+        Join the Waitlist
+      </h2>
+      <p class="max-w-[620px] text-[18px] leading-[25px] pt-[20px] text-white font-normal!">
+        The Reset – Wellness & Emotional Balance program is now in limited release.  If you are a wellness center, mental health professional, or retreat facilitator, be among the first to bring immersive emotional wellness and nervous system regulation to those you serve.
+      </p>
+      <div class="flex gap-2 pt-12">
+        <button
+          class="text-[20px] uppercase px-[30px] py-[8px] border rounded-full text-white border-white"
+          >Join the Waitlist</button
+        >
+        <img
+          class="w-[165px]!"
+          src="images/multiple-peoples.svg"
+          alt="multiple-peoples"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- for phone -->
+<section class="md:hidden">
+  <div class="pt-[75px] px-[31px] bg-[#080705] pb-[80px]">
+    <h2 class="text-[38px] leading-[45px] font-medium text-white">Join the Waitlist</h2>
+    <p class="text-[16px] font-light text-white pt-[10px]">
+      The Reset – Wellness & Emotional Balance program is now in limited release.  If you are a wellness center, mental health professional, or retreat facilitator, be among the first to bring immersive emotional wellness and nervous system regulation to those you serve.
+    </p>
+    <div class="flex gap-2 pt-6">
+      <button
+        class="text-[14px] font-semibold uppercase px-[20px] py-[8px] border rounded-full text-white border-white"
+        >Join the Waitlist</button
+      >
+      <img
+        class="w-[120px]!"
+        src="images/multiple-peoples.svg"
+        alt="multiple-peoples"
+      />
+    </div>
+  </div>
+  <img src="https://i.ibb.co.com/XkD7X1cn/sdfsd.png" alt="eye" />
+</section>
+    <Footer/>
+    <script>
+  // for tabs
+  const buttons = document.querySelectorAll(".tab-btn");
+  const contents = document.querySelectorAll(".tab-content");
+
+  // ✅ Reusable function to activate a tab
+  function activateTab(tab: any) {
+    (buttons as NodeListOf<HTMLElement>).forEach((b) => {
+      const text = b.querySelector(".text") as HTMLElement;
+
+      if (b.getAttribute("data-tab") === tab) {
+        // Mobile: wider + show text
+        if (window.innerWidth < 768) {
+          b.style.width = "55%";
+          text.classList.remove("hidden");
+        }
+        b.classList.add("bg-[#D7DCE3]", "font-medium");
+        b.classList.remove("bg-[var(--verLightGrayishBlue)]", "font-normal");
+      } else {
+        if (window.innerWidth < 768) {
+          b.style.width = "15%";
+          text.classList.add("hidden");
+        }
+        b.classList.remove("bg-[#D7DCE3]", "font-medium");
+        b.classList.add("bg-[var(--verLightGrayishBlue)]", "font-normal");
+      }
+    });
+
+    // Animate content
+    (contents as NodeListOf<HTMLElement>).forEach((c) => {
+      if (c.getAttribute("data-tab") === tab) {
+        // c.style.maxHeight = c.scrollHeight + "px";
+        c.style.maxHeight = "526px";
+        c.style.opacity = "1";
+      } else {
+        c.style.maxHeight = "0px";
+        c.style.opacity = "0";
+      }
+    });
+  }
+
+  // ✅ Click events
+  (buttons as NodeListOf<HTMLElement>).forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const tab = btn.getAttribute("data-tab");
+      activateTab(tab!);
+    });
+  });
+
+  // ✅ Activate tab #1 by default on page load
+  document.addEventListener("DOMContentLoaded", () => {
+    activateTab("1");
+  });
+
+  // ✅ Handle resize
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 768) {
+      (buttons as NodeListOf<HTMLElement>).forEach((b) => {
+        b.style.width = "25%";
+        const text = b.querySelector(".text") as HTMLElement;
+        text.classList.remove("hidden");
+      });
+    } else {
+      // Re-apply mobile widths correctly
+      const activeBtn = document.querySelector(
+        ".tab-btn.bg-[#D7DCE3]"
+      ) as HTMLElement;
+      if (activeBtn) {
+        (buttons as NodeListOf<HTMLElement>).forEach((b) => {
+          const text = b.querySelector(".text") as HTMLElement;
+          if (b === activeBtn) {
+            b.style.width = "55%";
+            text.classList.remove("hidden");
+          } else {
+            b.style.width = "15%";
+            text.classList.add("hidden");
+          }
+        });
+      }
+    }
+  });
+</script>
+</Layout>
