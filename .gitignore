@@ -1,6 +1,9 @@
 # build output
 dist/
 
+# Error videos
+public/videos/
+
 # generated types
 .astro/
 
