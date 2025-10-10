@@ -20,9 +20,9 @@ const Navigation: React.FC = () => {
       const currentScrollY = window.scrollY;
 
       if (currentScrollY > lastScrollY) {
-        setScrollUp(false);
-      } else if (currentScrollY < lastScrollY) {
         setScrollUp(true);
+      } else if (currentScrollY < lastScrollY) {
+        setScrollUp(false);
       }
 
       setIsScrolled(currentScrollY > 0);
