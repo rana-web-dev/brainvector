@@ -97,7 +97,7 @@ const Navigation: React.FC = () => {
             ))}
           </ul>
 
-          <a href="#" className="px-5 py-3 border text-white rounded-full font-[Barlow] text-[14px] uppercase hover:bg-white hover:text-black">Book a demo</a>
+          <a href="/contact" className="px-5 py-3 border text-white rounded-full font-[Barlow] text-[14px] uppercase hover:bg-white hover:text-black">Book a demo</a>
         </div>
       </div>
 
@@ -135,8 +135,8 @@ const Navigation: React.FC = () => {
                 </a>
               </li>
             ))}
-            <li className="book-a-demo-mobile-li">
-              <a href="/about-us" className="book-a-demo-mobile">
+            <li>
+              <a href="/contact" className="text-[18px] text-white border rounded-full px-8 py-3 hover:bg-white hover:text-black!">
                 Book a demo
               </a>
             </li>

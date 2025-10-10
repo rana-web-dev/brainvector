@@ -110,8 +110,7 @@
 
   .mobile-nav-container {
     padding: 20px;
-}
-
+  }
 
   /* Home page Understanding Emotional */
   .understanding-emotional h2 {
@@ -119,6 +118,11 @@
     line-height: 42px;
     padding-bottom: 24px;
   }
+
+  .contact {
+    margin-top: -948px;
+  }
+
 }
 
 @media (max-width: 900px) {
