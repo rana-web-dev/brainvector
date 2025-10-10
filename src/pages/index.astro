@@ -10,15 +10,20 @@ import Footer from "../components/Footer.astro";
   <!-- Home Page Start -->
   <section class="home mt-[105px]">
     <video
-      autoplay
       muted
+      autoplay
       loop
       playsinline
+      preload="auto"
       poster="https://i.ibb.co/PsyBtX5G/brainvector-home-banner-fallback-img.png"
+      style="width: 100%; height: auto; object-fit: cover;"
     >
-      <source src="/videos/brainvector-home-bg-video.mp4" type="video/mp4" />
+      <source
+        src="https://brainvector.dev.karma-dev.com/content/videos/brainvector-home-bg-video.mp4"
+        type="video/mp4"
+      />
       <img
-        src="https://i.ibb.co.com/PsyBtX5G/brainvector-home-banner-fallback-img.png"
+        src="https://i.ibb.co/PsyBtX5G/brainvector-home-banner-fallback-img.png"
         alt="Your browser does not support video playback."
       />
     </video>

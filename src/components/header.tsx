@@ -6,7 +6,8 @@ const Navigation: React.FC = () => {
   const [scrollUp, setScrollUp] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [currentPath, setCurrentPath] = useState("");
-  console.log(currentPath);
+  const [scrollTop, setScrollTop] = useState(false);
+  
 
   const mobileMenuToggle = (): void => {
     setActiveMenu(!activeMenu);
@@ -19,12 +20,17 @@ const Navigation: React.FC = () => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
+      if (currentScrollY === 0) {
+        setScrollTop(true);
+      }
+
       if (currentScrollY > lastScrollY) {
         setScrollUp(true);
       } else if (currentScrollY < lastScrollY) {
         setScrollUp(false);
       }
 
+      setScrollTop(false);
       setIsScrolled(currentScrollY > 0);
       setLastScrollY(currentScrollY);
     };
@@ -42,7 +48,7 @@ const Navigation: React.FC = () => {
 
   return (
     <nav className={`navigations ${activeMenu || scrollUp ? "nav-top-0" : ""}`}>
-      <div className={`${activeMenu || scrollUp ? "" : "bg-black"}`}>
+      <div className={`${isScrolled && !scrollTop ? "bg-black" : ""}`}>
         <div className="navigations-content">
           <ul className="menu-for-desktop">
             <li>
@@ -62,7 +68,7 @@ const Navigation: React.FC = () => {
         </div>
       </div>
       <div className={`menu-for-mobile ${activeMenu ? "bg-black nav-top-0" : "pe-none"}`}>
-        <div className={`pe-auto mobile-nav-container ${isScrolled ? "bg-black" : ""}`}>
+        <div className={`pe-auto mobile-nav-container ${isScrolled && !scrollTop ? "bg-black" : ""}`}>
           <a href="/">
             <img src="/images/brainvector_logo.svg" alt="Brainvector logo" />
           </a>
