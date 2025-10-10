@@ -41,7 +41,7 @@ const Navigation: React.FC = () => {
   ];
 
   return (
-    <nav className={`navigations ${activeMenu || scrollUp ? "pe-auto nav-top-0" : ""}`}>
+    <nav className={`navigations ${activeMenu || scrollUp ? "nav-top-0" : ""}`}>
       <div className={`${activeMenu || scrollUp ? "" : "bg-black"}`}>
         <div className="navigations-content">
           <ul className="menu-for-desktop">
@@ -61,7 +61,7 @@ const Navigation: React.FC = () => {
           <a href="#" className="book-a-demo">Book a demo</a>
         </div>
       </div>
-      <div className={`menu-for-mobile ${activeMenu ? "bg-black nav-top-0" : ""}`}>
+      <div className={`menu-for-mobile ${activeMenu ? "bg-black nav-top-0" : "pe-none"}`}>
         <div className={`pe-auto mobile-nav-container ${isScrolled ? "bg-black" : ""}`}>
           <a href="/">
             <img src="/images/brainvector_logo.svg" alt="Brainvector logo" />
@@ -75,8 +75,8 @@ const Navigation: React.FC = () => {
           </button>
         </div>
 
-        <div className={`mobile-menu-items ${activeMenu ? "mobile-menu-items-active" : ""}`}>
-          <ul>
+        <div className={`mobile-menu-items ${activeMenu ? "mobile-menu-items-active" : "pe-none"}`}>
+          <ul className={`${activeMenu ? "pe-auto" : ""}`}>
             {menuItems.map((item) => (
               <li key={item.href}>
                 <a className={currentPath === item.href ? "active-menu-white" : ""} href={item.href}>

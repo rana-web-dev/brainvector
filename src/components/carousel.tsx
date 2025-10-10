@@ -11,12 +11,11 @@ export default function App() {
       pagination={{ clickable: true }}
       modules={[Pagination]}
       className="mySwiper"
-      slidesPerView={1}           // default for small screens
-      spaceBetween={20}           // spacing between slides
+      slidesPerView={1}            
       breakpoints={{
-        640: { slidesPerView: 1 },   // mobile
-        768: { slidesPerView: 3 },   // tablet
-        1024: { slidesPerView: 5 },  // desktop
+        640: { slidesPerView: 1 }, 
+        768: { slidesPerView: 3 }, 
+        1024: { slidesPerView: 5 }, 
       }}
     >
       <SwiperSlide>

@@ -184,6 +184,19 @@
     display: block !important;
   }
 
+  .swiper {
+    padding-bottom: 50px !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #DDE0E4 !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 20px !important;
+    border-radius: 5px !important;
+    background: #000000 !important;
+  }
 }
 
 @media (max-width: 590px) {
