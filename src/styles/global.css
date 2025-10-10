@@ -66,4 +66,8 @@ img {
     display: none !important;
 }
 
+.dropdown-icon {
+    width: 10px !important;
+    height: auto;
+}
 /* Global CSS end */
