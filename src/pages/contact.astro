@@ -1,0 +1,126 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/header";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout>
+    <Header client:load />
+    <section class="bg-[#1C1C1C] pt-[61px] pb-[99px] pt-[150px] md:pt-[218px] md:pb-[162px] px-[20px]">
+        <div class="max-w-[1358px] mx-auto md:flex items-center gap-[96px]">
+            <div class="md:w-1/2">
+                <h1 class="text-[40px] md:text-[70px] md:leading-[70px] font-[Barlow] font-bold text-white">Contact us</h1>
+                <form class="pt-[35px]">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <!-- First Name -->
+                        <div class="flex flex-col gap-2">
+                        <label for="first-name" class="font-light text-white tracking-[1px]">
+                            First name <span class="text-red-500">*</span>
+                        </label>
+                        <input
+                            id="first-name"
+                            name="first-name"
+                            type="text"
+                            required
+                            class="bg-[#3C3C3C] text-white rounded-md px-3 py-2 border-none focus:outline-none focus:ring-1 focus:ring-white"
+                        />
+                        </div>
+
+                        <!-- Last Name -->
+                        <div class="flex flex-col gap-2">
+                        <label for="last-name" class="font-light text-white tracking-[1px]">
+                            Last name <span class="text-red-500">*</span>
+                        </label>
+                        <input
+                            id="last-name"
+                            name="last-name"
+                            type="text"
+                            required
+                            class="bg-[#3C3C3C] text-white rounded-md px-3 py-2 border-none focus:outline-none focus:ring-1 focus:ring-white"
+                        />
+                        </div>
+
+                        <!-- Job Title -->
+                        <div class="flex flex-col gap-2">
+                        <label for="job-title" class="font-light text-white tracking-[1px]">
+                            Job Title <span class="text-red-500">*</span>
+                        </label>
+                        <input
+                            id="job-title"
+                            name="job-title"
+                            type="text"
+                            required
+                            class="bg-[#3C3C3C] text-white rounded-md px-3 py-2 border-none focus:outline-none focus:ring-1 focus:ring-white"
+                        />
+                        </div>
+
+                        <!-- Company Name -->
+                        <div class="flex flex-col gap-2">
+                        <label for="company-name" class="font-light text-white tracking-[1px]">
+                            Company Name <span class="text-red-500">*</span>
+                        </label>
+                        <input
+                            id="company-name"
+                            name="company-name"
+                            type="text"
+                            required
+                            class="bg-[#3C3C3C] text-white rounded-md px-3 py-2 border-none focus:outline-none focus:ring-1 focus:ring-white"
+                        />
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div class="flex flex-col gap-2">
+                        <label for="phone-number" class="font-light text-white tracking-[1px]">
+                            Phone Number <span class="text-red-500">*</span>
+                        </label>
+                        <input
+                            id="phone-number"
+                            name="phone-number"
+                            type="tel"
+                            required
+                            class="bg-[#3C3C3C] text-white rounded-md px-3 py-2 border-none focus:outline-none focus:ring-1 focus:ring-white"
+                        />
+                        </div>
+
+                        <!-- Email -->
+                        <div class="flex flex-col gap-2">
+                        <label for="email" class="font-light text-white tracking-[1px]">
+                            Email <span class="text-red-500">*</span>
+                        </label>
+                        <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            required
+                            class="bg-[#3C3C3C] text-white rounded-md px-3 py-2 border-none focus:outline-none focus:ring-1 focus:ring-white"
+                        />
+                        </div>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="flex flex-col gap-2 pt-[35px]">
+                        <label for="message" class="font-light text-white tracking-[1px]">
+                        Message <span class="text-red-500">*</span>
+                        </label>
+                        <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        required
+                        class="bg-[#3C3C3C] text-white rounded-md px-3 py-2 border-none focus:outline-none focus:ring-1 focus:ring-white resize-none"
+                        ></textarea>
+                    </div>
+                    <div class="pt-[35px] flex items-end flex-col md:flex-row gap-1">
+                        <input type="submit" value="Submit" class="hidden md:block font-normal px-7 py-2 border text-white uppercase rounded-full cursor-pointer text-[14px] md:text-[20px] hover:bg-white hover:text-black" />
+                        <input type="submit" value="Join the SUBMIT" class="w-[171px] md:hidden font-normal px-7 py-2 border text-white uppercase rounded-full cursor-pointer text-[14px] md:text-[20px] hover:bg-white hover:text-black" />
+                        <a href="#" class="w-[300px] md:w-auto font-normal px-7 py-2 border bg-white uppercase rounded-full cursor-pointer text-[14px] md:text-[20px] ml-[20px] hover:bg-transparent hover:text-white" >or schedule a demo right away</a>
+                    </div>
+                </form>
+            </div>
+            <div class="md:w-1/2 hidden md:block">
+                <img src="images/img/contact-us-img.png" alt="Contact Us" />
+            </div>
+        </div>
+    </section>
+<Footer client:load />
+</Layout>
