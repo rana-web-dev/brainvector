@@ -4,6 +4,7 @@
   height: 1024px;
   position: relative;
   overflow: hidden;
+  margin-top: -105px;
 }
 
 .home video {

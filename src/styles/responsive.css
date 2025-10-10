@@ -11,6 +11,9 @@
 
 @media (max-width: 1250px) {
   /* Header */
+  .home {
+    margin-top: -945px;
+  }
   .navigations .menu-for-desktop,
   .navigations .book-a-demo,
   .navigations-content {
@@ -20,6 +23,7 @@
   .navigations .menu-for-mobile {
     display: block;
     width: 100%;
+    z-index: 999;
   }
 
   .navigations .menu-for-mobile .mobile-menu-items {

@@ -1,8 +1,11 @@
+
 import React, { useState, useEffect } from "react";
 
 const Navigation: React.FC = () => {
   const [activeMenu, setActiveMenu] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [scrollUp, setScrollUp] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   const mobileMenuToggle = (): void => {
     setActiveMenu(!activeMenu);
@@ -10,20 +13,25 @@ const Navigation: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY) {
+        setScrollUp(true);
+      } else if (currentScrollY < lastScrollY) {
+        setScrollUp(false);
       }
+
+      setIsScrolled(currentScrollY > 0);
+      setLastScrollY(currentScrollY);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [lastScrollY]);
 
   return (
-    <nav className={`navigations ${activeMenu ? "pe-auto" : ""}`}>
-      <div className={`${activeMenu || isScrolled ? "bg-black" : ""}`}>
+    <nav className={`navigations ${activeMenu || scrollUp ? "pe-auto nav-top-0" : ""}`}>
+      <div className={`${activeMenu || scrollUp ? "" : "bg-black"}`}>
         <div className="navigations-content">
           <ul className="menu-for-desktop">
             <li>
@@ -52,7 +60,7 @@ const Navigation: React.FC = () => {
           </a>
         </div>
       </div>
-      <div className={`menu-for-mobile ${activeMenu ? "bg-black" : ""}`}>
+      <div className={`menu-for-mobile ${activeMenu ? "bg-black nav-top-0" : ""}`}>
         <div className={`pe-auto mobile-nav-container ${isScrolled ? "bg-black" : ""}`}>
           <a href="/">
             <img src="/images/brainvector_logo.svg" alt="Brainvector logo" />

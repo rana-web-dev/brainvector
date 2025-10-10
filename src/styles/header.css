@@ -1,10 +1,15 @@
+.nav-top-0 {
+    top: -150px !important;
+}
+
 .navigations {
     background-color: transparent;
     z-index: 999;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
+    transition: 0.2s;
 }
 
 .navigations-content {
