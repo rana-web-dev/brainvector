@@ -38,6 +38,10 @@ html, body {
     --BE: #BEBEBE;
 }
 
+.active-menu-white {
+    color: #ffffff !important;
+}
+
 .bg-black {
     background-color: var(--black) !important;
 }
