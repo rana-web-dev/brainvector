@@ -11,7 +11,9 @@ export default function App() {
       pagination={{ clickable: true }}
       modules={[Pagination]}
       className="mySwiper"
-      slidesPerView={1}            
+      slidesPerView={1} 
+      spaceBetween={20}   
+      slidesOffsetAfter={50}
       breakpoints={{
         640: { slidesPerView: 1 }, 
         768: { slidesPerView: 3 }, 
@@ -20,7 +22,7 @@ export default function App() {
     >
       <SwiperSlide>
         <div
-        className="flex justify-center items-center w-[326px] h-[579px] rounded-[20px] relative p-8 bg-cover bg-center"
+        className="flex justify-center items-center  h-[579px] rounded-[20px] relative p-8 bg-cover bg-center"
         style={{ backgroundImage: `url(https://i.ibb.co.com/mrqZnnSs/captain.png)` }}
       >
         <img className="w-[60px]!" src="images/playicon.svg" alt="play icon" />
@@ -31,7 +33,7 @@ export default function App() {
       </SwiperSlide>
       <SwiperSlide>
         <div
-        className="flex justify-center items-center w-[326px] h-[579px] rounded-[20px] relative p-8 bg-cover bg-center"
+        className="flex justify-center items-center  h-[579px] rounded-[20px] relative p-8 bg-cover bg-center"
         style={{ backgroundImage: `url(https://i.ibb.co.com/ksjQNGrv/laura-bg.png)` }}
       >
         <img className="w-[60px]!" src="images/playicon.svg" alt="play icon" />
@@ -42,7 +44,7 @@ export default function App() {
       </SwiperSlide>
       <SwiperSlide>
         <div
-        className="flex justify-center items-center w-[326px] h-[579px] rounded-[20px] relative p-8 bg-cover bg-center"
+        className="flex justify-center items-center  h-[579px] rounded-[20px] relative p-8 bg-cover bg-center"
         style={{ backgroundImage: `url(https://i.ibb.co.com/8SZZLGM/captain-elias.png)` }}
       >
         <img className="w-[60px]!" src="images/playicon.svg" alt="play icon" />
@@ -53,7 +55,7 @@ export default function App() {
       </SwiperSlide>
       <SwiperSlide>
         <div
-        className="flex justify-center items-center w-[326px] h-[579px] rounded-[20px] relative p-8 bg-cover bg-center"
+        className="flex justify-center items-center  h-[579px] rounded-[20px] relative p-8 bg-cover bg-center"
         style={{ backgroundImage: `url(https://i.ibb.co.com/5gRPwBxk/paula-bg.png)` }}
       >
         <img className="w-[60px]!" src="images/playicon.svg" alt="play icon" />
@@ -64,7 +66,7 @@ export default function App() {
       </SwiperSlide>
       <SwiperSlide>
         <div
-        className="flex justify-center items-center w-[326px] h-[579px] rounded-[20px] relative p-8 bg-cover bg-center"
+        className="flex justify-center items-center  h-[579px] rounded-[20px] relative p-8 bg-cover bg-center"
         style={{ backgroundImage: `url(https://i.ibb.co/359p9YQr/jasmin-bg.png)` }}
       >
         <img className="w-[60px]!" src="images/playicon.svg" alt="play icon" />
