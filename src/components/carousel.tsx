@@ -62,7 +62,7 @@ const App: React.FC = () => {
       {slidesData.map((slide, index) => (
         <SwiperSlide key={index}>
           <div
-            className="relative w-full h-[579px] rounded-[20px] p-8 bg-cover bg-center flex justify-center items-center"
+            className="relative w-full h-[579px] rounded-[20px] p-8 bg-cover bg-center flex justify-center items-center cursor-pointer"
             style={{ backgroundImage: playingSlide !== index ? `url(${slide.bgImage})` : 'none' }}
           >
             {playingSlide === index && (
@@ -77,8 +77,8 @@ const App: React.FC = () => {
             )}
             <button onClick={() => toggleVideo(index)} className="z-10">
               <img
-                className="w-[60px]"
-                src="https://via.placeholder.com/60?text=Play" // Replace with actual play icon URL
+                className="w-[60px] cursor-pointer"
+                src="images/playicon.svg"
                 alt="play icon"
               />
             </button>
