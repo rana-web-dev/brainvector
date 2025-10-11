@@ -71,8 +71,6 @@ const App: React.FC = () => {
                 className="absolute inset-0 w-full h-full rounded-[20px] object-cover"
                 src={slide.videoUrl}
                 autoPlay
-                loop
-                muted
                 onEnded={() => setPlayingSlide(null)}
               />
             )}
