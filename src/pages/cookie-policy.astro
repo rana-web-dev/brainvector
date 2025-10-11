@@ -1,0 +1,59 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/header";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout>
+    <Header client:load />
+    <section class="pt-[161px] md:pt-[177px] pb-[169px] bg-[#1C1C1C] -mt-[950px] md:-mt-[105px] px-4">
+        <div class="max-w-[1043px] mx-auto">
+            <h1 class="text-[40px] md:text-[70px] font-[Barlow] font-bold text-white md:text-center">Cookie Policy</h1>
+            <p class="pt-[20px] md:pt-[100px] font-light text-[16px] tracking-[1px] text-white italic">Last Updated: 10/01/2025</p>
+            <p class="text-white text-[16px] font-light pt-[30px] md:pt-[80px]">At Brain Vector, we use cookies and similar technologies to enhance your experience, improve site performance, and understand how you interact with our platform. This Cookie Policy explains what cookies are, how we use them, and how you can manage your preferences.</p>
+            <h2 class="text-[24px]  md:text-[30px] md:leading-[30px] text-white font-medium pt-[32px] md:pt-[88px]">1. What Are Cookies?</h2>
+            <p class="text-white text-[16px] font-light pt-[20px]">Cookies are small text files stored on your device when you visit a website. They allow the site to remember your actions and preferences (like login, language, or region) for a certain period, so you don’t have to re-enter them when returning.</p>
+            <p class="text-white text-[16px] font-light pt-[20px]">a. Essential Cookies</p>
+            <p class="text-white text-[16px] font-light">These cookies are necessary for our website to function properly. They enable core features like secure login, page navigation, and session management.</p>
+            <h2 class="text-[24px]  md:text-[30px] md:leading-[30px] text-white font-medium pt-[32px] md:pt-[88px]">2. Types of Cookies We Use</h2>
+            <p class="text-white text-[16px] font-light pt-[20px]">b. Performance & Analytics Cookies</p>
+            <p class="text-white text-[16px] font-light">We use cookies from tools like Google Analytics to understand how visitors use our site. These cookies help us improve site speed, navigation, and content.</p>
+            <p class="text-white text-[16px] font-light pt-[20px]">c. Functionality Cookies</p>
+            <p class="text-white text-[16px] font-light">These cookies enhance your experience by remembering your preferences (like language or region) and enabling personalized features.</p>
+            <p class="text-white text-[16px] font-light pt-[20px]">d. Advertising & Targeting Cookies</p>
+            <p class="text-white text-[16px] font-light">Where applicable, we may use cookies to deliver relevant ads or content based on your browsing behavior. These may be set by third-party platforms.</p>
+
+            <h2 class="text-[24px]  md:text-[30px] md:leading-[30px] text-white font-medium pt-[32px] md:pt-[88px]">3. How We Use Cookies</h2>
+            <p class="text-white text-[16px] font-light pt-[20px]">We use cookies to:</p>
+            <ul class="text-white list-disc text-[16px] leading-[22px] font-light! ml-[35px]">
+                <li class="pt-[2px]">Recognize repeat visitors and logged-in users</li>
+                <li class="pt-[2px]">Analyze site traffic and usage trends</li>
+                <li class="pt-[2px]">Customize user experiences and display relevant content</li>
+                <li class="pt-[2px]">Improve security and detect anomalies</li>
+            </ul>
+            <h2 class="text-[24px]  md:text-[30px] md:leading-[30px] text-white font-medium pt-[32px] md:pt-[88px]">4. Third-Party Cookies</h2>
+            <p class="text-white text-[16px] font-light pt-[20px]">Some cookies may be placed by third-party services that appear on our pages. These include embedded videos, social media integrations, and analytics tools. These parties may collect information about your browsing activity across different websites.</p>
+
+            <h2 class="text-[24px]  md:text-[30px] md:leading-[30px] text-white font-medium pt-[32px] md:pt-[88px]">5. Managing Cookie Preferences</h2>
+            <p class="text-white text-[16px] font-light pt-[20px]">You can manage or delete cookies at any time through your browser settings:</p>
+            <ul class="text-white list-disc text-[16px] leading-[22px] font-light! ml-[35px]">
+                <li class="pt-[2px]">Disable all or specific types of cookies</li>
+                <li class="pt-[2px]">Delete stored cookies</li>
+                <li class="pt-[2px]">Block cookies from specific websites</li>
+            </ul>
+            <p class="text-white text-[16px] font-light pt-[20px]">Note: Disabling cookies may affect how certain parts of the Brain Vector website function.</p>
+
+            <h2 class="text-[24px]  md:text-[30px] md:leading-[30px] text-white font-medium pt-[32px] md:pt-[88px]">6. Consent</h2>
+            <p class="text-white text-[16px] font-light pt-[20px]">When you visit our website for the first time, you will see a banner asking for your consent to use non-essential cookies. You can accept, decline, or customize your preferences.</p>
+
+            <h2 class="text-[24px]  md:text-[30px] md:leading-[30px] text-white font-medium pt-[32px] md:pt-[88px]">7. Updates to This Policy</h2>
+            <p class="text-white text-[16px] font-light pt-[20px]">We may update this Cookie Policy from time to time to reflect changes in technology, legal requirements, or our cookie usage. Changes will be posted on this page with an updated "Last Updated" date.</p>
+
+            <h2 class="text-[24px]  md:text-[30px] md:leading-[30px] text-white font-medium pt-[32px] md:pt-[88px]">8. Contact Us</h2>
+            <p class="text-white text-[16px] font-light pt-[20px]">If you have any questions or concerns about our use of cookies, please contact us:<br>
+            [Insert Contact Email]<br>
+            www.brainvector.com</p>
+        </div>
+    </section>
+    <Footer client:load />
+</Layout>
