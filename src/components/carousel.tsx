@@ -55,8 +55,9 @@ const App: React.FC = () => {
       slidesOffsetAfter={50}
       breakpoints={{
         640: { slidesPerView: 1 },
-        768: { slidesPerView: 3 },
-        1024: { slidesPerView: 5 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+        1280: { slidesPerView: 5 }
       }}
     >
       {slidesData.map((slide, index) => (
