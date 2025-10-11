@@ -1,9 +1,6 @@
 /* All pages responsive here */
 @media (max-width: 1500px) {
   /* Header */
-  .navigations {
-    pointer-events: none;
-  }
   .navigations .menu-for-desktop {
     gap: 50px;
   }
@@ -23,9 +20,27 @@
     border-radius: 5px !important;
     background: #000000 !important;
   }
+
+  .mega-menu-container {
+    left: -445px !important;
+  }
+
+  .mega-menu-content {
+    width: 1220px !important;
+    padding-right: 100px !important;
+    padding-left: 100px !important;
+  }
+
+  .mega-menu-content a p {
+    font-size: 22px !important;
+    padding-top: 10px !important;
+  }
 }
 
 @media (max-width: 1250px) {
+  .navigations {
+    pointer-events: none;
+  }
   /* Header */
   .home {
     margin-top: -945px;

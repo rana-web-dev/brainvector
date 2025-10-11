@@ -76,19 +76,19 @@ const Navigation: React.FC = () => {
                   )}
                 </a>
                 {item.mega && hoveredItem === item.name && (
-                  <div className="absolute -left-[550px] pt-[30px]">
-                    <div className="w-[1764px] px-[200px] py-[100px] bg-white grid grid-cols-3 gap-6">
+                  <div className="mega-menu-container absolute -left-[550px] pt-[30px]">
+                    <div className="mega-menu-content w-[1764px] px-[200px] py-[100px] bg-white grid grid-cols-3 gap-6">
                       <a href="/reboot">
                         <img src="images/img/Reboot-Corporate.png" alt="Reboot" />
-                        <p className="text-[26px] leading-[26px] font-[Barlow] font-normal pt-[20px] text-black capitalize">Reboot – Corporate Mental Clarity</p>
+                        <p className="text-[26px] leading-[28px] font-[Barlow] font-normal pt-[20px] text-black capitalize">Reboot – Corporate Mental Clarity</p>
                       </a>
                       <a href="/realize">
                         <img src="images/img/Realize-dropdown.png" alt="Realize" />
-                        <p className="text-[26px] leading-[26px] font-[Barlow] font-normal pt-[20px] text-black capitalize">Realize – Elite Performance & Focus</p>
+                        <p className="text-[26px] leading-[28px] font-[Barlow] font-normal pt-[20px] text-black capitalize">Realize – Elite Performance & Focus</p>
                       </a>
                       <a href="/reset">
                         <img src="images/img/Reset-dropdown.png" alt="Reset" />
-                        <p className="text-[26px] leading-[26px] font-[Barlow] font-normal pt-[20px] text-black capitalize">Reset - Wellness & Emotional Balance</p>
+                        <p className="text-[26px] leading-[28px] font-[Barlow] font-normal pt-[20px] text-black capitalize">Reset - Wellness & Emotional Balance</p>
                       </a>
                     </div>
                   </div>
