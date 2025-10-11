@@ -17,9 +17,108 @@ import "flowbite/dist/flowbite.css"; // Flowbite CSS
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Brainvector</title>
+		<style>
+			/* Mouse effect */
+			/* blurred circle that follows the cursor */
+				.cursor-blur {
+				position: fixed;
+				left: 0;
+				top: 0;
+				width: 100px;               /* circle diameter */
+				height: 100px;
+				border-radius: 50%;
+				pointer-events: none;      /* don't block clicks */
+				transform: translate(-50%, -50%);
+				/* color and translucency of the blur */
+				background: rgba(255, 255, 255, 0.14);
+				/* make it look soft:
+					- filter: blur() blurs the element itself
+					- box-shadow spreads a soft glow beyond the element
+				*/
+				filter: blur(8px);
+				box-shadow: 0 8px 24px rgba(255, 255, 255, 0.22);
+				/* place the blur slightly below the real pointer */
+				translate: 0 18px; /* modern, but we'll handle offset in JS too for compatibility */
+				z-index: 9999;
+				transition: opacity 150ms linear, transform 50ms linear;
+				opacity: 1;
+				mix-blend-mode: normal;
+				will-change: transform;
+				}
+
+				/* small optimization: hide effect on touch devices */
+				@media (hover: none), (pointer: coarse) {
+				.cursor-blur { display: none; }
+				}
+		</style>
 	</head>
 	<body>
 		<slot />
+
+		<div id="cursorBlur" class="cursor-blur"></div>
+		<script>
+		(function () {
+      const blurEl = document.getElementById('cursorBlur');
+
+      // Keep last known mouse pos and "rendered" pos for easing/smoothing
+      let mouseX = window.innerWidth / 2;
+      let mouseY = window.innerHeight / 2;
+      let renderX = mouseX;
+      let renderY = mouseY;
+      const offsetY = 18; // how far below the cursor the blur sits (px)
+      const ease = 0.18; // 0 = no follow, 1 = snap to cursor
+
+      // Update mouse coords on move
+      window.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        // ensure the blur is visible when moving
+        blurEl.style.opacity = '1';
+      });
+
+      // Optionally hide when leaving window
+      window.addEventListener('mouseleave', () => {
+        blurEl.style.opacity = '0';
+      });
+      window.addEventListener('mouseenter', () => {
+        blurEl.style.opacity = '1';
+      });
+
+      // Animation loop to smoothly follow the cursor
+      function animate() {
+        // interpolate renderX/renderY towards mouseX/mouseY
+        renderX += (mouseX - renderX) * ease;
+        renderY += (mouseY - renderY) * ease;
+
+        // We want the blur slightly below the real cursor:
+        const targetX = renderX;
+        const targetY = renderY + offsetY;
+
+        // Apply transform (translate centers the circle at pointer)
+        // we subtract 50% via CSS transform already; here we set translate coordinates
+        blurEl.style.transform = `translate(${targetX}px, ${targetY}px) translate(-50%, -50%)`;
+
+        requestAnimationFrame(animate);
+      }
+
+      // Start the loop
+      requestAnimationFrame(animate);
+
+      // Accessibility / prefers-reduced-motion respect:
+      const mql = window.matchMedia('(prefers-reduced-motion: reduce)');
+      function handleReduceMotion(e) {
+        if (e.matches) {
+          // disable smoothing (snap) and heavy blur
+          blurEl.style.filter = 'blur(4px)';
+          blurEl.style.transition = 'none';
+        } else {
+          blurEl.style.filter = 'blur(8px)';
+        }
+      }
+      handleReduceMotion(mql);
+      mql.addEventListener && mql.addEventListener('change', handleReduceMotion);
+    })();
+  </script>
 	</body>
 </html>
 
