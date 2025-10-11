@@ -9,6 +9,7 @@ const Navigation: React.FC = () => {
   const [currentPath, setCurrentPath] = useState("");
   const [scrollTop, setScrollTop] = useState(false);
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   const mobileMenuToggle = (): void => {
     setActiveMenu(!activeMenu);
@@ -84,11 +85,11 @@ const Navigation: React.FC = () => {
                       </a>
                       <a href="/realize">
                         <img src="images/img/Realize-dropdown.png" alt="Realize" />
-                        <p className="text-[26px] leading-[26px] font-[Barlow] font-normal pt-[20px] text-black capitalize">Reboot – Corporate Mental Clarity</p>
+                        <p className="text-[26px] leading-[26px] font-[Barlow] font-normal pt-[20px] text-black capitalize">Realize – Elite Performance & Focus</p>
                       </a>
                       <a href="/reset">
                         <img src="images/img/Reset-dropdown.png" alt="Reset" />
-                        <p className="text-[26px] leading-[26px] font-[Barlow] font-normal pt-[20px] text-black capitalize">Reboot – Corporate Mental Clarity</p>
+                        <p className="text-[26px] leading-[26px] font-[Barlow] font-normal pt-[20px] text-black capitalize">Reset - Wellness & Emotional Balance</p>
                       </a>
                     </div>
                   </div>
@@ -123,6 +124,14 @@ const Navigation: React.FC = () => {
                 <a
                   className={currentPath === item.href ? "active-menu-white" : ""}
                   href={item.href}
+                  onClick={(e) => {
+                    if (item.mega) {
+                      e.preventDefault(); // prevent navigation
+                      setOpenDropdown(openDropdown === item.name ? null : item.name);
+                    } else {
+                      setActiveMenu(false);
+                    }
+                  }}
                 >
                   {item.name}
                   {item.dropdownicon && (
@@ -133,6 +142,14 @@ const Navigation: React.FC = () => {
                     />
                   )}
                 </a>
+                {/* Mobile Dropdown */}
+                {item.mega && openDropdown === item.name && (
+                  <div className="flex flex-col gap-[18px] pt-[18px]">
+                    <a href="/reboot" className="text-[12px] font-light! text-[#D8D8D8]! hover:text-white! ">Reboot – Corporate Mental Clarity</a>
+                    <a href="/realize" className="text-[12px] font-light! text-[#D8D8D8]! hover:text-white! ">Realize – Elite Performance & Focus</a>
+                    <a href="/reset" className="text-[12px] font-light! text-[#D8D8D8]! hover:text-white! ">Reset - Wellness & Emotional Balance</a>
+                  </div>
+                )}
               </li>
             ))}
             <li>
