@@ -41,7 +41,7 @@ const Navigation: React.FC = () => {
     { 
       name: "Explore our solutions", 
       href: "#", 
-      dropdownicon: "/images/dropdownicon.svg" ,
+      dropdownupicon: "/images/dropdownupicon.svg",
       mega: true,
     },
     { name: "Backed by research", href: "/backed-by-research" },
@@ -58,7 +58,6 @@ const Navigation: React.FC = () => {
                 <img src="/images/brainvector_logo.svg" alt="Brainvector logo" />
               </a>
             </li>
-
             {menuItems.map((item) => (
               <li key={item.href} className="relative"
                 onMouseEnter={() => setHoveredItem(item.name)}
@@ -68,9 +67,9 @@ const Navigation: React.FC = () => {
                   href={item.href}
                 >
                   {item.name}
-                  {item.dropdownicon && (
+                  {item.dropdownupicon && (
                     <img
-                      src={item.dropdownicon}
+                      src={item.dropdownupicon}
                       alt="icon"
                       className="inline-block ml-2 w-[15px]!"
                     />
@@ -101,7 +100,6 @@ const Navigation: React.FC = () => {
           <a href="/contact" className="px-5 py-3 border text-white rounded-full font-[Barlow] text-[14px] uppercase hover:bg-white hover:text-black">Book a demo</a>
         </div>
       </div>
-
       {/* Mobile menu */}
       <div className={`menu-for-mobile ${activeMenu ? "bg-black nav-top-0" : "pe-none"}`}>
         <div className={`pe-auto mobile-nav-container ${isScrolled && !scrollTop ? "bg-black" : ""}`}>
@@ -116,7 +114,6 @@ const Navigation: React.FC = () => {
             )}
           </button>
         </div>
-
         <div className={`mobile-menu-items ${activeMenu ? "mobile-menu-items-active" : "pe-none"}`}>
           <ul className={`${activeMenu ? "pe-auto" : ""}`}>
             {menuItems.map((item) => (
@@ -134,12 +131,17 @@ const Navigation: React.FC = () => {
                   }}
                 >
                   {item.name}
-                  {item.dropdownicon && (
-                    <img
-                      src={item.dropdownicon}
+                  {item.dropdownupicon && (
+                    openDropdown ? (<img
+                      src={item.dropdownupicon}
+                      alt="icon"
+                      className="inline-block ml-2 w-[15px]! rotate-180" // icon rotate for down
+                    />) : (<img
+                      src={item.dropdownupicon}
                       alt="icon"
                       className="inline-block ml-2 w-[15px]!"
-                    />
+                    />)
+                    
                   )}
                 </a>
                 {/* Mobile Dropdown */}
