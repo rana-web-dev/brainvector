@@ -40,7 +40,7 @@ import Footer from "../components/Footer.astro";
   <!-- Home Page End -->
   <!-- Understanding Emotional -->
   <section class="understanding-emotional">
-    <div>
+    <div class="w-1/2">
       <h2>
         Understanding Emotional Regulation:<span style="color: var(--blueGray)"
           >The Oxytocin Pathway to Clarity, Performance & Inner Balance</span
@@ -70,12 +70,25 @@ import Footer from "../components/Footer.astro";
       a corporate leader, or a performance-focused organization, supporting emotional
       regulation can unlock untapped human potential.
     </div>
-    <div>
-    <img
-      class="for-desktop-img"
-      src="https://i.ibb.co.com/j9LdWvs2/Animation-visuel-homepage.png"
-    />
-  </div>
+    <!-- Progressbar -->
+    <div class="w-1/2 bg-[url('images/img/animation-visual.png')] h-[700px] bg-center bg-cover rounded-[20px] no-repeat">
+      <div class="progress-container">
+    <div id="content1" class="content active">+ FOCUS</div>
+      <div id="content2" class="content">-STRESS</div>
+      <div id="content3" class="content">+ RESILIENCE</div>
+      <!-- image fade -->
+      <img
+        id="fade-image"
+        class="fade-image"
+        src="images/img/sans-animations.png"
+        alt="Progress image"
+      />
+      <!-- progress track + fill -->
+      <div class="progress-track">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+      </div>
+    </div>
   </section>
   
 </Layout>
@@ -597,9 +610,9 @@ import Footer from "../components/Footer.astro";
         among the first to access this innovative solution.
       </p>
       <div class="flex gap-2 pt-12">
-        <button
-          class="text-[20px] uppercase px-[50px] py-[15px] border rounded-full text-white border-white"
-          >Join the Waitlist</button
+        <a href="#"
+          class="text-[20px] uppercase px-[50px] py-[15px] border rounded-full text-white border-white cursor-pointer"
+          >Join the Waitlist</a
         >
         <img
           class="w-[165px]!"
@@ -620,9 +633,9 @@ import Footer from "../components/Footer.astro";
       the first to access this innovative solution.
     </p>
     <div class="flex gap-2 pt-6">
-      <button
-        class="text-[14px] font-semibold uppercase px-[20px] py-[8px] border rounded-full text-white border-white"
-        >Join the Waitlist</button
+      <a href="#"
+        class="text-[14px] font-semibold uppercase px-[20px] py-[8px] border rounded-full text-white border-white cursor-pointer"
+        >Join the Waitlist</a
       >
       <img
         class="w-[120px]!"
@@ -719,4 +732,63 @@ import Footer from "../components/Footer.astro";
       }
     }
   });
+
+  // Progress
+ // Get elements with null checks
+const progressBar = document.getElementById("progress-bar") as HTMLDivElement | null;
+const fadeImage = document.getElementById("fade-image") as HTMLImageElement | null;
+const pcontents: (HTMLDivElement | null)[] = [
+  document.getElementById("content1") as HTMLDivElement | null,
+  document.getElementById("content2") as HTMLDivElement | null,
+  document.getElementById("content3") as HTMLDivElement | null,
+];
+
+if (!progressBar || !fadeImage || pcontents.some(c => c === null)) {
+  throw new Error("Required elements not found in the DOM.");
+}
+
+let progress = 0;
+let started = false; // ensure animation runs only once
+
+// Function to run progress animation
+function runProgress(): void {
+  if (started) return;
+  started = true;
+
+  const interval = setInterval(() => {
+    progress += 1;
+
+    // Fill progress bar
+    progressBar!.style.width = progress + "%";
+
+    // Fade image
+    fadeImage!.style.opacity = (progress / 100).toString();
+
+    // Show content progressively
+    if (progress >= 0 && progress <= 33) pcontents[0]!.classList.add("active");
+    else if (progress > 33 && progress <= 66) pcontents[1]!.classList.add("active");
+    else if (progress > 66) pcontents[2]!.classList.add("active");
+
+    if (progress >= 100) clearInterval(interval);
+  }, 30);
+}
+
+// Use Intersection Observer to trigger animation
+const section = document.querySelector(".progress-container") as HTMLElement | null;
+if (!section) throw new Error("Section not found");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        runProgress();
+      }
+    });
+  },
+  { threshold: 0.5 } // trigger when 50% of section is visible
+);
+
+observer.observe(section);
+
+
 </script>
