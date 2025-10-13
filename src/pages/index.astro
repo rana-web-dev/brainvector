@@ -18,9 +18,15 @@ import Footer from "../components/Footer.astro";
       poster="https://i.ibb.co/PsyBtX5G/brainvector-home-banner-fallback-img.png"
       style="width: 100%; height: auto; object-fit: cover;"
     >
-      <source
+      <source class="brainvector-home-bg-video" 
         src="https://brainvector.dev.karma-dev.com/content/videos/brainvector-home-bg-video.mp4"
         type="video/mp4"
+        media="(min-width: 768px)"
+      />
+      <source class="brainvector-home-bg-video-phone" 
+        src="https://brainvector.dev.karma-dev.com/content/videos/brainvector-home-bg-video-phone.mp4"
+        type="video/mp4"
+        media="(max-width: 767px)"
       />
       <img
         src="https://i.ibb.co/PsyBtX5G/brainvector-home-banner-fallback-img.png"
@@ -83,7 +89,7 @@ import Footer from "../components/Footer.astro";
         src="images/img/sans-animations.png"
         alt="Progress image"
       />
-      <h2 class="mb-[65px] md:mb-[90px] text-[25px]! text-white! font-medigum!">Oxytocin</h2>
+      <h2 class="mb-[60px] md:mb-[85px] text-[20px]! text-white! font-medigum!">Oxytocin</h2>
       <!-- progress track + fill -->
       <div class="progress-track">
         <div class="progress-bar" id="progress-bar"></div>
@@ -91,7 +97,6 @@ import Footer from "../components/Footer.astro";
       </div>
     </div>
   </section>
-  
 </Layout>
 <!-- Introdution Brainvector Start -->
 <section class="introduction-brainvector">
