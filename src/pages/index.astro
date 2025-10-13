@@ -71,7 +71,7 @@ import Footer from "../components/Footer.astro";
       regulation can unlock untapped human potential.
     </div>
     <!-- Progressbar -->
-    <div class="w-1/2 bg-[url('https://i.ibb.co.com/4RpCMK4H/animation-visual.png')] h-[700px] bg-center bg-cover rounded-[20px] no-repeat">
+    <div class="w-1/2 bg-[url('https://i.ibb.co.com/4RpCMK4H/animation-visual.png')] h-[500px] md:h-[700px] bg-center bg-cover rounded-[20px] no-repeat">
       <div class="progress-container">
     <div id="content1" class="content active">+ FOCUS</div>
       <div id="content2" class="content">-STRESS</div>
@@ -83,6 +83,7 @@ import Footer from "../components/Footer.astro";
         src="images/img/sans-animations.png"
         alt="Progress image"
       />
+      <h2 class="mb-[65px] md:mb-[90px] text-[25px]! text-white! font-medigum!">Oxytocin</h2>
       <!-- progress track + fill -->
       <div class="progress-track">
         <div class="progress-bar" id="progress-bar"></div>
@@ -682,7 +683,7 @@ import Footer from "../components/Footer.astro";
     // Animate content
     (contents as NodeListOf<HTMLElement>).forEach((c) => {
       if (c.getAttribute("data-tab") === tab) {
-        // c.style.maxHeight = c.scrollHeight + "px";
+        c.style.maxHeight = c.scrollHeight + "px";
         c.style.maxHeight = "526px";
         c.style.opacity = "1";
       } else {
@@ -733,8 +734,8 @@ import Footer from "../components/Footer.astro";
     }
   });
 
-  // Progress
- // Get elements with null checks
+// Progress
+// Get elements with null checks
 const progressBar = document.getElementById("progress-bar") as HTMLDivElement | null;
 const fadeImage = document.getElementById("fade-image") as HTMLImageElement | null;
 const pcontents: (HTMLDivElement | null)[] = [
@@ -789,6 +790,4 @@ const observer = new IntersectionObserver(
 );
 
 observer.observe(section);
-
-
 </script>

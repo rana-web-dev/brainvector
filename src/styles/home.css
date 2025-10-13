@@ -177,21 +177,30 @@
 #content1 {
   top: 50%;
   left: 5%;
+  width: 114px;
 }
 
 #content2 {
   top: 15%;
   left: 27%;
+  width: 115px;
 }
 
 #content3 {
   top: 50%;
-  left: 70%;
+  left: 65%;
   z-index: 999999;
+  width: 166px;
 }
 
 .progress-track {
   width: 60%;
   left: 20%;
   bottom: 16%;
+}
+
+@media (max-width: 768px) {
+  #content3 {
+    left: 55%;
+  }
 }
