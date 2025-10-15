@@ -83,19 +83,19 @@ const Navigation: React.FC = () => {
                       <div className="grid grid-cols-3 gap-6">
                       <div>
                         <a href="/reboot">
-                        <img src="images/img/Reboot-Corporate.png" alt="reboot" />
+                        <img src="https://brainvector.dev.karma-dev.com/content/img/Reboot-Corporate.png" alt="reboot" />
                         <p className="text-[26px] font-[Barlow] text-black capitalize font-normal pt-2">Reboot – Corporate Mental Clarity</p>
                         </a>
                       </div>
                       <div>
                         <a href="/realize">
-                        <img src="images/img/Realize-dropdown.png" alt="Realize" />
+                        <img src="https://brainvector.dev.karma-dev.com/content/img/Realize-dropdown.png" alt="Realize" />
                         <p className="text-[26px] font-[Barlow] text-black capitalize font-normal pt-2">Realize – Elite Performance & Focus</p>
                         </a>
                       </div>
                       <div>
                         <a href="/reset">
-                        <img src="images/img/Reset-dropdown.png" alt="Reset" />
+                        <img src="https://brainvector.dev.karma-dev.com/content/img/Reset-dropdown.png" alt="Reset" />
                         <p className="text-[26px] font-[Barlow] text-black capitalize font-normal pt-2">Reset - Wellness & Emotional Balance</p>
                         </a>
                       </div>

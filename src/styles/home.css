@@ -50,7 +50,6 @@
 
 /* Understanding Emotional start  */
 .understanding-emotional {
-  max-width: 1400px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -64,8 +63,6 @@
 } */
 
 .understanding-emotional h2 {
-  font-size: 50px;
-  line-height: 60px;
   padding-bottom: 24px;
   color: var(--darkBlueGray);
 }
@@ -189,7 +186,7 @@
 #content3 {
   top: 50%;
   left: 65%;
-  z-index: 999999;
+  z-index: 99;
   width: 166px;
 }
 
@@ -197,10 +194,4 @@
   width: 60%;
   left: 20%;
   bottom: 16%;
-}
-
-@media (max-width: 768px) {
-  #content3 {
-    left: 55%;
-  }
 }

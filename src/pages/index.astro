@@ -15,21 +15,21 @@ import Footer from "../components/Footer.astro";
       loop
       playsinline
       preload="auto"
-      poster="https://i.ibb.co/PsyBtX5G/brainvector-home-banner-fallback-img.png"
+      poster="./images/img/home-bg-img.png"
       style="width: 100%; height: auto; object-fit: cover;"
     >
       <source class="brainvector-home-bg-video" 
-        src="https://brainvector.dev.karma-dev.com/content/videos/brainvector-home-bg-video.mp4"
+        src="./videos/brainvector-home-bg-video.mp4"
         type="video/mp4"
         media="(min-width: 768px)"
       />
       <source class="brainvector-home-bg-video-phone" 
-        src="https://brainvector.dev.karma-dev.com/content/videos/brainvector-home-bg-video-phone.mp4"
+        src="./videos/brainvector-home-bg-video-phone.mp4"
         type="video/mp4"
         media="(max-width: 767px)"
       />
       <img
-        src="https://i.ibb.co/PsyBtX5G/brainvector-home-banner-fallback-img.png"
+        src="./images/img/home-bg-img.png"
         alt="Your browser does not support video playback."
       />
     </video>
@@ -45,23 +45,22 @@ import Footer from "../components/Footer.astro";
   </section>
   <!-- Home Page End -->
   <!-- Understanding Emotional -->
-  <section class="understanding-emotional">
+   <section>
+    <h2 class="md:hidden px-4 pt-[50px] text-[38px] leading-[38px] font-medium">
+        Understanding Emotional Regulation:<span style="color: var(--blueGray)"
+          >The Oxytocin Pathway to Clarity, Performance & Inner Balance</span
+        >
+        </h2>
+  <div class="understanding-emotional max-w-[1450px]">
     <div class="w-1/2">
-      <h2>
+      <h2 class="hidden md:block md:text-[50px] md:leading-[52px] font-medium!">
         Understanding Emotional Regulation:<span style="color: var(--blueGray)"
           >The Oxytocin Pathway to Clarity, Performance & Inner Balance</span
         >
       </h2>
-      <img
-        class="for-phone-img mb-[20px]"
-        src="https://i.ibb.co.com/j9LdWvs2/Animation-visuel-homepage.png"
-        alt="animation visuel"
-      />
-      <span style="font-size: 19px; text-transform: uppercase;"
-        >Regulate Emotions. Boost Focus. Elevate Mental Performance.</span
-      >
-      <br /><br />Emotion can shape how we think, decide, and perform. At the
-      center of this process is oxytocin, a naturally occurring neurochemical
+      <p style="font-size: 19px; text-transform: uppercase; inline-block mt-[15px]"
+        >Regulate Emotions. Boost Focus. Elevate Mental Performance.</p>
+      <p class="mt-[15px]">Emotion can shape how we think, decide, and perform. At the center of this process is oxytocin, a naturally occurring neurochemical
       that promotes trust, emotional balance, and stress relief. When triggered,
       either naturally or through VR and AI-enhanced immersive technology,
       oxytocin helps shift the brain from a stress response into a state of
@@ -74,10 +73,10 @@ import Footer from "../components/Footer.astro";
       <br /><br /> regulation is not a personality trait: it’s a trainable mental
       capacity, now accessible through technology. Whether you're a wellness center,
       a corporate leader, or a performance-focused organization, supporting emotional
-      regulation can unlock untapped human potential.
+      regulation can unlock untapped human potential.</p>
     </div>
     <!-- Progressbar -->
-    <div class="w-1/2 bg-[url('https://i.ibb.co.com/4RpCMK4H/animation-visual.png')] h-[500px] md:h-[700px] bg-center bg-cover rounded-[20px] no-repeat">
+    <div class="w-1/2 h-[364px] md:h-[700px] bg-center bg-cover rounded-[20px] no-repeat" style="background-image: url('./images/img/animations-visual.png')">
       <div class="progress-container">
     <div id="content1" class="content active">+ FOCUS</div>
       <div id="content2" class="content">-STRESS</div>
@@ -86,16 +85,17 @@ import Footer from "../components/Footer.astro";
       <img
         id="fade-image"
         class="fade-image"
-        src="images/img/sans-animations.png"
+        src="./images/img/sans-animations.png"
         alt="Progress image"
       />
-      <h2 class="mb-[60px] md:mb-[85px] text-[20px]! text-white! font-medigum!">Oxytocin</h2>
+      <h2 class="mb-[40px] md:mb-[100px] text-[16px]! md:text-[20px]! text-white! font-medigum!">Oxytocin</h2>
       <!-- progress track + fill -->
       <div class="progress-track">
         <div class="progress-bar" id="progress-bar"></div>
       </div>
       </div>
     </div>
+  </div>
   </section>
 </Layout>
 <!-- Introdution Brainvector Start -->
@@ -106,13 +106,13 @@ import Footer from "../components/Footer.astro";
     <div class="md:w-1/2 flex items-center">
       <img
         class="hidden md:block"
-        src="https://i.ibb.co.com/LDFZQ3bY/Introduction-Brainvector-Image.png"
+        src="./images/img/Introduction-Brainvector-Image.png"
         alt="Introduction brainvector image"
       />
     </div>
     <div class="md:w-1/2">
       <h2
-        class="hel font-mediam text-[38px] leading-[42px] md:text-[50px] md:leading-[52px]"
+        class="hel max-w-[600px] font-medium! text-[38px] leading-[42px] md:text-[50px] md:leading-[52px]"
       >
         Introducing Brain Vector:
         <span class="text-[var(--blueGray)]"
@@ -121,7 +121,7 @@ import Footer from "../components/Footer.astro";
       </h2>
       <img
         class="md:hidden mt-[35px]"
-        src="https://i.ibb.co.com/svHXHDqc/Introduction-Brainvector-Image-phone.png"
+        src="./images/img/Introduction-Brainvector-Image-phone.png"
         alt="Introduction brainvector image"
       />
       <p class="mt-[20px]">
@@ -133,10 +133,10 @@ import Footer from "../components/Footer.astro";
       <div class="mt-[30px] md:mt-[20px] grid gap-[20px]">
         <div class="flex flex-col md:flex-row">
           <div
-            class="bg-white rounded-[15px] w-[63px] md:w-[135px] h-auto p-[10px] flex items-center"
+            class="bg-white rounded-[15px] w-[63px] md:w-[105px] h-auto p-[10px] flex items-center"
           >
             <img
-              src="/images/Emotional-Lucidity.svg"
+              src="./images/Emotional-Lucidity.svg"
               alt="Emotional-Lucidity"
             />
           </div>
@@ -152,10 +152,10 @@ import Footer from "../components/Footer.astro";
         </div>
         <div class="flex flex-col md:flex-row">
           <div
-            class="bg-white rounded-[15px] w-[63px] md:w-[135px] h-auto p-[10px] flex items-center"
+            class="bg-white rounded-[15px] w-[63px] md:w-[100px] h-auto p-[10px] flex items-center"
           >
             <img
-              src="/images/Human-Centered-Technology.svg"
+              src="./images/Human-Centered-Technology.svg"
               alt="Human-Centered-Technology"
             />
           </div>
@@ -171,9 +171,9 @@ import Footer from "../components/Footer.astro";
         </div>
         <div class="flex flex-col md:flex-row">
           <div
-            class="bg-white rounded-[15px] w-[63px] md:w-[182px] h-auto p-[10px] flex items-center"
+            class="bg-white rounded-[15px] w-[63px] md:w-[130px] h-auto p-[10px] flex items-center"
           >
-            <img src="/images/Active-Resilience.svg" alt="Active Resilience" />
+            <img src="./images/Active-Resilience.svg" alt="Active Resilience" />
           </div>
           <div class="pt-[10px] md:pt-[0px] md:pl-[20px]">
             <h4 class="text-[18px] font-semibold">Active Resilience</h4>
@@ -188,9 +188,9 @@ import Footer from "../components/Footer.astro";
         </div>
         <div class="flex flex-col md:flex-row">
           <div
-            class="bg-white rounded-[15px] w-[63px] md:w-[165px] h-auto p-[10px] flex items-center"
+            class="bg-white rounded-[15px] w-[63px] md:w-[120px] h-auto p-[10px] flex items-center"
           >
-            <img src="/images/Confidentiality.svg" alt="Confidentiality" />
+            <img src="./images/Confidentiality.svg" alt="Confidentiality" />
           </div>
           <div class="pt-[10px] md:pt-[0px] md:pl-[20px]">
             <h4 class="text-[18px] font-semibold">Confidentiality</h4>
@@ -198,16 +198,15 @@ import Footer from "../components/Footer.astro";
               <em
                 >All emotional and cognitive data is processed with strict
                 privacy protocols. Ethical technology for sensitive,
-                human-centered applications.</em
-              >
+                human-centered applications.</em>
             </p>
           </div>
         </div>
         <button
-          class="w-[190px] mt-[20px] cursor-pointer flex items-center gap-[8px] p-[12px] border rounded-full pointer"
+          class="w-[190px] mt-[15px] cursor-pointer flex items-center gap-[8px] px-[18px] py-[12px] border rounded-full pointer hover:bg-[#bebebe] hover:border-[#bebebe] hover:text-black"
           ><img
             style={{ width: "20px;" }}
-            src="/images/video.svg"
+            src="./images/video.svg"
             alt="video play"
           /> Watch the video</button
         >
@@ -218,7 +217,7 @@ import Footer from "../components/Footer.astro";
 <!-- Introdution Brainvector End -->
 <!-- Discover How Brain Vector Helps You Tab Start -->
 <section
-  class="pt-[73px] md:pt-[75px] pb-[60px] md:pb-[119px] bg-white max-w-[1150px] mx-auto px-4"
+  class="pt-[73px] md:pt-[75px] pb-[60px] md:pb-[203px] bg-white max-w-[1150px] mx-auto px-4"
 >
   <h2
     class="text-[38px] leading-[42px] md:text-[50px] md:leading-[52px] font-medium text-center"
@@ -272,8 +271,9 @@ import Footer from "../components/Footer.astro";
     <div class="mt-6">
       <div
         id="home-tab-content-desktop"
-        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/PSnvfw8/home-page-tab-identify-bg-img.png')]"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-xl p-2 opacity-100 bg-center bg-cover"
         data-tab="1"
+        style="background-image: url('./images/img/home-page-tab-identify-bg-img.png')"
       >
         <img
           class="max-w-[240px] mb-[-115px]"
@@ -296,13 +296,13 @@ import Footer from "../components/Footer.astro";
       </div>
       <div
         id="home-tab-content-phone"
-        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/Jw1hvJQ4/idsfajfn.png')] bg-cover bg-center"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-cover bg-center"
         data-tab="1"
+        style="background-image: url('./images/img/home-identify-phone.png')"
       >
         <img
-          class="max-w-[140px] absolute
-        right-[-10px] bottom-[-10px]"
-          src="images/img/tab-phone-img-desktop.png"
+          class="max-w-[140px] absolute right-[-10px] bottom-[-10px]"
+          src="./images/img/tab-phone-img-desktop.png"
           alt="indentify mobile image"
         />
         <div class="max-w-[200px] absolute left-[25px] bottom-[50px]">
@@ -321,12 +321,13 @@ import Footer from "../components/Footer.astro";
       </div>
       <div
         id="home-tab-content-desktop"
-        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/JwJtbVwy/home-page-personalize-bgimg.png')]"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-xl p-2 md:-mt-3 opacity-100 bg-center bg-cover"
         data-tab="2"
+        style="background-image: url('./images/img/home-page-personalize-bgimg.png')"
       >
         <img
           class="max-w-[240px] mb-[-115px]"
-          src="images/img/tab-phone-img-desktop.png"
+          src="./images/img/tab-phone-img-desktop.png"
           alt="indentify mobile image"
         />
         <div class="max-w-[318px] absolute right-[60px]">
@@ -344,12 +345,12 @@ import Footer from "../components/Footer.astro";
       </div>
       <div
         id="home-tab-content-phone"
-        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/zhJLxFv7/personalize-phone-bg.png')] bg-cover bg-center"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-cover bg-center"
         data-tab="2"
+        style="background-image: url('./images/img/personalize-phone-bg.png')"
       >
         <img
-          class="max-w-[140px] absolute
-        right-[-10px] bottom-[-10px]"
+          class="max-w-[140px] absolute right-[-10px] bottom-[-10px]"
           src="images/img/tab-phone-img-desktop.png"
           alt="indentify mobile image"
         />
@@ -368,12 +369,13 @@ import Footer from "../components/Footer.astro";
       </div>
       <div
         id="home-tab-content-desktop"
-        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/sJJYBk3J/guide-bg.png')]"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-xl p-2 md:-mt-4 opacity-100 bg-center bg-cover"
         data-tab="3"
+        style="background-image: url('./images/img/guide-bg.png')"
       >
         <img
           class="max-w-[240px] mb-[-115px]"
-          src="images/img/tab-phone-img-desktop.png"
+          src="./images/img/tab-phone-img-desktop.png"
           alt="indentify mobile image"
         />
         <div class="max-w-[310px] absolute right-[70px]">
@@ -391,13 +393,13 @@ import Footer from "../components/Footer.astro";
       </div>
       <div
         id="home-tab-content-phone"
-        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/C3zyb9Qx/guide-phone-bg.png')] bg-cover bg-center"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-cover bg-center"
         data-tab="3"
+        style="background-image: url('./images/img/guide-phone-bg.png')"
       >
         <img
-          class="max-w-[140px] absolute
-        right-[-10px] bottom-[-10px]"
-          src="images/img/tab-phone-img-desktop.png"
+          class="max-w-[140px] absolute right-[-10px] bottom-[-10px]"
+          src="./images/img/tab-phone-img-desktop.png"
           alt="indentify mobile image"
         />
         <div class="max-w-[200px] absolute left-[25px] bottom-[50px]">
@@ -415,12 +417,13 @@ import Footer from "../components/Footer.astro";
       </div>
       <div
         id="home-tab-content-desktop"
-        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/fYDxz1mF/activate-bg.png')]"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-xl p-2 md:-mt-4 opacity-100 bg-center bg-cover"
         data-tab="4"
+        style="background-image: url('./images/img/activate-bg.png')"
       >
         <img
           class="max-w-[240px] mb-[-115px]"
-          src="images/img/tab-phone-img-desktop.png"
+          src="./images/img/tab-phone-img-desktop.png"
           alt="indentify mobile image"
         />
         <div class="max-w-[307px] absolute right-[82px]">
@@ -438,13 +441,13 @@ import Footer from "../components/Footer.astro";
       </div>
       <div
         id="home-tab-content-phone"
-        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-[url('https://i.ibb.co.com/hFHKnZYj/activate-phone-bg.png')] bg-cover bg-center"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-cover bg-center"
         data-tab="4"
+        style="background-image: url('./images/img/activate-phone-bg.png')"
       >
         <img
-          class="max-w-[140px] absolute
-        right-[-10px] bottom-[-10px]"
-          src="images/img/tab-phone-img-desktop.png"
+          class="max-w-[140px] absolute right-[-10px] bottom-[-10px]"
+          src="./images/img/tab-phone-img-desktop.png"
           alt="indentify mobile image"
         />
         <div class="max-w-[200px] absolute left-[25px] bottom-[50px]">
@@ -466,7 +469,7 @@ import Footer from "../components/Footer.astro";
 <!-- Discover How Brain Vector Helps You Tab End -->
 <!-- Unlock Your Potential Start -->
 <section
-  class="mx-auto z-50 bg-[var(--verLightGrayishBlue)] pt-[62px] md:pt-[97px] pb-[94px] md:pb-[119px] px-[20px]"
+  class="mx-auto z-50 bg-[var(--verLightGrayishBlue)] pt-[62px] md:pt-[97px] pb-[94px] md:pb-[145px] px-[20px]"
 >
   <div class="max-w-[1680px] mx-auto">
     <h2
@@ -488,7 +491,8 @@ import Footer from "../components/Footer.astro";
       class="pt-[40px] md:pt-[62px] grid grid-cols-1 md:grid-cols-3 gap-[16px] md:gap-[30px]"
     >
       <div
-        class="px-[20px] md:px-[37px] pt-[20px] md: pb-[30px] md:py-[20px] h-[316px] md:h-[526px] bg-[url('https://i.ibb.co.com/nsWW9WDm/ullock-reboot.png')] bg-cover bg-center rounded-[20px] flex flex-col justify-between"
+        class="px-[20px] md:px-[37px] pt-[20px] md:pb-[30px] md:py-[20px] h-[316px] md:h-[526px] bg-cover bg-center rounded-[20px] flex flex-col justify-between"
+        style="background-image: url('./images/img/ullock-reboot.png')"
       >
         <div>
           <h4
@@ -507,7 +511,8 @@ import Footer from "../components/Footer.astro";
         </p>
       </div>
       <div
-        class="px-[20px] md:px-[37px] pt-[20px] md: pb-[30px] md:py-[20px] h-[316px] md:h-[526px] bg-[url('https://i.ibb.co.com/RGGhrWNv/Realize-bg.png')] bg-cover bg-center rounded-[20px] flex flex-col justify-between"
+        class="px-[20px] md:px-[37px] pt-[20px] md:pb-[30px] md:py-[20px] h-[316px] md:h-[526px] bg-cover bg-center rounded-[20px] flex flex-col justify-between"
+        style="background-image: url('./images/img/Realize-bg.png')"
       >
         <div>
           <h4
@@ -520,13 +525,14 @@ import Footer from "../components/Footer.astro";
         <p
           class="md:pb-[24px] text-[16px] leading-[20px] md:text-[18px] md:leading-[26px] font-normal! text-[var(--white)]"
         >
-          Designed for athletes, military professionals, and pilots. Enhance
+          Designed for athletes, military professionals, and pilots. Enhance
           mental endurance, cognitive precision, and stress recovery in
           high-stakes environments.
         </p>
       </div>
       <div
-        class="px-[20px] md:px-[37px] pt-[20px] md: pb-[30px] md:py-[20px] h-[316px] md:h-[526px] bg-[url('https://i.ibb.co.com/xSBTps8K/reset-bg.png')] bg-cover bg-center rounded-[20px] flex flex-col justify-between"
+        class="px-[20px] md:px-[37px] pt-[20px] md:pb-[30px] md:py-[20px] h-[316px] md:h-[526px] bg-cover bg-center rounded-[20px] flex flex-col justify-between"
+        style="background-image: url('./images/img/reset-bg.png')"
       >
         <div>
           <h4
@@ -553,7 +559,7 @@ import Footer from "../components/Footer.astro";
   class="max-w-[1742px] mx-auto px-[20px] pt-[74px] md:pt-[91px] pb-[20px] md:pb-[138px]"
 >
   <h2
-    class="pb-[25px] md:pb-[35px] text-[38px] leading-[42px] md:text-[50px] md:leading-[52px] font-medium"
+    class="pb-[20px] md:pb-[25px] text-[38px] leading-[42px] md:text-[50px] md:leading-[52px] font-medium"
   >
     The VectorVerse
   </h2>
@@ -562,23 +568,25 @@ import Footer from "../components/Footer.astro";
     class="max-w-[1408px] flex flex-col md:flex-row items-center mx-auto pt-[89px] md:pt-[166px] flex gap-[83px]"
   >
     <div
-      class="hidden md:block w-[672px] h-[742px] bg-[url('https://i.ibb.co.com/yn3RK4bg/why-emotional.png')] rounded-[20px]"
+      class="hidden md:block w-[672px] h-[742px] rounded-[20px] bg-center bg-cover"
+      style="background-image: url('./images/img/why-emotional.png')"
     >
     </div>
     <div class="md:w-1/2">
       <h2
-        class="text-[38px] leading-[42px] md:text-[50px] md:leading-[55px] font-medium"
+        class="text-[38px] leading-[42px] md:text-[50px] md:leading-[52px] font-medium"
       >
         Why Emotional Regulation Technology Matters in <span
           class="text-[var(--graywishBlueShade)]">Business & Wellness</span
         >
       </h2>
       <div
-        class="mt-[25px] md:hidden h-[364px] bg-[url('https://i.ibb.co.com/yn3RK4bg/why-emotional.png')] bg-cover bg-center rounded-[20px]"
+        class="mt-[25px] md:hidden h-[364px] bg-cover bg-center rounded-[20px]"
+        style="background-image: url('./images/img/why-emotional.png')"
       >
       </div>
-      <div class="pt-[32px] md:pt-[92px] flex justify-start items-center">
-        <img class="w-[130px]!" src="images/s.svg" alt="s svg" />
+      <div class="pt-[32px] md:pt-[61px] flex justify-start items-center">
+        <img class="w-[130px]!" src="./images/s.svg" alt="s svg" />
         <p
           class="max-w-[504px] text-[19px] md:text-[24px] font-regular text-[var(--desaturated)]"
         >
@@ -593,7 +601,7 @@ import Footer from "../components/Footer.astro";
         functioning. <br /> With Brain Vector, you're not just implementing wellness—you’re
         upgrading human potential through science and immersive tech.
       </p>
-      <p class="pt-[70px] md:hidden text-[#8D8D8D] text-[14px] text-normal!">
+      <p class="pt-[75px] text-[#8D8D8D] text-[14px] text-normal!">
         1. Gallup, Employee Burnout: Causes and Cures (2020).
       </p>
     </div>
@@ -603,7 +611,8 @@ import Footer from "../components/Footer.astro";
 <!-- Equip Your Team Start -->
 <!-- for desktop -->
 <section
-  class="hidden md:block md:pt-[151px] pb-[139px] bg-[url('https://i.ibb.co.com/Y7Jb3DGM/equip-your-team.png')] bg-cover bg-center"
+  class="hidden md:block md:pt-[151px] pb-[139px] bg-cover bg-center md:px-4"
+  style="background-image: url('./images/img/equip-your-team.png')"
 >
   <div class="max-w-[1400px] mx-auto">
     <div class="w-[718px]">
@@ -615,14 +624,14 @@ import Footer from "../components/Footer.astro";
         environments, performance centers, and well-being professionals. Be
         among the first to access this innovative solution.
       </p>
-      <div class="flex gap-2 pt-12">
+      <div class="flex gap-2 pt-8">
         <a href="#"
-          class="text-[20px] uppercase px-[50px] py-[15px] border rounded-full text-white border-white cursor-pointer"
+          class="text-[20px] uppercase px-[35px] py-[8px] border rounded-full text-white border-white cursor-pointer hover:bg-[#bebebe] hover:border-[#bebebe] hover:text-black "
           >Join the Waitlist</a
         >
         <img
-          class="w-[165px]!"
-          src="images/multiple-peoples.svg"
+          class="w-[165px]! h-[50px]!"
+          src="images/multiple-peoples.png"
           alt="multiple-peoples"
         />
       </div>
@@ -631,8 +640,8 @@ import Footer from "../components/Footer.astro";
 </section>
 <!-- for phone -->
 <section class="md:hidden">
-  <div class="pt-[75px] px-[31px] bg-[#756B5F] pb-[80px]">
-    <h2 class="text-[38px] leading-[45px] font-medium text-white">Equip Your Team or Clients With the Mental Tools They Deserve</h2>
+  <div class="pt-[75px] px-4 bg-[#756B5F] pb-[60px]">
+    <h2 class="text-[38px] leading-[40px] font-medium text-white">Equip Your Team or Clients With the Mental Tools They Deserve</h2>
     <p class="text-[16px] font-light text-white pt-[10px]">
       Brain Vector is currently available in limited release for corporate
       environments, performance centers, and well-being professionals. Be among
@@ -640,17 +649,17 @@ import Footer from "../components/Footer.astro";
     </p>
     <div class="flex gap-2 pt-6">
       <a href="#"
-        class="text-[14px] font-semibold uppercase px-[20px] py-[8px] border rounded-full text-white border-white cursor-pointer"
+        class="text-[14px] font-semibold uppercase px-[20px] py-[8px] border rounded-full text-white border-white cursor-pointer hover:bg-[#bebebe] hover:border-[#bebebe] hover:text-black"
         >Join the Waitlist</a
       >
       <img
         class="w-[120px]!"
-        src="images/multiple-peoples.svg"
+        src="images/multiple-peoples.png"
         alt="multiple-peoples"
       />
     </div>
   </div>
-  <img src="https://i.ibb.co.com/5g13jDzD/eye.png" alt="eye" />
+  <img src="./images/img/eye1.png" alt="eye" />
 </section>
 <!-- Equip Your Team End -->
 <!-- Footer Start -->

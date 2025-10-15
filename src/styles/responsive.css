@@ -156,6 +156,12 @@
 
 }
 
+@media (max-width: 1024px) {
+  #content3 {
+    left: 55% !important;
+  }
+}
+
 @media (max-width: 900px) {
   .home {
     height: 844px;
@@ -183,7 +189,7 @@
   .understanding-emotional {
     flex-direction: column-reverse;
     gap: 0px;
-    padding: 80px 20px;
+    padding: 20px 20px 80px 20px;
   }
 
   .understanding-emotional > div {
@@ -219,6 +225,24 @@
     display: block !important;
   }
 
+#content1,
+#content2,
+#content3 {
+  font-size: 16px;
+}
+
+#content1 {
+  width: 90px;
+}
+
+#content2 {
+  width: 92px;
+}
+
+  #content3 {
+    left: 50% !important;
+    width: 127px;
+  }
   
 }
 

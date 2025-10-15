@@ -70,4 +70,10 @@ img {
     height: auto;
 }
 
+@media (min-width: 767px) {
+    .swiper-pagination-bullet {
+    display: none !important;
+}
+}
+
 /* Global CSS end */

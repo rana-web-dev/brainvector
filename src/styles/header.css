@@ -2,6 +2,11 @@
     top: -150px !important;
 }
 
+.top-fixed {
+    position: fixed;
+    top: 0;
+}
+
 .navigations {
     background-color: transparent;
     z-index: 999;
@@ -18,15 +23,20 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
 }
 
 .navigations .menu-for-desktop {
     display: flex;
     gap: 100px;
+    align-items: center;
     border-bottom: 1px solid var(--white);
     padding-bottom: 24px;
-    align-items: center;
+}
+
+.header-border-unactive {
+    border-bottom: 0px !important;
+    padding-bottom: 0px !important;
 }
 
 .navigations .menu-for-desktop a {

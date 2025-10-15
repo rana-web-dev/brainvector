@@ -12,27 +12,27 @@ interface SlideData {
 
 const slidesData: SlideData[] = [
   {
-    bgImage: 'https://i.ibb.co/mrqZnnSs/captain.png',
+    bgImage: './images/img/captain.png',
     title: 'Captain Elias Monroe, U.S. Marine Corps Pilot',
     videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4', // Replace with actual video URL
   },
   {
-    bgImage: 'https://i.ibb.co/ksjQNGrv/laura-bg.png',
+    bgImage: './images/img/laura-bg.png',
     title: 'Laura Campbell, Artistic gymnast',
     videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4', // Replace with actual video URL
   },
   {
-    bgImage: 'https://i.ibb.co/8SZZLGM/captain-elias.png',
+    bgImage: './images/img/captain-elias.png',
     title: 'Captain Elias Monroe, Commercial Airline Pilot',
     videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4', // Replace with actual video URL
   },
   {
-    bgImage: 'https://i.ibb.co/5gRPwBxk/paula-bg.png',
+    bgImage: './images/img/paula-bg.png',
     title: 'Paula Berger, Neurosurgeon',
     videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4', // Replace with actual video URL
   },
   {
-    bgImage: 'https://i.ibb.co/359p9YQr/jasmin-bg.png',
+    bgImage: './images/img/jasmin-bg.png',
     title: 'Jasmine Lavoie, Senior Operations Manager',
     videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4', // Replace with actual video URL
   },
@@ -51,7 +51,7 @@ const App: React.FC = () => {
       modules={[Pagination]}
       className="mySwiper"
       slidesPerView={1}
-      spaceBetween={20}
+      spaceBetween={30}
       slidesOffsetAfter={50}
       breakpoints={{
         640: { slidesPerView: 1 },

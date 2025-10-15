@@ -1,4 +1,5 @@
 
+
 import React, { useState, useEffect } from "react";
 
 const Navigation: React.FC = () => {
@@ -8,6 +9,7 @@ const Navigation: React.FC = () => {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [currentPath, setCurrentPath] = useState("");
   const [scrollTop, setScrollTop] = useState(false);
+  const [headerBorder, setBorder] = useState(false);
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
@@ -15,12 +17,22 @@ const Navigation: React.FC = () => {
     setActiveMenu(!activeMenu);
   };
 
+  // Normalize paths by removing trailing slashes
+  const normalizePath = (path: string) => path.replace(/\/+$/, '');
+
   useEffect(() => {
     // Only runs on client
-    setCurrentPath(window.location.pathname);
+    if (typeof window !== 'undefined') {
+      const path = normalizePath(window.location.pathname);
+      setCurrentPath(path);
+    }
 
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
+
+      if (currentScrollY > 0) {
+        setBorder(true);
+      }
 
       if (currentScrollY === 0) setScrollTop(true);
       else setScrollTop(false);
@@ -52,7 +64,7 @@ const Navigation: React.FC = () => {
     <nav className={`navigations ${activeMenu || scrollUp ? "nav-top-0" : ""}`}>
       <div className={`${isScrolled && !scrollTop ? "bg-black" : ""}`}>
         <div className="navigations-content">
-          <ul className="menu-for-desktop">
+          <ul className={`menu-for-desktop ${headerBorder && !scrollTop ? "header-border-unactive" : ""}`}>
             <li>
               <a href="/">
                 <img src="/images/brainvector_logo.svg" alt="Brainvector logo" />
@@ -63,7 +75,7 @@ const Navigation: React.FC = () => {
                 onMouseEnter={() => setHoveredItem(item.name)}
                 onMouseLeave={() => setHoveredItem(null)}>
                 <a
-                  className={currentPath === item.href ? "active-menu-white" : ""}
+                  className={currentPath == item.href ? "active-menu-white" : ""}
                   href={item.href}
                 >
                   {item.name}
@@ -79,15 +91,15 @@ const Navigation: React.FC = () => {
                   <div className="mega-menu-container absolute -left-[550px] pt-[30px]">
                     <div className="mega-menu-content w-[1764px] px-[200px] py-[100px] bg-white grid grid-cols-3 gap-6">
                       <a href="/reboot">
-                        <img src="images/img/Reboot-Corporate.png" alt="Reboot" />
+                        <img src="https://brainvector.dev.karma-dev.com/content/img/Reboot-Corporate.png" alt="Reboot" />
                         <p className="text-[26px] leading-[28px] font-[Barlow] font-normal pt-[20px] text-black capitalize">Reboot – Corporate Mental Clarity</p>
                       </a>
                       <a href="/realize">
-                        <img src="images/img/Realize-dropdown.png" alt="Realize" />
+                        <img src="https://brainvector.dev.karma-dev.com/content/img/Realize-dropdown.png" alt="Realize" />
                         <p className="text-[26px] leading-[28px] font-[Barlow] font-normal pt-[20px] text-black capitalize">Realize – Elite Performance & Focus</p>
                       </a>
                       <a href="/reset">
-                        <img src="images/img/Reset-dropdown.png" alt="Reset" />
+                        <img src="https://brainvector.dev.karma-dev.com/content/img/Reset-dropdown.png" alt="Reset" />
                         <p className="text-[26px] leading-[28px] font-[Barlow] font-normal pt-[20px] text-black capitalize">Reset - Wellness & Emotional Balance</p>
                       </a>
                     </div>
@@ -101,7 +113,7 @@ const Navigation: React.FC = () => {
         </div>
       </div>
       {/* Mobile menu */}
-      <div className={`menu-for-mobile ${activeMenu ? "bg-black nav-top-0" : "pe-none"}`}>
+      <div className={`menu-for-mobile ${activeMenu ? "bg-black top-fixed" : "pe-none"}`}>
         <div className={`pe-auto mobile-nav-container ${isScrolled && !scrollTop ? "bg-black" : ""}`}>
           <a href="/">
             <img src="/images/brainvector_logo.svg" alt="Brainvector logo" />
