@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/header";
 import Carousel from "../components/carousel";
 import Footer from "../components/Footer.astro";
+import PopupModal from "../components/watchvideopopup";
 ---
 
 <Layout>
@@ -18,12 +19,14 @@ import Footer from "../components/Footer.astro";
       poster="./images/img/home-bg-img.png"
       style="width: 100%; height: auto; object-fit: cover;"
     >
-      <source class="brainvector-home-bg-video" 
+      <source
+        class="brainvector-home-bg-video"
         src="./videos/brainvector-home-bg-video.mp4"
         type="video/mp4"
         media="(min-width: 768px)"
       />
-      <source class="brainvector-home-bg-video-phone" 
+      <source
+        class="brainvector-home-bg-video-phone"
         src="./videos/brainvector-home-bg-video-phone.mp4"
         type="video/mp4"
         media="(max-width: 767px)"
@@ -45,68 +48,89 @@ import Footer from "../components/Footer.astro";
   </section>
   <!-- Home Page End -->
   <!-- Understanding Emotional -->
-   <section>
-    <h2 class="md:hidden px-4 pt-[50px] text-[38px] leading-[38px] font-medium">
-        Understanding Emotional Regulation:<span style="color: var(--blueGray)"
-          >The Oxytocin Pathway to Clarity, Performance & Inner Balance</span
-        >
-        </h2>
-  <div class="understanding-emotional max-w-[1450px]">
-    <div class="w-1/2">
-      <h2 class="hidden md:block md:text-[50px] md:leading-[52px] font-medium!">
-        Understanding Emotional Regulation:<span style="color: var(--blueGray)"
-          >The Oxytocin Pathway to Clarity, Performance & Inner Balance</span
-        >
-      </h2>
-      <p style="font-size: 19px; text-transform: uppercase; inline-block mt-[15px]"
-        >Regulate Emotions. Boost Focus. Elevate Mental Performance.</p>
-      <p class="mt-[15px]">Emotion can shape how we think, decide, and perform. At the center of this process is oxytocin, a naturally occurring neurochemical
-      that promotes trust, emotional balance, and stress relief. When triggered,
-      either naturally or through VR and AI-enhanced immersive technology,
-      oxytocin helps shift the brain from a stress response into a state of
-      clarity and cognitive readiness. It enhances focus, strengthens working
-      memory, and improves decision-making under pressure.<br /><br />
-      <span style="font-weight: 600;color: var(--darkBlueGray);"
-        >Repeated thoughts and imagery strengthen the pathways that guide
-        behavior and choices, reinforcing this process over time.</span
+  <section>
+    <h2
+      class="md:hidden px-4 pt-[50px] text-[38px] leading-[38px] font-normal! md:font-medium"
+    >
+      Understanding Emotional Regulation:<span style="color: var(--blueGray)"
+        >The Oxytocin Pathway to Clarity, Performance & Inner Balance</span
       >
-      <br /><br /> regulation is not a personality trait: it’s a trainable mental
-      capacity, now accessible through technology. Whether you're a wellness center,
-      a corporate leader, or a performance-focused organization, supporting emotional
-      regulation can unlock untapped human potential.</p>
-    </div>
-    <!-- Progressbar -->
-    <div class="w-1/2 h-[364px] md:h-[700px] bg-center bg-cover rounded-[20px] no-repeat" style="background-image: url('./images/img/animations-visual.png')">
-      <div class="progress-container">
-    <div id="content1" class="content active">+ FOCUS</div>
-      <div id="content2" class="content">-STRESS</div>
-      <div id="content3" class="content">+ RESILIENCE</div>
-      <!-- image fade -->
-      <img
-        id="fade-image"
-        class="fade-image"
-        src="./images/img/sans-animations.png"
-        alt="Progress image"
-      />
-      <h2 class="mb-[40px] md:mb-[100px] text-[16px]! md:text-[20px]! text-white! font-medigum!">Oxytocin</h2>
-      <!-- progress track + fill -->
-      <div class="progress-track">
-        <div class="progress-bar" id="progress-bar"></div>
+    </h2>
+    <div class="understanding-emotional max-w-[1450px]">
+      <div class="w-1/2">
+        <h2
+          class="hidden md:block md:text-[50px] md:leading-[52px] font-medium!"
+        >
+          Understanding Emotional Regulation:<span
+            style="color: var(--blueGray)"
+            >The Oxytocin Pathway to Clarity, Performance & Inner Balance</span
+          >
+        </h2>
+        <p
+          style="font-size: 19px; text-transform: uppercase; inline-block mt-[15px]"
+        >
+          Regulate Emotions. Boost Focus. Elevate Mental Performance.
+        </p>
+        <p class="mt-[15px]">
+          Emotion can shape how we think, decide, and perform. At the center of
+          this process is oxytocin, a naturally occurring neurochemical that
+          promotes trust, emotional balance, and stress relief. When triggered,
+          either naturally or through VR and AI-enhanced immersive technology,
+          oxytocin helps shift the brain from a stress response into a state of
+          clarity and cognitive readiness. It enhances focus, strengthens
+          working memory, and improves decision-making under pressure.<br /><br
+          />
+          <span style="font-weight: 600;color: var(--darkBlueGray);"
+            >Repeated thoughts and imagery strengthen the pathways that guide
+            behavior and choices, reinforcing this process over time.</span
+          >
+          <br /><br /> Emotional regulation is not a personality trait: it’s a trainable
+          mental capacity, now accessible through technology. Whether you're a wellness
+          center, a corporate leader, or a performance-focused organization, supporting
+          emotional regulation can unlock untapped human potential.
+        </p>
       </div>
+      <!-- Progressbar -->
+      <div
+        class="w-1/2 h-[364px] mb-[31px] md:mb-[0px] md:h-[700px] bg-center bg-cover rounded-[20px] no-repeat"
+        style="background-image: url('./images/img/animations-visual.png')"
+      >
+        <div class="progress-container">
+          <div id="content1" class="content active">+ FOCUS</div>
+          <div id="content2" class="content">-STRESS</div>
+          <div id="content3" class="content">+ RESILIENCE</div>
+          <!-- image fade -->
+          <img
+            id="fade-image"
+            class="fade-image"
+            src="./images/img/sans-animations.png"
+            alt="Progress image"
+          />
+          <h2
+            class="mb-[40px] md:mb-[100px] text-[16px]! md:text-[20px]! text-white! font-medigum!"
+          >
+            Oxytocin
+          </h2>
+          <!-- progress track + fill -->
+          <div class="progress-track">
+            <div class="progress-bar" id="progress-bar"></div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
   </section>
 </Layout>
 <!-- Introdution Brainvector Start -->
-<section class="introduction-brainvector">
+<section
+  class="introduction-brainvector px-4 pt-[62px] pb-[90px] md:pt-[116px] md:pb-[119px]"
+>
   <div
     class="introduction-brainvector-content flex flex-col md:flex-row gap-[0] md:gap-[68px]"
   >
     <div class="md:w-1/2 flex items-center">
       <img
         class="hidden md:block"
-        src="./images/img/Introduction-Brainvector-Image.png"
+        src="./images/img/contact-us-img.png"
         alt="Introduction brainvector image"
       />
     </div>
@@ -130,7 +154,7 @@ import Footer from "../components/Footer.astro";
         regain control over their emotional states and optimize cognitive
         performance.
       </p>
-      <div class="mt-[30px] md:mt-[20px] grid gap-[20px]">
+      <div class="mt-[30px] md:mt-[20px] grid gap-[35px] md:gap-[20px]">
         <div class="flex flex-col md:flex-row">
           <div
             class="bg-white rounded-[15px] w-[63px] md:w-[105px] h-auto p-[10px] flex items-center"
@@ -198,18 +222,12 @@ import Footer from "../components/Footer.astro";
               <em
                 >All emotional and cognitive data is processed with strict
                 privacy protocols. Ethical technology for sensitive,
-                human-centered applications.</em>
+                human-centered applications.</em
+              >
             </p>
           </div>
         </div>
-        <button
-          class="w-[190px] mt-[15px] cursor-pointer flex items-center gap-[8px] px-[18px] py-[12px] border rounded-full pointer hover:bg-[#bebebe] hover:border-[#bebebe] hover:text-black"
-          ><img
-            style={{ width: "20px;" }}
-            src="./images/video.svg"
-            alt="video play"
-          /> Watch the video</button
-        >
+        <PopupModal client:load />
       </div>
     </div>
   </div>
@@ -296,7 +314,7 @@ import Footer from "../components/Footer.astro";
       </div>
       <div
         id="home-tab-content-phone"
-        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-cover bg-center"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 -mt-[13px] md:-mt-[0px] opacity-100 bg-cover bg-center"
         data-tab="1"
         style="background-image: url('./images/img/home-identify-phone.png')"
       >
@@ -345,7 +363,7 @@ import Footer from "../components/Footer.astro";
       </div>
       <div
         id="home-tab-content-phone"
-        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-cover bg-center"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 -mt-[15px] md:-mt-[0px] opacity-100 bg-cover bg-center"
         data-tab="2"
         style="background-image: url('./images/img/personalize-phone-bg.png')"
       >
@@ -393,7 +411,7 @@ import Footer from "../components/Footer.astro";
       </div>
       <div
         id="home-tab-content-phone"
-        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-cover bg-center"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 -mt-[15px] md:-mt-[0px] opacity-100 bg-cover bg-center"
         data-tab="3"
         style="background-image: url('./images/img/guide-phone-bg.png')"
       >
@@ -441,7 +459,7 @@ import Footer from "../components/Footer.astro";
       </div>
       <div
         id="home-tab-content-phone"
-        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 opacity-100 bg-cover bg-center"
+        class="tab-content flex relative justify-center items-center transition-all duration-500 h-[526px] rounded-3xl p-2 -mt-[15px] md:-mt-[0px] opacity-100 bg-cover bg-center"
         data-tab="4"
         style="background-image: url('./images/img/activate-phone-bg.png')"
       >
@@ -491,7 +509,7 @@ import Footer from "../components/Footer.astro";
       class="pt-[40px] md:pt-[62px] grid grid-cols-1 md:grid-cols-3 gap-[16px] md:gap-[30px]"
     >
       <div
-        class="px-[20px] md:px-[37px] pt-[20px] md:pb-[30px] md:py-[20px] h-[316px] md:h-[526px] bg-cover bg-center rounded-[20px] flex flex-col justify-between"
+        class="px-[20px] md:px-[37px] pt-[20px] pb-[30px] md:py-[20px] h-[316px] md:h-[526px] bg-cover bg-center rounded-[20px] flex flex-col justify-between"
         style="background-image: url('./images/img/ullock-reboot.png')"
       >
         <div>
@@ -503,7 +521,7 @@ import Footer from "../components/Footer.astro";
           <hr class="text-[var(--white)] mt-[10px]" />
         </div>
         <p
-          class="md:pb-[23px] text-[16px] leading-[20px] md:text-[18px] md:leading-[26px] font-normal! text-[var(--white)]"
+          class="ulp1 text-[16px] leading-[20px] md:text-[18px] md:leading-[26px] font-normal! text-[var(--white)]"
         >
           For executives, innovators, and teams facing pressure and decision
           fatigue. Improve focus, reduce distraction, and regain energy with
@@ -511,7 +529,7 @@ import Footer from "../components/Footer.astro";
         </p>
       </div>
       <div
-        class="px-[20px] md:px-[37px] pt-[20px] md:pb-[30px] md:py-[20px] h-[316px] md:h-[526px] bg-cover bg-center rounded-[20px] flex flex-col justify-between"
+        class="px-[20px] md:px-[37px] pt-[20px] pb-[30px] md:py-[20px] h-[316px] md:h-[526px] bg-cover bg-center rounded-[20px] flex flex-col justify-between"
         style="background-image: url('./images/img/Realize-bg.png')"
       >
         <div>
@@ -523,7 +541,7 @@ import Footer from "../components/Footer.astro";
           <hr class="text-[var(--white)] mt-[10px]" />
         </div>
         <p
-          class="md:pb-[24px] text-[16px] leading-[20px] md:text-[18px] md:leading-[26px] font-normal! text-[var(--white)]"
+          class="ulp2 text-[16px] leading-[20px] md:text-[18px] md:leading-[26px] font-normal! text-[var(--white)]"
         >
           Designed for athletes, military professionals, and pilots. Enhance
           mental endurance, cognitive precision, and stress recovery in
@@ -531,7 +549,7 @@ import Footer from "../components/Footer.astro";
         </p>
       </div>
       <div
-        class="px-[20px] md:px-[37px] pt-[20px] md:pb-[30px] md:py-[20px] h-[316px] md:h-[526px] bg-cover bg-center rounded-[20px] flex flex-col justify-between"
+        class="px-[20px] md:px-[37px] pt-[20px] pb-[30px] md:py-[20px] h-[316px] md:h-[526px] bg-cover bg-center rounded-[20px] flex flex-col justify-between"
         style="background-image: url('./images/img/reset-bg.png')"
       >
         <div>
@@ -556,7 +574,7 @@ import Footer from "../components/Footer.astro";
 <!-- Unlock Your Potential End -->
 <!-- The VectorVerse Start -->
 <section
-  class="max-w-[1742px] mx-auto px-[20px] pt-[74px] md:pt-[91px] pb-[20px] md:pb-[138px]"
+  class="hidden max-w-[1742px] mx-auto px-[20px] pt-[74px] md:pt-[91px] pb-[20px] md:pb-[138px]"
 >
   <h2
     class="pb-[20px] md:pb-[25px] text-[38px] leading-[42px] md:text-[50px] md:leading-[52px] font-medium"
@@ -625,8 +643,9 @@ import Footer from "../components/Footer.astro";
         among the first to access this innovative solution.
       </p>
       <div class="flex gap-2 pt-8">
-        <a href="#"
-          class="text-[20px] uppercase px-[35px] py-[8px] border rounded-full text-white border-white cursor-pointer hover:bg-[#bebebe] hover:border-[#bebebe] hover:text-black "
+        <a
+          href="/contact"
+          class="text-[20px] uppercase px-[35px] py-[8px] border rounded-full text-white border-white cursor-pointer hover:bg-[#bebebe] hover:border-[#bebebe] hover:text-black"
           >Join the Waitlist</a
         >
         <img
@@ -641,14 +660,17 @@ import Footer from "../components/Footer.astro";
 <!-- for phone -->
 <section class="md:hidden">
   <div class="pt-[75px] px-4 bg-[#756B5F] pb-[60px]">
-    <h2 class="text-[38px] leading-[40px] font-medium text-white">Equip Your Team or Clients With the Mental Tools They Deserve</h2>
+    <h2 class="text-[38px] leading-[40px] font-medium text-white">
+      Equip Your Team or Clients With the Mental Tools They Deserve
+    </h2>
     <p class="text-[16px] font-light text-white pt-[10px]">
       Brain Vector is currently available in limited release for corporate
       environments, performance centers, and well-being professionals. Be among
       the first to access this innovative solution.
     </p>
     <div class="flex gap-2 pt-6">
-      <a href="#"
+      <a
+        href="#"
         class="text-[14px] font-semibold uppercase px-[20px] py-[8px] border rounded-full text-white border-white cursor-pointer hover:bg-[#bebebe] hover:border-[#bebebe] hover:text-black"
         >Join the Waitlist</a
       >
@@ -663,7 +685,7 @@ import Footer from "../components/Footer.astro";
 </section>
 <!-- Equip Your Team End -->
 <!-- Footer Start -->
-<Footer/>
+<Footer />
 <!-- Footer End -->
 
 <script>
@@ -748,60 +770,68 @@ import Footer from "../components/Footer.astro";
     }
   });
 
-// Progress
-// Get elements with null checks
-const progressBar = document.getElementById("progress-bar") as HTMLDivElement | null;
-const fadeImage = document.getElementById("fade-image") as HTMLImageElement | null;
-const pcontents: (HTMLDivElement | null)[] = [
-  document.getElementById("content1") as HTMLDivElement | null,
-  document.getElementById("content2") as HTMLDivElement | null,
-  document.getElementById("content3") as HTMLDivElement | null,
-];
+  // Progress
+  // Get elements with null checks
+  const progressBar = document.getElementById(
+    "progress-bar"
+  ) as HTMLDivElement | null;
+  const fadeImage = document.getElementById(
+    "fade-image"
+  ) as HTMLImageElement | null;
+  const pcontents: (HTMLDivElement | null)[] = [
+    document.getElementById("content1") as HTMLDivElement | null,
+    document.getElementById("content2") as HTMLDivElement | null,
+    document.getElementById("content3") as HTMLDivElement | null,
+  ];
 
-if (!progressBar || !fadeImage || pcontents.some(c => c === null)) {
-  throw new Error("Required elements not found in the DOM.");
-}
+  if (!progressBar || !fadeImage || pcontents.some((c) => c === null)) {
+    throw new Error("Required elements not found in the DOM.");
+  }
 
-let progress = 0;
-let started = false; // ensure animation runs only once
+  let progress = 0;
+  let started = false; // ensure animation runs only once
 
-// Function to run progress animation
-function runProgress(): void {
-  if (started) return;
-  started = true;
+  // Function to run progress animation
+  function runProgress(): void {
+    if (started) return;
+    started = true;
 
-  const interval = setInterval(() => {
-    progress += 1;
+    const interval = setInterval(() => {
+      progress += 1;
 
-    // Fill progress bar
-    progressBar!.style.width = progress + "%";
+      // Fill progress bar
+      progressBar!.style.width = progress + "%";
 
-    // Fade image
-    fadeImage!.style.opacity = (progress / 100).toString();
+      // Fade image
+      fadeImage!.style.opacity = (progress / 100).toString();
 
-    // Show content progressively
-    if (progress >= 0 && progress <= 33) pcontents[0]!.classList.add("active");
-    else if (progress > 33 && progress <= 66) pcontents[1]!.classList.add("active");
-    else if (progress > 66) pcontents[2]!.classList.add("active");
+      // Show content progressively
+      if (progress >= 0 && progress <= 33)
+        pcontents[0]!.classList.add("active");
+      else if (progress > 33 && progress <= 66)
+        pcontents[1]!.classList.add("active");
+      else if (progress > 66) pcontents[2]!.classList.add("active");
 
-    if (progress >= 100) clearInterval(interval);
-  }, 30);
-}
+      if (progress >= 100) clearInterval(interval);
+    }, 30);
+  }
 
-// Use Intersection Observer to trigger animation
-const section = document.querySelector(".progress-container") as HTMLElement | null;
-if (!section) throw new Error("Section not found");
+  // Use Intersection Observer to trigger animation
+  const section = document.querySelector(
+    ".progress-container"
+  ) as HTMLElement | null;
+  if (!section) throw new Error("Section not found");
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        runProgress();
-      }
-    });
-  },
-  { threshold: 0.5 } // trigger when 50% of section is visible
-);
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          runProgress();
+        }
+      });
+    },
+    { threshold: 0.5 } // trigger when 50% of section is visible
+  );
 
-observer.observe(section);
+  observer.observe(section);
 </script>

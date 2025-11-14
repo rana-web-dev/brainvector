@@ -1,4 +1,50 @@
 /* All pages responsive here */
+@media (max-width: 1662px) {
+  .ulp1 {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 1634px) {
+  .ulp2 {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .ulp2 {
+    margin-bottom: 26px;
+  }
+}
+
+@media (max-width: 1430px) {
+  .who-reset-serves .reset-serves-grid, .who-it-for-grid, .reboot-who-it-for {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1076px) {
+  .who-reset-serves .reset-serves-grid, .who-it-for-grid, .reboot-who-it-for {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1366px) {
+  .mega-menu-container {
+    left: calc(442px * -1);
+  }
+  .mega-menu-content {
+    width: 1310px;
+    padding-inline: 130px;
+  }
+}
+
+@media (max-width: 1338px) {
+  .ulp2 {
+    margin-bottom: 0px;
+  }
+}
+
 @media (max-width: 1500px) {
   /* Header */
   .navigations .menu-for-desktop {
@@ -12,7 +58,7 @@
   }
 
   .swiper-pagination-bullet-active {
-    background: #DDE0E4 !important;
+    background: #dde0e4 !important;
   }
 
   .swiper-pagination-bullet-active {
@@ -153,8 +199,61 @@
   .contact {
     margin-top: -948px;
   }
-
 }
+
+/* Unlock Your Potential Start */
+@media (max-width: 1212px) {
+  .ulp1, .ulp2 {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 1192px) {
+  .ulp1 {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 1157px) {
+  .ulp2 {
+    margin-bottom: 0px;
+  }
+
+  .ulp1 {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 1048px) {
+  .ulp2 {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 1117px) {
+  .ulp2 {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 1145px) {
+  .ulp1 {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 994px) {
+  .ulp1, .ulp2 {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 994px) {
+  .ulp1 {
+    margin-bottom: 0px;
+  }
+}
+/* Unlock Your Potential End */
 
 @media (max-width: 1024px) {
   #content3 {
@@ -185,7 +284,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .understanding-emotional {
     flex-direction: column-reverse;
     gap: 0px;
@@ -204,15 +303,7 @@
     display: none;
   }
 
-  .understanding-emotional p {
-    padding-top: 31px;
-  }
-
   /* Introduction Brainvector */
-  .introduction-brainvector-content {
-    padding: 61px 20px;
-  }
-
   #h-tabs {
     background-color: transparent;
   }
@@ -225,25 +316,28 @@
     display: block !important;
   }
 
-#content1,
-#content2,
-#content3 {
-  font-size: 16px;
-}
+  #content1,
+  #content2,
+  #content3 {
+    font-size: 16px;
+  }
 
-#content1 {
-  width: 90px;
-}
+  #content1 {
+    width: 90px;
+  }
 
-#content2 {
-  width: 92px;
-}
+  #content2 {
+    width: 92px;
+  }
 
   #content3 {
-    left: 50% !important;
+    left: 60% !important;
     width: 127px;
   }
-  
+
+  .who-reset-serves .reset-serves-grid, .who-it-for-grid, .reboot-who-it-for {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 @media (max-width: 590px) {

@@ -70,6 +70,18 @@ img {
     height: auto;
 }
 
+.play-btn img {
+    width: 20px !important;
+}
+
+.ulp1 {
+    margin-bottom: 23px;
+}
+
+.ulp2 {
+    margin-bottom: 24px;
+}
+
 @media (min-width: 767px) {
     .swiper-pagination-bullet {
     display: none !important;

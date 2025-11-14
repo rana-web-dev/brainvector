@@ -73,15 +73,21 @@ import "flowbite/dist/flowbite.css"; // Flowbite CSS
         mouseX = e.clientX;
         mouseY = e.clientY;
         // ensure the blur is visible when moving
-        blurEl.style.opacity = '1';
+        if (blurEl) {
+          blurEl.style.opacity = '1';
+        }
       });
 
       // Optionally hide when leaving window
       window.addEventListener('mouseleave', () => {
-        blurEl.style.opacity = '0';
+        if (blurEl) {
+          blurEl.style.opacity = '0';
+        }
       });
       window.addEventListener('mouseenter', () => {
-        blurEl.style.opacity = '1';
+        if (blurEl) {
+          blurEl.style.opacity = '1';
+        }
       });
 
       // Animation loop to smoothly follow the cursor
@@ -96,7 +102,9 @@ import "flowbite/dist/flowbite.css"; // Flowbite CSS
 
         // Apply transform (translate centers the circle at pointer)
         // we subtract 50% via CSS transform already; here we set translate coordinates
-        blurEl.style.transform = `translate(${targetX}px, ${targetY}px) translate(-50%, -50%)`;
+        if (blurEl) {
+          blurEl.style.transform = `translate(${targetX}px, ${targetY}px) translate(-50%, -50%)`;
+        }
 
         requestAnimationFrame(animate);
       }
@@ -106,13 +114,17 @@ import "flowbite/dist/flowbite.css"; // Flowbite CSS
 
       // Accessibility / prefers-reduced-motion respect:
       const mql = window.matchMedia('(prefers-reduced-motion: reduce)');
-      function handleReduceMotion(e) {
+      function handleReduceMotion(e: any) {
         if (e.matches) {
           // disable smoothing (snap) and heavy blur
-          blurEl.style.filter = 'blur(4px)';
-          blurEl.style.transition = 'none';
+          if (blurEl) {
+            blurEl.style.filter = 'blur(4px)';
+            blurEl.style.transition = 'none';
+          }
         } else {
-          blurEl.style.filter = 'blur(8px)';
+          if (blurEl) {
+            blurEl.style.filter = 'blur(8px)';
+          }
         }
       }
       handleReduceMotion(mql);
